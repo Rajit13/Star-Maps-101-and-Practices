@@ -1,0 +1,49 @@
+\contentsline {section}{\numberline {1}Stars, Constellations, and Olympiads}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Constellation Names}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Star Names}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Constellation Figures}{8}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Exploring the Moon}{32}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem: Moon features }{33}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Deep Sky Objects}{35}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Short Problems and Solutions on DSOs}{38}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Star Charts}{41}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Stargazing maps: Coordinate lines}{41}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Projections}{42}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Horizon Views}{42}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Round Maps}{44}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Pole View Maps}{47}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}The precession of the equinoxes}{48}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Monthly Sky Chats}{52}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Celestial Navigation}{58}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Naked Eye Observation}{58}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Telescope Aided Observation}{63}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Astrophotography}{68}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Practice Olympiad Problems}{69}{section.6}%
+\contentsline {subsection}{\numberline {6.1}How OBS Marking works}{69}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}BDOAA}{70}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}2019}{70}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}2021}{71}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}INAO}{72}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}2019}{72}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}2018}{73}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}2016}{73}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}SAO}{74}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}P1: The night of Vernal Equinox}{74}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Czech}{76}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Observation using Simbad}{76}{subsubsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.6}IOAA 2016 Observation Round}{77}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Observational Map}{77}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Observational Planetarium}{78}{subsubsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.7}IOAA 2018 Observation Round}{81}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}O1}{81}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}O2}{82}{subsubsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.3}O3}{83}{subsubsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.4}O4}{84}{subsubsection.6.7.4}%
+\contentsline {subsection}{\numberline {6.8}IOAA 2019 Observation Round}{86}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Task 01}{86}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}Task 02}{87}{subsubsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.3}Task 03}{88}{subsubsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.9}GeCAA 2020}{90}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Problem 1}{90}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.2}Problem 4}{91}{subsubsection.6.9.2}%
+\contentsline {section}{\numberline {7}Sources}{93}{section.7}%
