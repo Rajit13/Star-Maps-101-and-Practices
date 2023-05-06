@@ -17,34 +17,34 @@
 \contentsline {section}{\numberline {5}Celestial Navigation}{58}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Naked Eye Observation}{58}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Telescope Aided Observation}{63}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Telescope Structures}{68}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Astrophotography}{69}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Practice Olympiad Problems}{69}{section.6}%
-\contentsline {subsection}{\numberline {6.1}How OBS Marking works}{69}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}BDOAA}{70}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}2019}{70}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}2021}{71}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}INAO}{72}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}2019}{72}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}2018}{73}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}2016}{73}{subsubsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.4}SAO}{74}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}P1: The night of Vernal Equinox}{74}{subsubsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.5}Czech}{76}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Observation using Simbad}{76}{subsubsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.6}IOAA 2016 Observation Round}{77}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Observational Map}{77}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Observational Planetarium}{78}{subsubsection.6.6.2}%
-\contentsline {subsection}{\numberline {6.7}IOAA 2018 Observation Round}{81}{subsection.6.7}%
-\contentsline {subsubsection}{\numberline {6.7.1}O1}{81}{subsubsection.6.7.1}%
-\contentsline {subsubsection}{\numberline {6.7.2}O2}{82}{subsubsection.6.7.2}%
-\contentsline {subsubsection}{\numberline {6.7.3}O3}{83}{subsubsection.6.7.3}%
-\contentsline {subsubsection}{\numberline {6.7.4}O4}{84}{subsubsection.6.7.4}%
-\contentsline {subsection}{\numberline {6.8}IOAA 2019 Observation Round}{86}{subsection.6.8}%
-\contentsline {subsubsection}{\numberline {6.8.1}Task 01}{86}{subsubsection.6.8.1}%
-\contentsline {subsubsection}{\numberline {6.8.2}Task 02}{87}{subsubsection.6.8.2}%
-\contentsline {subsubsection}{\numberline {6.8.3}Task 03}{88}{subsubsection.6.8.3}%
-\contentsline {subsection}{\numberline {6.9}GeCAA 2020}{90}{subsection.6.9}%
-\contentsline {subsubsection}{\numberline {6.9.1}Problem 1}{90}{subsubsection.6.9.1}%
-\contentsline {subsubsection}{\numberline {6.9.2}Problem 4}{91}{subsubsection.6.9.2}%
-\contentsline {section}{\numberline {7}Sources}{93}{section.7}%
+\contentsline {subsection}{\numberline {5.3}Telescope Structures}{69}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Astrophotography}{70}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Practice Olympiad Problems}{70}{section.6}%
+\contentsline {subsection}{\numberline {6.1}How OBS Marking works}{70}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}BDOAA}{71}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}2019}{71}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}2021}{72}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}INAO}{73}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}2019}{73}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}2018}{74}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}2016}{74}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}SAO}{75}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}P1: The night of Vernal Equinox}{75}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Czech}{77}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Observation using Simbad}{77}{subsubsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.6}IOAA 2016 Observation Round}{78}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Observational Map}{78}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Observational Planetarium}{79}{subsubsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.7}IOAA 2018 Observation Round}{82}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}O1}{82}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}O2}{83}{subsubsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.3}O3}{84}{subsubsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.4}O4}{85}{subsubsection.6.7.4}%
+\contentsline {subsection}{\numberline {6.8}IOAA 2019 Observation Round}{87}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Task 01}{87}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}Task 02}{88}{subsubsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.3}Task 03}{89}{subsubsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.9}GeCAA 2020}{91}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Problem 1}{91}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.2}Problem 4}{92}{subsubsection.6.9.2}%
+\contentsline {section}{\numberline {7}Sources}{94}{section.7}%
