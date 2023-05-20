@@ -1204,6 +1204,11 @@ Note: Star trails start becoming visibly apparent when a source that covers 1px 
 \end{enumerate}
 
 \subsection{Telescope Aided Observation}
+\textbf{Eyepiece}\\ 
+
+Lens placed near the focal point of the telescope.\\
+\textit{Determines:} magnification, apparent FoV, true FoV, and other specifications.
+Each eyepiece has a focal length just like the telescope\\
 
 
 \textbf{F-Number}\\ 
@@ -1252,7 +1257,13 @@ If the star passes through the chord of the field of view, you can measure the m
 If the apparent field of view is known, the actual field of view can be calculated from the following approximate formula:
 $$\text{TFOV}=\frac{\rm AFOV}{M}$$
 For a telescope with focal length of $f$, object image size of $d$,
-$$AFOV=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$ 
+$$\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$ 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{FOV.png}
+	\caption{Same magnification but different AFoV and TFoV}
+\end{figure}
 
 \textsf{\textbf{Planetary (color) filters:}} Colour filters are mostly used to enhance the colour contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognise the differences.
 
@@ -1378,7 +1389,7 @@ Such a construction is called a liquid mirror telescope. See this video by Actio
 In this problem, we explore the physics of the liquid mirror telescope. Consider a liquid rotating around in a cylinder with radius $r$ at an angular velocity $\omega$! around the cylinder’s axis. For the following parts, you are to ignore effects of surface tension
 \begin{enumerate}[a.]
 	\item Let $y(r)$ represent the height of the liquid surface at a radial distance $r$ from the axis of rotation. By considering the forces acting on a small element on the surface of the container, determine the gradient $\frac{dy}{dr}$ as a function of $r$.
-	\item Determine an equation for the height of the mirror surface with radial distance r from the cylinder's axis. Should you need, $\int ax^n dx=\frac{ax^{n+1}}{n+1}$
+	\item Determine an equation for the height of the mirror surface with radial distance r from the cylinder's axis. Should you need, $$\int ax^n dx=\frac{ax^{n+1}}{n+1}$$
 	\item The Large Zenith Telescope had (it is no longer in use) a diameter of $6.0$m and a rotation period of 8.51s. Determine the focal ratio and plate scale of this telescope.\\
 	Should you not have obtained an answer to the previous parts, you may use 12.0m as the focal
 	length of the Large Zenith Telescope.\\
