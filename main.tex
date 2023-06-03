@@ -1203,12 +1203,12 @@ the plane of the sensor, ie.  $|\delta_\ast +\delta_c|< 90^\circ$ and  $|\delta_
 Note: Star trails start becoming visibly apparent when a source that covers 1px stretches out to span 5px in any direction}
 \end{enumerate}
 
+\clearpage
 \subsection{Telescope Aided Observation}
 \textbf{Eyepiece}\\ 
 
 Lens placed near the focal point of the telescope.\\
-\textit{Determines:} magnification, apparent FoV, true FoV, and other specifications.
-Each eyepiece has a focal length just like the telescope\\
+\textit{Determines:} magnification, apparent FoV, true FoV, and other specifications. Each eyepiece has a focal length just like the telescope.\\
 
 
 \textbf{F-Number}\\ 
@@ -1230,6 +1230,7 @@ $$\text{Magnification}=\frac{\text{Telescope focal length}}{\text{Eyepiece focal
 	\includegraphics[width=0.9\linewidth]{tel_magnify.png}
 \end{figure}
 
+\clearpage 
 \textbf{Field of View}\\
 
 In general, the field of view (FOV) describes the area of a target (measured as an angle from the location of viewing) that can be seen on the chip of a CCD-camera or when looking through an eyepiece.\\
@@ -1261,7 +1262,7 @@ $$\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.3\linewidth]{FOV.png}
+	\includegraphics[width=0.4\linewidth]{FOV.png}
 	\caption{Same magnification but different AFoV and TFoV}
 \end{figure}
 
@@ -1275,7 +1276,7 @@ $$\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$
 {\color{blue} Light pollution} \quad A filter to increase contrast of objects when observing from
 urban areas. Darkens the sky by blocking street-lights whilst passing light from other colours.\\
 
-\textsc{\textbf{Practice Questions}}
+\textsc{\textbf{Practice QnA}}
 \begin{enumerate}
 	\item \textbf{In what situation would polar alignment be necessary?}\\
 	- To track stars/to counter diurnal motion
@@ -1378,26 +1379,90 @@ Calculate the new effective focal length, f/ratio, magnification, exit pupil and
 2-degree true field-of-view. He observes that the star takes roughly 9.23 minutes to fully cross the
 diameter of the eyepiece field of view. Estimate the declination of the star. Assume the star is in the
 northern hemisphere.
+
+\item A curious astronomer has observed two stars while they have been passing across the very center of telescope’s field of view at the same time interval. One day, he noticed one of them rising and another setting simultaneously. Show that the stars will appear in exactly opposite directions on the horizon. Ignore any atmospheric effects.
 \end{enumerate}
 
-\subsection{Telescope Structures}
-\textbf{Liquid Mirror Telescope}\\
+
+\clearpage
+\subsection{Telescope Long Questions}
+
+\subsubsection{Liquid Mirror Telescope}
 
 A relatively inexpensive way to make a parabolic mirror involves rotating a liquid around in a circle.
 Such a construction is called a liquid mirror telescope. See this video by Action Lab - \url{https://www.youtube.com/watch?v=s0sQYAWSHzU}\\
 
 In this problem, we explore the physics of the liquid mirror telescope. Consider a liquid rotating around in a cylinder with radius $r$ at an angular velocity $\omega$! around the cylinder’s axis. For the following parts, you are to ignore effects of surface tension
 \begin{enumerate}[a.]
-	\item Let $y(r)$ represent the height of the liquid surface at a radial distance $r$ from the axis of rotation. By considering the forces acting on a small element on the surface of the container, determine the gradient $\frac{dy}{dr}$ as a function of $r$.
+	\item Let $y(r)$ represent the height of the liquid surface at a radial distance $r$ from the axis of rotation. By considering the forces acting on a small element on the surface of the container, determine the gradient $\dfrac{dy}{dr}$ as a function of $r$.
 	\item Determine an equation for the height of the mirror surface with radial distance r from the cylinder's axis. Should you need, $$\int ax^n dx=\frac{ax^{n+1}}{n+1}$$
 	\item The Large Zenith Telescope had (it is no longer in use) a diameter of $6.0$m and a rotation period of 8.51s. Determine the focal ratio and plate scale of this telescope.\\
 	Should you not have obtained an answer to the previous parts, you may use 12.0m as the focal
 	length of the Large Zenith Telescope.\\
 	Hint: The Cartesian equation of a parabola is given by $y = 4fx^2$.
 \end{enumerate}
+\fbox{\begin{minipage}{44em}
+\textbf{a.} Consider an element along the surface of the mirror, a radial distance $r$ from the centre
+The buoyant force (green arrow) must provide for the centripetal force, and also counter the gravitational force on the element
+$$\frac{dy}{dr}=\tan \theta=\frac{\sin\theta}{\cos\theta}=\frac{m\omega^2 r}{mg}$$
+
+\textbf{b.} 
+$$\frac{dy}{dr}=\frac{m\omega^2 r}{mg}$$
+$$\int_0^r (\omega^2r/g)dr= \frac{\omega^2 r^2}{2g}$$
+It is technically not required to integrate; so long the participant has a qualitative understanding of an integral as the area under a graph, the
+answer can be arrived at through finding the area under the straight line graph with gradient $\omega^2/g$.\\
+
+\textbf{c.} For a parabola, we have $x^2=4fy$ where $f$ is the focal length. Rearranging, $y=\dfrac{1}{4f}r^2$,
+$$\frac{1}{4f}=\frac{\omega^2}{2f}\rightarrow f=\frac{g}{2\omega^2}=9.0\; m$$
+$$\frac{f}{D}=\frac{9}{6}=1.5$$
+$$p=\frac{206265}{9m}=22.9''/mm=23''/mm$$
+\end{minipage}}
+
+\subsubsection{Alt-azimuthal Mount}
+In the Poland during IOAA at a site with latitude = $51^\circ$, an observer centered his altazimuth-mounted telescope at a star with declination $\delta = -18^\circ$ at the moment of its culmination in the South. He then started an automated motion of the telescope along its vertical axis with a period of one sidereal day $T= 86 164$ s. Half an hour later ($t = 1800$s), he came back to the telescope and found that the star had left the field of view.\\
+
+The observer is now interested to know if he can observe the star after replacing the eyepiece so that the field of view has a diameter $d= 0.5^\circ$, and in the case that he cannot, if he could bring the star back into the field of view by moving the telescope along exactly one axis (either vertical or horizontal). Note that the astronomical azimuth is measured from the North eastwards.
+
+\begin{enumerate} [a.]
+	\item Determine the horizontal coordinates $a_D, \; z_D$ (azimuth and zenith distance) of the center of the field of view of the telescope at $t = 1800$s after initiating the telescope motion. Express the result in degrees.
+	\item Determine the horizontal coordinates $a_H,\; z_H$ of the star at $t = 1800$ s after initiating the telescope motion. Express your answer in degrees.		
+	\item Is it possible to observe the star after replacing the eyepiece?
+	\item Can the observer bring the star back into the field of view by moving the telescope along exactly one axis? If so, along which axis (either vertical or horizontal) does the telescope need to be moved?\\
+	Hint: For $a,b\neq 0$, the function $f(x)=a\sin x+b \cos x$ attains its minimum/maximum in the open interval $x \; \epsilon \; (0,180^\circ)$ exactly at the point $x=\arctan\left(\frac{a}{b}\right)$
+\end{enumerate}
+
+\fbox{\begin{minipage}{44em}
+\textbf{a.} The zenith distance $z_D$ did not change with the displacement of the telescope and is $z_D = \phi − \delta = 68^\circ$. The azimuth has the value $a_D =\dfrac{t}{T} \cdot 360^\circ = 7.5^\circ$.	\\
+
+\textbf{b.} For this we will use the spherical triangle $SZH$, where $S$ is the north celestial pole, $Z$ is the zenith and $H$ is the observed star. We determine the zenith distance from $H$ of the star using the cosine theorem for the sides
+$$\cos z_H = \cos |SH| \cos |SZ| + \sin |SH| \sin |SW| \cos \alpha,$$	
+
+where $|SH| = 90^\circ -\delta$ is the angular distance of star $H$ from the north celestial pole, $|NW| =90^\circ - \phi$ is the zenith distance of the north celestial pole, and $\alpha  =\frac{t}{T} \cdot 360^\circ$ is the angle by which the sky has apparently rotated around the north celestial pole in time $t$. Thus,
+$$z_H = \arccos (\sin \delta \sin \phi + \cos \delta \cos \phi \cos \alpha)= 68.3^\circ $$
+We determine the azimuth $a_H$ of the stars from the sine theorem
+$$\frac{\sin|ZH|}{\sin\alpha}=\frac{\sin|SH|}{\sin(180^\circ -a_H)} \Rightarrow \arcsin \left(\frac{\cos\delta \sin\alpha }{\sin z_H}\right)=7.70^\circ,$$
+
+where $|ZH| = z_H$ is the zenith distance of the star $H$. It should be noted that the previous equation has two solutions on the interval $[0, 180^\circ]$. However, since $t\ll T$, only one solution on the interval $[0, 90^\circ]$ makes physical sense. Formally, it is possible to verify this by substituting into the cosine theorem for the side $SH$, whose opposite interior angle is $180^\circ- a_H$.
+\end{minipage}}
+\clearpage
+\fbox{\begin{minipage}{44em}
+\textbf{c)} Now that we know the azimuthal coordinates of the star $H$ and the field of view of the telescope $D$, we can determine their mutual angular distance l using the cosine theorem for the sides of the spherical triangle $ZDH$
+$$l = \arccos (\cos z_D \cos z_H + \sin z_D \sin z_H \cos (a_H − a_D))= 0.36^\circ $$
+Since $l > d/2 = 0.25^\circ$, it is not possible to observe the star even after changing the eyepiece.\\
 
 
+\textbf{d.} Because $|z_D - z_H| = 0.32^\circ$, and therefore $|z_D - z_H| > d/2 = 0.25^\circ$, it is not possible to observe the star after moving around the vertical axis of the telescope.\\
+When moving around the horizontal axis, the zenith distance $z_D'$ of the telescope changes. For the fine angular distance $l'$ between the star and the telescope, it holds
+$$\cos l' = \cos z_D' \cos z_H + \sin z_D' \sin z_H \cos(a_H - a_D)$$
 
+Since the cosine function is decreasing on the interval $[0, 180^\circ]$, we are looking for the maximum of the function
+$$f (z_D') = (\sin z_H \cos (a_H - a_D)) \sin z_D' +(\cos z_H) \cos z_D'$$ 
+According to the hint in the assignment, this function reaches a maximum at a point
+$$z_D'=\arctan\left(\frac{\sin z_H \cos(a_H-a_D)}{\cos z_H}\right)=\arctan (\tan z_H \cos (a_H-a_D))=68.3^\circ$$
+Let us emphasize that $z_D'\neq z_H$, as follows from the presence of the term $\cos (a_H-a_D)$ in the relation for $z_D'$. By re-substituting $z_D'$ into the relationship for $l'$, we get the minimum possible angular distance of the star $H$ from the center of the field of view of the telescope as it moves around the horizontal axis
+$$l' = \arccos (\cos z_D' \cos z_H + \sin z_D' \sin z_H \cos (a_H - a_D))= 0.16^\circ.$$
+Since $l' < d/2 = 0.25^\circ$, the observer can observe the star after moving the telescope around its horizontal axis, if he sets the center of the field of view to the zenith distance $z_D'$.
+\end{minipage}}
 
 
 \clearpage
@@ -1417,8 +1482,8 @@ To achieve a good control over light, photographers concern themselves with 3 ma
 		\hline
 		\textbf{Camera Settings}                                               & \textbf{What it Controls}                                                                                                   \\ \hline
 		Shutter Speed / Exposure Length                                        & \begin{tabular}[c]{@{}c@{}}The length of time the sensor is exposed to light.\\ (e.g. 1/3s, 1/1000s, 1s, etc.)\end{tabular} \\ \hline
-		\begin{tabular}[c]{@{}c@{}}ISO \\ (pronounced "eye-soh'')\end{tabular} & \begin{tabular}[c]{@{}c@{}}The Sensitivity of the sensor.\\ Higher ISO = More Sensitive\end{tabular}                        \\ \hline
-		f-Number/Ratio                                                         & \begin{tabular}[c]{@{}c@{}}Aperture size of the lens.\\ Same definition with a telescope’s f-ratio.\end{tabular}            \\ \hline
+		\begin{tabular}[c]{@{}c@{}}ISO \\ (pronounced ``eye-soh'')\end{tabular} & \begin{tabular}[c]{@{}c@{}}The Sensitivity of the sensor.\\ Higher ISO = More Sensitive\end{tabular}                        \\ \hline
+		f-Number/Ratio                                                         & \begin{tabular}[c]{@{}c@{}}Aperture size of the lens.\\ Same definition with a telescope's f-ratio.\end{tabular}            \\ \hline
 	\end{tabular}
 \end{table}
 These three settings are what a photographer uses to control the amount of light that hits the sensor.\\
