@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.15)  3 JUN 2023 08:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.15)  3 JUN 2023 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2556,8 +2556,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [70
 
 ]
-Missing character: There is no − in font cmr12!
-
 Underfull \hbox (badness 10000) in paragraph at lines 1446--1446
 
  []
@@ -2578,12 +2576,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [71]
 Missing character: There is no − in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
+Underfull \hbox (badness 10000) in paragraph at lines 1466--1466
 
  []
 
 
-Overfull \hbox (9.5621pt too wide) in paragraph at lines 1465--1466
+Underfull \hbox (badness 10000) in paragraph at lines 1466--1466
+
+ []
+
+
+Overfull \hbox (9.5621pt too wide) in paragraph at lines 1466--1467
 [][] 
  []
 
@@ -2598,27 +2601,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [72
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1472
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1473--1474
+Underfull \hbox (badness 10000) in paragraph at lines 1474--1475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1490
+Underfull \hbox (badness 10000) in paragraph at lines 1490--1491
 
  []
 
 
-Overfull \hbox (9.5621pt too wide) in paragraph at lines 1497--1498
+Overfull \hbox (9.5621pt too wide) in paragraph at lines 1498--1499
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1502
+Underfull \hbox (badness 10000) in paragraph at lines 1502--1503
 
  []
 
@@ -2671,7 +2674,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [76]
-Underfull \hbox (badness 10000) in paragraph at lines 1584--1585
+Underfull \hbox (badness 10000) in paragraph at lines 1585--1586
 
  []
 
@@ -2735,7 +2738,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: ./images//2016_T2.PNG Graphic file (type bmp)
 <./images//2016_T2.PNG>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1718
+Underfull \hbox (badness 10000) in paragraph at lines 1718--1719
 
  []
 
@@ -2811,7 +2814,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [87
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1782--1783
+Underfull \hbox (badness 10000) in paragraph at lines 1783--1784
 
  []
 
@@ -2865,7 +2868,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [91]
-Overfull \hbox (5.08969pt too wide) in paragraph at lines 1849--1850
+Overfull \hbox (5.08969pt too wide) in paragraph at lines 1850--1851
 []\TU/lmr/m/n/12 List the circumpolar constellations seen from the given observ
 ing site, using their IAU abbreviations
  []
@@ -2939,9 +2942,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ] (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 177360623E01CE41201CFC0257313140;7327.

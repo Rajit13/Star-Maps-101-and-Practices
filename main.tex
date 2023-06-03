@@ -1390,16 +1390,16 @@ northern hemisphere.
 \subsubsection{Liquid Mirror Telescope}
 
 A relatively inexpensive way to make a parabolic mirror involves rotating a liquid around in a circle.
-Such a construction is called a liquid mirror telescope. See this video by Action Lab - \url{https://www.youtube.com/watch?v=s0sQYAWSHzU}\\
+Such a construction is called a liquid mirror telescope. See this video by \textit{Action Lab} - \url{https://www.youtube.com/watch?v=s0sQYAWSHzU}\\
 
-In this problem, we explore the physics of the liquid mirror telescope. Consider a liquid rotating around in a cylinder with radius $r$ at an angular velocity $\omega$! around the cylinder’s axis. For the following parts, you are to ignore effects of surface tension
+In this problem, we explore the physics of the liquid mirror telescope. Consider a liquid rotating around in a cylinder with radius $r$ at an angular velocity $\omega$ around the cylinder’s axis. For the following parts, you are to ignore effects of surface tension
 \begin{enumerate}[a.]
 	\item Let $y(r)$ represent the height of the liquid surface at a radial distance $r$ from the axis of rotation. By considering the forces acting on a small element on the surface of the container, determine the gradient $\dfrac{dy}{dr}$ as a function of $r$.
-	\item Determine an equation for the height of the mirror surface with radial distance r from the cylinder's axis. Should you need, $$\int ax^n dx=\frac{ax^{n+1}}{n+1}$$
-	\item The Large Zenith Telescope had (it is no longer in use) a diameter of $6.0$m and a rotation period of 8.51s. Determine the focal ratio and plate scale of this telescope.\\
+	\item Determine an equation for the height of the mirror surface with radial distance r from the cylinder's axis. Should you need, $$\int ax^n dx=\frac{ax^{n+1}}{n+1}+C$$
+	\item \textit{The Large Zenith Telescope} had (it is no longer in use) a diameter of $6.0$m and a rotation period of 8.51s. Determine the focal ratio and plate scale of this telescope.\\
 	Should you not have obtained an answer to the previous parts, you may use 12.0m as the focal
-	length of the Large Zenith Telescope.\\
-	Hint: The Cartesian equation of a parabola is given by $y = 4fx^2$.
+	length of the \textit{Large Zenith Telescope}.\\
+	\textbf{Hint:} The Cartesian equation of a parabola is given by $y = 4fx^2$.
 \end{enumerate}
 \fbox{\begin{minipage}{44em}
 \textbf{a.} Consider an element along the surface of the mirror, a radial distance $r$ from the centre
@@ -1419,7 +1419,7 @@ $$p=\frac{206265}{9m}=22.9''/mm=23''/mm$$
 \end{minipage}}
 
 \subsubsection{Alt-azimuthal Mount}
-In the Poland during IOAA at a site with latitude = $51^\circ$, an observer centered his altazimuth-mounted telescope at a star with declination $\delta = -18^\circ$ at the moment of its culmination in the South. He then started an automated motion of the telescope along its vertical axis with a period of one sidereal day $T= 86 164$ s. Half an hour later ($t = 1800$s), he came back to the telescope and found that the star had left the field of view.\\
+In the Poland during IOAA at a site with latitude = $50^\circ$, an observer centered his altazimuth-mounted telescope at a star with declination $\delta = -18^\circ$ at the moment of its culmination in the South. He then started an automated motion of the telescope along its vertical axis with a period of one sidereal day $T= 86 164$ s. Half an hour later ($t = 1800$s), he came back to the telescope and found that the star had left the field of view.\\
 
 The observer is now interested to know if he can observe the star after replacing the eyepiece so that the field of view has a diameter $d= 0.5^\circ$, and in the case that he cannot, if he could bring the star back into the field of view by moving the telescope along exactly one axis (either vertical or horizontal). Note that the astronomical azimuth is measured from the North eastwards.
 
@@ -1432,10 +1432,10 @@ The observer is now interested to know if he can observe the star after replacin
 \end{enumerate}
 
 \fbox{\begin{minipage}{44em}
-\textbf{a.} The zenith distance $z_D$ did not change with the displacement of the telescope and is $z_D = \phi − \delta = 68^\circ$. The azimuth has the value $a_D =\dfrac{t}{T} \cdot 360^\circ = 7.5^\circ$.	\\
+\textbf{a.} The zenith distance $z_D$ did not change with the displacement of the telescope and is $z_D = \phi - \delta = 68^\circ$. The azimuth has the value $a_D =\dfrac{t}{T} \cdot 360^\circ = 7.5^\circ$.	\\
 
 \textbf{b.} For this we will use the spherical triangle $SZH$, where $S$ is the north celestial pole, $Z$ is the zenith and $H$ is the observed star. We determine the zenith distance from $H$ of the star using the cosine theorem for the sides
-$$\cos z_H = \cos |SH| \cos |SZ| + \sin |SH| \sin |SW| \cos \alpha,$$	
+$$\cos z_H = \cos |SH| \cos |SZ| + \sin |SH| \sin |SZ| \cos \alpha,$$	
 
 where $|SH| = 90^\circ -\delta$ is the angular distance of star $H$ from the north celestial pole, $|NW| =90^\circ - \phi$ is the zenith distance of the north celestial pole, and $\alpha  =\frac{t}{T} \cdot 360^\circ$ is the angle by which the sky has apparently rotated around the north celestial pole in time $t$. Thus,
 $$z_H = \arccos (\sin \delta \sin \phi + \cos \delta \cos \phi \cos \alpha)= 68.3^\circ $$
@@ -1446,12 +1446,13 @@ where $|ZH| = z_H$ is the zenith distance of the star $H$. It should be noted th
 \end{minipage}}
 \clearpage
 \fbox{\begin{minipage}{44em}
-\textbf{c)} Now that we know the azimuthal coordinates of the star $H$ and the field of view of the telescope $D$, we can determine their mutual angular distance l using the cosine theorem for the sides of the spherical triangle $ZDH$
+\textbf{c.} Now that we know the azimuthal coordinates of the star $H$ and the field of view of the telescope $D$, we can determine their mutual angular distance l using the cosine theorem for the sides of the spherical triangle $ZDH$
 $$l = \arccos (\cos z_D \cos z_H + \sin z_D \sin z_H \cos (a_H − a_D))= 0.36^\circ $$
 Since $l > d/2 = 0.25^\circ$, it is not possible to observe the star even after changing the eyepiece.\\
 
 
 \textbf{d.} Because $|z_D - z_H| = 0.32^\circ$, and therefore $|z_D - z_H| > d/2 = 0.25^\circ$, it is not possible to observe the star after moving around the vertical axis of the telescope.\\
+
 When moving around the horizontal axis, the zenith distance $z_D'$ of the telescope changes. For the fine angular distance $l'$ between the star and the telescope, it holds
 $$\cos l' = \cos z_D' \cos z_H + \sin z_D' \sin z_H \cos(a_H - a_D)$$
 
