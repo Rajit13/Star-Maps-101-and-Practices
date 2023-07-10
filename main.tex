@@ -1205,13 +1205,13 @@ Note: Star trails start becoming visibly apparent when a source that covers 1px 
 
 \clearpage
 \subsection{Telescope Aided Observation}
-\textbf{Eyepiece}\\ 
+\textbf{1. Eyepiece}\\ 
 
 Lens placed near the focal point of the telescope.\\
 \textit{Determines:} magnification, apparent FoV, true FoV, and other specifications. Each eyepiece has a focal length just like the telescope.\\
 
 
-\textbf{F-Number}\\ 
+\textbf{2. F-Number}\\ 
 
 Telescopes are often described by both their aperture size and f number. The f-number is the ratio of the focal length of the main lens or mirror to the aperture. In astronomy, as in photography, the aperture ratio is often denoted by $f/n$ (e. g. $f/8$), where $n$ is the focal length divided by the aperture. For fast telescopes this ratio can be $f/1. . . . f/3$, but usually it is smaller, $f/8. . . . f/15$. These specifications are important because the brightness, size, and clarity of the image produced by a telescope depend on the aperture and focal length of its main lens or mirror. For example, a “150-mm (6-inch), f/8 reflector” means the primary mirror is 150 mm (6 inches) in diameter and has a focal length of 1200 mm (8 $\times$150), or 48 inches (8$\times$6).\\
 
@@ -1219,7 +1219,7 @@ If the aperture ratio is large, near unity, one has a powerful, ``fast'' telesco
 
 \textsf{\textbf{Question}} A special telescope features a 3x optical scope  with a diameter of 25mm, and a length of 120mm. Find the f-number of the scope.\\
 
-\textbf{Magnification}\\
+\textbf{3. Magnification}\\
 
 So for a given telescope, changing the eyepiece to another with a lower focal length will increase the magnification. 
 
@@ -1231,7 +1231,7 @@ $$\text{Magnification}=\frac{\text{Telescope focal length}}{\text{Eyepiece focal
 \end{figure}
 
 \clearpage 
-\textbf{Field of View}\\
+\textbf{4. Field of View}\\
 
 In general, the field of view (FOV) describes the area of a target (measured as an angle from the location of viewing) that can be seen on the chip of a CCD-camera or when looking through an eyepiece.\\
 
@@ -1266,7 +1266,7 @@ $$\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$
 	\caption{Same magnification but different AFoV and TFoV}
 \end{figure}
 
-\textsf{\textbf{Planetary (color) filters:}} Colour filters are mostly used to enhance the colour contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognise the differences.
+\textsf{\textbf{5. Planetary (color) filters:}} Colour filters are mostly used to enhance the colour contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognise the differences.
 
 {\color{blue} UHC} \quad Ultra High Contrast filter. Increases the contrast of planetary and emission nebulas.\\
 {\color{blue} OIII} \quad Oxygen-III filter. Similar to UHC, but higher contrast on certain nebulas.\\
@@ -1276,7 +1276,7 @@ $$\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$
 {\color{blue} Light pollution} \quad A filter to increase contrast of objects when observing from
 urban areas. Darkens the sky by blocking street-lights whilst passing light from other colours.\\
 
-\textbf{Finderscope}\\
+\textbf{6. Finderscope}\\
 
 Regardless of what kind of finder you are using you will have to align it with the telescope. The procedure is fairly simple and is best done during the day. The key thing is that you are aligning the finder to the telescope and not the other way around.\\
 
@@ -1287,6 +1287,7 @@ During the day, set your telescope so that you can see a distant object, at leas
 Here are the steps to follow.
 
 \begin{itemize}
+	\itemsep0em 
 	\item Using your low power eyepiece point the telescope at the target and get it centered in the field of view of the eyepiece. Ignore the finder for now.
 	\item Switch to a high power eyepiece and again, get that target centered
 	\item Lock the scope into position in any way you can. You don’t want it to move
@@ -1303,8 +1304,66 @@ When the finder and the telescope both are lined up on the same point on your ta
 	\includegraphics[width=0.8\linewidth]{finderscope.png}
 	\caption{Left: finderscope FOV and marking, Right: a typical finderscope.}
 \end{figure}
+\textbf{7. Telescope Mount}\\
+
+There are two main types of telescope mount – equatorial and altitude-azimuth (``alt-az'')– with many variations.\\
+
+\textit{Equatorial}: This type of mount has been popular, almost universal, since telescopes achieved any sort of useful size. As we have seen, the equatorial system of co-ordinates ($\alpha, \delta$) is based on the rotation of the Earth. A telescope with one axis aligned with the polar axis only needs to be driven around this axis at the sidereal rate to track astronomical objects.\\
+
+\textit{Alt-az} mounts are the simplest telescope mounts. Advantages: Cheap and simple to operate.
+Telescope moves up/down (altitude) and left/right
+(azimuth). Reflecting telescopes using this mount are known as \textit{Dobsonians}. There are a couple of (minor) drawbacks to alt-az telescopes:\\
+
+• The necessity for continuous rapid calculation of altitude and azimuth. This has been solved by the power of modern computers – so not really a problem at all.\\
+• We have seen that the relationship between horizontal and equatorial co-ordinates can be expressed by two equations such as:
+\[\sin a=\sin \delta \sin \phi+\cos \delta \cos \phi \cos H\]
+and,
+\[\sin A=-\frac{\sin H \sin \delta}{\cos a}\]
+
+Note that, in the second equation, if the altitude (a) approaches 90◦, the azimuth (A) approaches infinity. What this means, of course, is that for an object which passes through the zenith, as it does so, its azimuth jumps instantaneously from 90◦ East to 90◦ West (or from 90◦ to 270◦). In practice, it means that for objects near the zenith, it is very difficult to transform quickly enough and accurately enough from equatorial to horizontal co-ordinates and a small patch of sky near the zenith is effectively inaccessible, even though the telescope can easily point there. Simple observing programme planning should avoid problems from this source.\\
+
+\textbf{8. Field Rotation}\\
+
+Alt-az mounts are to be avoided due to a phenomenon
+known as field rotation. Field rotation occurs due to
+the design of the alt-az mount. One axis, the azimuth
+axis, rotates around a vertical line passing from the
+center of the telescope to the zenith (left to right). The altitude axis rotates about a horizontal axis (up and down). Both axes must rotate at different rates to maintain the object in the field of view (FOV). As the Earth rotates about its axis, the central object in the field of view will remain centered but other objects in the FOV will appear to rotate with elapsed time. Field Rotation is an undesirable effect on time-exposure astrophotographs caused when an "Alt-Az" ("altitude-azimuth" or altazimuth) mount (sometimes called a "Dobsonian" or "fork mount") is used to hold and point a telescope with a camera. It is also sometimes called Frame Rotation because the objects framed by the photograph seem to have rotated while the picture was taken.\\
+
+\textbf{Mathematical Concepts Behind Field Rotation}
+Stars appear to rise in the east and set in the west, rotating about the north celestial pole star, Polaris. Rising stars will reach their highest elevation in the sky as they cross the local meridian, due south of the line between Polaris and the zenith. The altitude indicates the vertical position of the star with $0^circ$ at the horizon and $90^circ$ at the zenith. From direct observation, the following aspects are known about rate of rotation
+\begin{enumerate}
+	\item The maximum rate of field rotation occurs as the star passes through the zenith.
+	\item The rate of field rotation is minimal when a star passes through the prime vertical at the
+	horizon.
+	\item Considering the azimuth only, the rate of field rotation is highest when the star passes
+	through 0° (N) and 180° (S), and lowest when
+	the star passes through 90° (E) and 270° (W).
+	\item Regarding latitude, field rotation is highest at the Earth’s equator and non-existent at the NCP and SCP.
+\end{enumerate}
+
+\begin{equation}
+	\text{Rotation Rate}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{\cos\text{(Altitude)}}
+\end{equation}
+where $\omega_\oplus=4.178 \times 10^{-3}$ degrees/second; Earth’s rotation. \\
+
+If we only consider changing the values of the
+azimuth in Equation 1, the least amount of field rotation (zero) is along the prime vertical (due east or west) because east is 90° from north (cos 90°=0) and west is 270° from north (cos 270°=0). Looking toward the other directions, the maximum rate of field rotation is when the star is due south (180° from north; cos 180°=1) or directly north where cos 0°=1.
+
+$$\text{Least ROR}_{E,W}= \frac{\omega_\oplus \ast \cos(\text{Lat}) \ast 0}{\cos\text{(Alt)}}=0;\quad \text{(Az = 90 or 270)}$$
 
 
+$$	\text{MAX ROR}_{N,S}= \frac{\omega_\oplus \ast \cos(\text{Lat}) \ast 1}{\cos\text{(Alt)}};\quad \text{(Az = 0 or 180)}$$
+
+The altitude function deals with values between
+the horizon (0°) and the zenith (90°), so only considering changes to the values of the altitude in Equation 1 and using the trig values given above we get to following.
+$$	\text{RoR}_{Horizon}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{1}; \quad \text{Alt = 0}$$
+so the rate depends solely on the latitude and azimuth.
+$$	\text{RoR}_{Zenith}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{0}; \quad \text{Alt = 90}$$
+which is an undefined quantity and not allowed.
+
+
+\clearpage
 \textsc{\textbf{Practice QnA}}
 \begin{enumerate}
 	\item \textbf{In what situation would polar alignment be necessary?}\\
