@@ -1,10 +1,10 @@
 # Star Maps 101 and Practices
 
-**Star Maps 101 and Practices** is a notebook/guide that I made in preparation for *the International Olympiad on Astronomy and Astrophysics*. This contains a detailed description of Star Map/Chart analysis as well as a brief introduction to Astronomical Observations practically. This book is used in the training of the [Bangladesh team at the Bangladesh Olympiad on Astronomy and Astrophysics](https://bdoaa.org). 
+**Star Maps 101 and Practices** is a notebook/guide that I made in preparation for *the International Olympiad on Astronomy and Astrophysics*. This contains a detailed description of Star Map/Chart analysis as well as a brief introduction to Astronomical Observations practically. This book is used in the training of the Bangladesh team at the [Bangladesh Olympiad on Astronomy and Astrophysics](https://bdoaa.org). 
 
 ## Call for contribution
 
-I started this book immediately after my Olympiad experience in 2016. However, as I joined college and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete.
+I started this book immediately after my Olympiad experience in 2016. However, as I joined University and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am later willing to add detailed notes of Celestial Coordinate System. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete.
 
 ## How to contribute?
 
@@ -16,7 +16,7 @@ This book has been written in [LaTeX](https://www.latex-project.org/) and publis
 
 For interested contributors who are not familiar with these terms, the QGIS-documentation repo explains these steps in detail for people making their [first contribution](https://github.com/gitty-coder/QGIS-Documentation/blob/master/docs/documentation_guidelines/first_contribution.rst).
 
-### If you would like to contribute, it would be a good idea to contact me by email at farahoshwadhin.13@gmail.com
+#### If you would like to contribute, it would be a good idea to contact me by email at farahoshwadhin.13@gmail.com
 ---
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
