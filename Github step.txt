@@ -1,0 +1,46 @@
+To add updates from your local repository to the remote repository, you need to follow these steps:
+
+1. First, make sure you are in the root directory of your local Git repository. You can use the `cd` command as you mentioned to navigate to the correct directory:
+
+   ```shell
+   cd C:/Users/FAHIM/Star-Maps-101-and-Practices
+   ```
+
+2. Check the status of your local repository to see if there are any changes that need to be committed. Use the following command:
+
+   ```shell
+   git status
+   ```
+
+3. If you have made changes and want to include them in the update, add and commit the changes. For example, if you want to add all changes, use:
+
+   ```shell
+   git add .
+   git commit -m "Your commit message"
+   ```
+
+   Replace `"Your commit message"` with a brief description of the changes you made.
+
+4. If you've already committed changes, you can skip the commit step.
+
+5. Next, pull any new changes from the remote repository to ensure your local repository is up-to-date before pushing your changes:
+
+   ```shell
+   git pull origin master
+   ```
+
+   This command fetches and merges the latest changes from the remote repository into your local `master` branch.
+
+6. If there are any conflicts between your changes and the remote changes, resolve them as described in the previous responses.
+
+7. Finally, push your changes to the remote repository:
+
+   ```shell
+   git push origin master
+   ```
+
+   This command pushes your local commits to the remote `master` branch.
+
+Now, your updates should be added to the remote repository. Keep in mind that you may need to replace `master` with the appropriate branch name if you are using a different branch.
+
+
