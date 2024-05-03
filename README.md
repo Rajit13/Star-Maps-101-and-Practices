@@ -1,6 +1,6 @@
 # Star Maps 101 and Practices
 
-Get the latest pdf version [here](main.pdf)
+Get the latest pdf version [here](StarMaps101.pdf)
 
 ---
 
@@ -8,7 +8,7 @@ Get the latest pdf version [here](main.pdf)
 
 ## Call for contribution
 
-I started this book immediately after my Olympiad experience in 2016. However, as I joined University and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am later willing to add detailed notes of Celestial Coordinate System. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete.
+I started this book immediately after my Olympiad experience in 2016. However, as I joined University and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am later willing to add detailed notes of the Celestial Coordinate System. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete.
 
 ## How to contribute?
 
@@ -16,7 +16,7 @@ This book has been written in [LaTeX](https://www.latex-project.org/) and publis
 
 - Fork this repository.
 - Make changes in a separate branch.
-- Create a pull request with adequate description of changes.
+- Create a pull request with an adequate description of changes.
 
 For interested contributors who are not familiar with these terms, the QGIS-documentation repo explains these steps in detail for people making their [first contribution](https://github.com/gitty-coder/QGIS-Documentation/blob/master/docs/documentation_guidelines/first_contribution.rst).
 
