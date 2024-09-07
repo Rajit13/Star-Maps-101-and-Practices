@@ -159,7 +159,7 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 15                                                                              & Canis Minor                                   & N/Eq                                     & The Little Dog                                  & CMi                                                                              & Procyon ($\alpha \ast$)                        \\
 16                                                                              & Capricornus                                   & S                                        & The Goat                                        & Cap                                                                              & Al Giedi ($\alpha$)                            \\
 17                                                                              & Carina                                        & S                                        & The Keel                                        & Car                                                                              & Canopus ($\alpha\ast$)                         \\
-18                                                                              & Cassiopeia                                    & N                                        & Cassiopeia                                      & Cas                                                                              & Shedir ($\alpha$)                              \\
+18                                                                              & Cassiopeia                                    & N                                        & Cassiopeia                                      & Cas                                                                              & Schedar ($\alpha$)                              \\
 19                                                                              & Centaurus                                     & S                                        & The Centaur                                     & Cen                                                                              & Rigel Kentaurus  ($\alpha \ast$)               \\
 20                                                                              & Cepheus                                       & S                                        & Cepheus                                         & Cep                                                                              & Alderamin  ($\alpha$)                          \\
 21                                                                              & Cetus                                         & Eq                                       & The Whale                                       & Cet                                                                              & Diphda  ($\beta$)                              \\
@@ -175,7 +175,7 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 31 & Cygnus          & N    & The Swan               & Cyg & Deneb ($\alpha \ast$)              \\
 32 & Delphinus       & N    & The Dolphin            & Del & Rotanev ($\beta$)                  \\
 33 & Dorado          & S    & The Goldfish           & Dor & $\alpha$ Doradus                   \\
-34 & Draco           & N    & The Dragon             & Dra & Etamin ($\gamma$)                  \\
+34 & Draco           & N    & The Dragon             & Dra & Eltanin ($\gamma$)                  \\
 35 & Equuleus        & N    & The Foal               & Equ & Kitalpha ($\alpha$) \\
 36 & Eridanus        & S/Eq & The River              & Eri & Achernar ($\alpha \ast$)           \\
 37 & Fornax          & S    & The Furnace            & For & $\alpha$ Fornacis                  \\
@@ -968,17 +968,20 @@ Currently the Earth’s north celestial pole points close to the star Polaris, b
 
 Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$ 
 
-$$\sin\beta=\cos\varepsilon \sin\delta_{old}-\sin\varepsilon\cos\delta_{old}\sin\alpha_{old}$$
-$$\sin\lambda_{old}=\frac{\sin\delta_{old}-\cos\varepsilon \sin\beta}{\sin\varepsilon \cos\beta}$$
+\begin{gather*}
+	\sin\beta=\cos\varepsilon \sin\delta_{old}-\sin\varepsilon\cos\delta_{old}\sin\alpha_{old}\\
+	\sin\lambda_{old}=\frac{\sin\delta_{old}-\cos\varepsilon \sin\beta}{\sin\varepsilon \cos\beta}\\
+	\cos\lambda_{old}=\frac{\cos\delta_{old}\cos\alpha_{old}}{\cos\beta}
+\end{gather*}
 
-$$\cos\lambda_{old}=\frac{\cos\delta_{old}\cos\alpha_{old}}{\cos\beta}$$
 Again, 
 
-$$\lambda_{new}=\lambda_{old}+\frac{t}{26000\; years}\ast 360^\circ$$
-
-$$\delta_{new}=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})$$
-$$\sin\alpha_{new}=\frac{\cos\varepsilon\sin\lambda_{new}-\sin\beta}{\sin\varepsilon\cos\delta_{new}}$$
-$$\cos\alpha_{new}=\frac{\cos\beta\cos\lambda_{new}}{\cos\delta_{new}}$$
+\begin{gather*}
+	\lambda_{new}=\lambda_{old}+\frac{t}{26000\; years}\ast 360^\circ\\
+	\delta_{new}=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})\\
+	\sin\alpha_{new}=\frac{\cos\varepsilon\sin\delta_{new}-\sin\beta}{\sin\varepsilon\cos\delta_{new}}\\
+	\cos\alpha_{new}=\frac{\cos\beta\cos\lambda_{new}}{\cos\delta_{new}}
+\end{gather*}
 
 \begin{figure}[H]
 	\centering
