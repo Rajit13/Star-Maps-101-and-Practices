@@ -30,7 +30,7 @@
 
 \parindent 0ex
 \title{{\fontsize{30}{30}\selectfont\blue{\textbf{Star Charts 101 and Practices}}}}
-\author{Fahim Rajit Hossain}
+\author{Fahim Rajit Hossain Shwadhin}
 \date{\today}
 
 
@@ -46,9 +46,10 @@
 \end{figure}
 	
 \vspace{1.5cm}
-This practice book is dedicated to all Astronomy enthusiasts and those aiming for cracking Star Charts, part of Astronomy and Earth Science Olympiads. It is not a star atlas but it will fulfill its duty as a practice book. I'll recommend students to Print it and solve problems. \\
+This practice book is dedicated to all Astronomy enthusiasts and those aiming for cracking Star Charts part of Astronomy and Earth Science Olympiads. It is not a full star atlas but it will fulfill its duty as a practice book. I'll recommend students to \textbf{Print} it then solve problems. Keep it during your exam days as \textbf{only printed materials} are allowed in IOAA. \\
 
-\textit{Written from my experience of both being a participant of two international Olympiads as well as team leader for IOAA since 2018. I've also tried to mix my added passion of stargazing into it! New versions can be found} -- \url{https://github.com/Rajit13/Star-Maps-101-and-Practices}
+\textit{Written from my experience of both being a participant of two international Olympiads as well as team leader for IOAA since 2018. I've also tried to mix my added experience as a stargazer/amateur astronomer into it!}\\
+New versions can be found -- \url{https://github.com/Rajit13/Star-Maps-101-and-Practices}
 
 \vfill{\LaTeX  \;  compiled and  \copyright \; 2024 by \textsf{Fahim Rajit Hossain Shwadhin} is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/} }\\
 
@@ -65,7 +66,7 @@ This practice book is dedicated to all Astronomy enthusiasts and those aiming fo
  
 If you are aiming for Astronomy and Astrophysics Olympiad\footnote{IOAA/IAO} or even Earth Science Olympiad\footnote{IESO} you may find a section  where problems contains a star map. So what is a star chart i.e. Sky Map?\\
 
-But before that, you should know some basic concepts i.e what are Constellations? How stars move across the sky or it affects our observation? \\
+But before that, you should know some basic concepts i.e. what are Constellations? How stars move across the sky or it affects our observation? \\
 
 \textbf{Constellations} represent apparent patterns formed by stars in the sky, often resembling figures or shapes perceived by humans. For instance, constellations might create recognizable figures like a Man (You may already guess the specific constellation I'm referring to!). They aid in identifying and recalling specific portions of the sky. However, it's important to note that creating random figures or personalized constellations is not officially recognized in Olympiads or by the International Astronomical Union (IAU). The IAU has officially acknowledged 88 constellations, while other popular patterns that are not part of these recognized constellations are referred to as Asterisms (e.g., Summer Triangle, Heavenly G, Big Dipper).\\
 
@@ -270,11 +271,11 @@ The constellations should be differentiated from asterisms. Asterisms are patter
 
 In the next page you'll find the official figures from IAU. Notice that you should \textbf{only} remember constellation figures from IAU. You'll find many constellation shapes on the internet which might differ due to distortion or variable observation. 
 
-\vfill{
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{legend.png}
-\end{figure}}
+    \includegraphics[width=0.7\linewidth]{chart_legend.pdf}
+\end{figure}
 \clearpage
 \begin{figure}
     \centering
@@ -412,7 +413,38 @@ Refractors and Cassegrain reflectors give mirror images when used with a star di
 
 Once the map is oriented, it will be simple to identify the major craters, mountains, and other features. In time, the geography of this alien world will become as familiar to you as that of our own.
 
-\subsection{Problem: Moon features }
+\subsection{Moon's motion}
+
+The Moon's orbital plane has an inclination of $5^\circ9'$ in relation to the ecliptic. Although this angle remains approximately constant, the orbital plane is not fixed, moving such that its axis describes a complete circle around of the ecliptic axis in a period of 18.6 years.\\
+
+Therefore, in relation to the Celestial Equator, the Moon's orbit has an inclination that varies from $18.4^\circ(23.5^\circ - 5.15^\circ$) to $28.7^\circ(23.5^\circ + 5.15^\circ$).\\
+
+Per day, the Moon moves $\dfrac{360^\circ}{27.3 \; days} \approx 13^\circ$ east in relation to the stars. This movement is a reflection of the Moon's revolution around the Earth, which completes every 27.3 days (sidereal month). The Sun moves $\approx 1^\circ$ east per day, therefore the Moon is $\approx 12^\circ$ east of the Sun per day. Because of this, the Moon crosses the local meridian $12^\circ$ . $\dfrac{4 \;min}{1^\circ} \approx 50$ min later than the previous day.
+
+\subsection{Moon's Phase}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{mphase1.eps}
+	\caption{Lunar Phase Geometry}
+\end{figure}
+From the diagram, $\angle SME= \Psi$ এবং $MN= CM \cos \measuredangle CMN=r\cos (90^\circ- \measuredangle CME)=r\cos [90^\circ-(90^\circ-\measuredangle SME)]= r \cos \Psi$. So here $\phi$ is phase of the moon, which is the ratio between illuminated part of lunar disk and total visible disk.।
+\[\boxed{0 \leq \phi \leq 1}\] 	
+\begin{align}
+	\phi &=\frac{BN}{AB}=\frac{r+MN}{2r}=\frac{r+r\cos\Psi}{2r} \nonumber \\
+	\phi&= \frac{1+\cos\Psi}{2}\\
+	&=\frac{\sin^2\frac{\Psi}{2}+\cos^2\frac{\Psi}{2}+ \cos^2\frac{\Psi}{2}-\sin^2\frac{\Psi}{2}}{2}\nonumber\\
+	\phi&=\cos^2 \frac{\Psi}{2} \label{lunareqq}
+\end{align}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{moon_phase.png}
+	\caption*{Name the Lunar Phase for Northern hemisphere!\\ 
+	(Image inverted for printing purposes)}
+\end{figure}
+
+\textsf{\textbf{\large Problem: Moon features}}
 \begin{enumerate}
 	\item Match the selenographic objects numbered in the photo and their names and complete the table. Some of the designations of selenographic objects in the list superfluous.
 	\item Estimate the angular and linear size of the lunar sea No 4, as well as its area (in km$^2$).
@@ -438,15 +470,9 @@ Once the map is oriented, it will be simple to identify the major craters, mount
 	\end{tabular}
 \end{table}
 
-\textbf{Word Meaning} Vaporum= Vapour (Steam), Frigoris = Cold, Crisium= Crises, Nectaris = Nectar, Homorum = Moisture, Fecunditatis = Ferticility, Imbrium = Rain, Nubium = Clouds. 
+\textbf{Word Meaning} Vaporum= Vapour (Steam), Frigoris = Cold, Crisium = Crises, Nectaris = Nectar, Homorum = Moisture, Fecunditatis = Ferticility, Imbrium = Rain, Nubium = Clouds. 
 
-\subsection{Moon's motion}
 
-The Moon's orbital plane has an inclination of $5^\circ9'$ in relation to the ecliptic. Although this angle remains approximately constant, the orbital plane is not fixed, moving such that its axis describes a complete circle around of the ecliptic axis in a period of 18.6 years.\\
-
-Therefore, in relation to the Celestial Equator, the Moon's orbit has an inclination that varies from $18.4^\circ(23.5^\circ - 5.15^\circ$) to $28.7^\circ(23.5^\circ + 5.15^\circ$).\\
-
-Per day, the Moon moves $\dfrac{360^\circ}{27.3 \; days} \approx 13^\circ$ east in relation to the stars. This movement is a reflection of the Moon's revolution around the Earth, which completes every 27.3 days (sidereal month). The Sun moves $\approx 1^\circ$ east per day, therefore the Moon is $\approx 12^\circ$ east of the Sun per day. Because of this, the Moon crosses the local meridian $12^\circ$ . $\dfrac{4 \;min}{1^\circ} \approx 50$ min later than the previous day.
 
 \clearpage 
 \section{Deep Sky Objects}
@@ -846,7 +872,7 @@ Correct orientation (within $23^\circ$ of the picture) -- \textbf{ 2 points}}
 
 A star chart or star map is a map of the night sky. Astronomers divide these into grids to use them more easily. They are used to identify and locate astronomical objects such as stars, constellations and galaxies. They have been used for human navigation since time immemorial. Note that a star chart differs from an astronomical catalog, which is a listing or tabulation of astronomical objects for a particular purpose. 
 
-\subsection{Stargazing maps: Coordinate lines}
+\subsection{Coordinate Lines}
 
 To help with navigation, some star maps include coordinate lines that allow you to more accurately track down a faint fuzzy or an interesting object. The coordinates right ascension (RA) and declination (dec) – roughly equivalent to longitude and latitude on Earth – are sometimes marked on a star map. RA and dec (also represented by the Greek letter $\delta$) are coordinates marking a star’s (or galaxy’s) position with respect to two points in the sky:
 
@@ -1007,7 +1033,7 @@ By considering the ecliptic line, we know that \textbf{E} is the north ecliptic 
 	\item Measure PT $\rightarrow$ PT = $25.8^\circ$.
 	Using cosine rule we get $\rightarrow \cos\angle PET =0.361$ or $\angle PET= 68.8^\circ$.\\
 	(for cosine rule in spherical geometry, $\angle PET= 68^\circ$)
-	\item Direct method (using protactor) $\angle PET= 69^\circ\; or \; 70^\circ$ (need to be measured again)
+	\item Direct method (using protactor) $\angle PET= 69^\circ\; \text{or} \; 70^\circ$ (need to be measured again)
 	\item Get a line from T and tangential to line PE. The intersect is at F, then : $\sin\angle PET = TF/TE$. From this method we get $\angle PET$ around $66^\circ$. (not really recommended)
 \end{itemize}
 
@@ -1016,7 +1042,7 @@ The time required to make this angle is = 3000 +20XX= 50XX years (XX = current y
 
 \textbf{Q4}  $PT=25.8^\circ$, hence $\delta_{\rm polaris} = 90-PT =64.2^\circ$.\\
 
-From sin rule, we get $\angle ETP = 58.1^\circ$ or 3h52m30s. (for sin rule in spherical geometry, it is $58.2^\circ$, still similar to flat one). We know $\alpha_{\text{North Ecliptic Pole}}=18^h$. Now, 
+From sin rule, we get $\angle ETP = 58.1^\circ$ or $3^h52^m30^s$. (for sin rule in spherical geometry, it is $58.2^\circ$, still similar to flat one). We know $\alpha_{\text{North Ecliptic Pole}}=18^h$. Now, 
 \begin{align*}
 	\alpha_{\rm polaris}=& \alpha_{\text{North Ecliptic Pole}}+ \angle ETP\\
 	\alpha_{\rm polaris}=& 21^h52^m30^s
@@ -1032,7 +1058,7 @@ Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (
 \end{figure}
 \clearpage 
 \subsubsection{Mercator Projections}
-Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.
+[To be completed] Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{starmap-glyph.png}
@@ -1698,7 +1724,7 @@ XX minutes place your answer sheets and the report in the envelope and wait at y
 directed to leave the hall.
 
 \subsection{How OBS Marking Works}
-
+[To be completed]
 
 \clearpage
 \subsection{BDOAA}
@@ -2141,7 +2167,7 @@ Which of these 15 constellations are also on the ecliptic? If you give more than
     \item  IOAA (GeCAA)
     \item International Earth Science Olympiad (IESO)
     \item Bangladesh Olympiad on Astronomy and Astrophysics -- \url{https://bdoaa.org/}
-    \item Singapore/Indian/Czech/Russian Astronomy Olympiad 
+    \item Singapore/Indian/Czech/Brazil/Russian Astronomy Olympiad 
     \item \textbf{Your Sky} -- \url{https://www.fourmilab.ch/yoursky/}\\
 Your sky is the most useful online tool for learning sky maps in an interactive way. You can personalize your own sky maps here for free. It is highly recommended. Most of the maps in this note are generated from here.
 \item \textbf{Stellarium} -- \url{www.stellarium.org/}\\
