@@ -219,7 +219,7 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 63                         & Perseus                              & N                               & Perseus- Demi God                      & Per                         & Mirfak ($\alpha$)                     \\
 64                         & Phoenix                              & S                               & The Phoenix                            & Phe                         & Ankaa ($\alpha$)                      \\
 65                         & Pictor                               & S                               & The Painter’s Easel                    & Pic                         & $\alpha$ Pictoris                     \\
-66                         & Pisces                               & N/Eq                            & The Fish                               & Psc                         & $\eta$ Piscium                        \\
+66                         & Pisces                               & N/Eq                            & The Fish                               & Psc                         & Alpherg $(\eta$)                        \\
 67                         & Pisces Australis                     & S                               & The Southern Fish                      & PsA                         & Fomalhaut ($\alpha\ast$)              \\
 68                         & Puppis                               & S                               & The Stern                              & Pup                         & Naos ($\zeta$)                        \\
 69                         & Pyxis                                & S                               & The Mariner’s Compass                  & Pyx                         & $\alpha$ Pyxidis                      \\
@@ -1028,7 +1028,14 @@ Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thu
 
 \textbf{Answers}\\
 \textbf{Q2} We can find the north ecliptic pole by drawing two circles with its radius of $23.5^\circ$ which the center of each circle is on Polaris and Thuban. We will get 2 intersections, E and the other one.\\
-By considering the ecliptic line, we know that \textbf{E} is the north ecliptic pole (white circle), not the other one.\\
+By considering the ecliptic line, we know that \textbf{E} is the north ecliptic pole (white circle), not the other one.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{thuban.png}
+	\caption{Thuban as North Pole}
+	\label{precession}
+\end{figure}
 
 \textbf{Q3} First, we measure the angle of $\angle PET$ .There are some ways to measure this angle. Some possible methods are:
 \begin{itemize}
@@ -1052,12 +1059,7 @@ From sin rule, we get $\angle ETP = 58.1^\circ$ or $3^h52^m30^s$. (for sin rule 
 
 Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (21^h 52^m 30^s,\, 64.2^\circ)$
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{thuban.png}
-	\caption{Thuban as North Pole}
-	\label{precession}
-\end{figure}
+
 \clearpage 
 \subsubsection{Mercator Projections}
 [To be completed] Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.
@@ -1146,7 +1148,7 @@ Positional astronomy requires the use of methods that are not usually used in an
 
 \subsection{Naked Eye Observation}
 
-\textsc{\textbf{Practice Questions}}
+\textsf{\textbf{Practice Questions}}
 \begin{enumerate}
 	\item \textbf{Name the constellations where the Milky Way passes through that are visible from Northern and Southern hemisphere}\\
 	The rotational Galactic Center of the Milky Way lies in the direction of Sagittarius, with the glowing band of hazy light then stretching all the way across to its anticenter in Auriga, before returning back to Sagittarius. From Earth, stargazers can see 30 constellations contained in this region of sky, some of which only faintly touch the region.\\
@@ -1162,6 +1164,18 @@ Positional astronomy requires the use of methods that are not usually used in an
 	- The vernal equinox is located slightly south of the circlet of Pisces. There is no bright star near its exact location hence it can be identified only through practice.
 	\item \textbf{In order to know your latitude from stargazing alone, what other piece(s) of information do you need?}\\
 	- Stars' altitude and declination.
+	
+	\item \textbf{Name the Zodic constellations according to sun's yearly path.} 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{zodiac.pdf}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{zodiac_dec.png}
+	\end{figure}
 	
 	\item \textbf{Which of these stars cannot be observed by an observer at certain location?}\\
 	
@@ -1229,7 +1243,7 @@ By definition, the $LST = LHA_{\rm Vernal \;Equinox}$, and $RA_{\rm Vernal\; Equ
 In a tropical (calendar) year, there are 365.25 solar days, but 366.25 sidereal days. By definition, \textbf{at local noon} on the day of Vernal Equinox (usually around March 20-21), the vernal equinox is at the local meridian everywhere, thus $LST = 0^h$.\\
 
 Thus, the $LST$ at local noon every day after that increases by a small amount equal to the time required for the Earth to rotate an extra small angle due to its orbital motion, i.e. for each complete solar day the Earth completes a small fraction of the extra sidereal day. This amount is,
-$$\Delta LST=\frac{1\; day}{366.25\; day}\times 24^h00^m= 3.93^m=3^m56^s$$
+$$\Delta LST=\frac{1\; \rm day}{366.25\; \rm day}\times 24^h00^m= 3.93^m=3^m56^s$$
 
 If we take January 28, approximately 10 months and 7 days after Vernal Equinox (there is inaccuracy introduced here as each month is not of equal length),
 $$LST_{\text{noon of 28 Jan}}=\left(\frac{10}{12}\times 365.25+7 \right)\times 3^h56^m= 1197^m=20.40^h$$
@@ -1243,6 +1257,7 @@ $$LST_{\text{6.15 am on 28 Jan}} \approx 20.51^h-(12^h-6.25^h)=14.76^h \approx \
 
 \item \textbf{Estimating the Local Time (LT) from Star Chart.}\\ 
 
+{\color{blue}
 For this you must know coordinates of a star lying on Celestial Equator. Recall that Orion lies along the celestial equator – and that one notable feature of the Belt of Orion are the declination of the belt stars, that is, their declination is close to $0^\circ$.\\
 
 As an estimate, we take Mintaka’s declination to be $0^\circ$, such that it would culminate at the zenith (centre of the starchart) when the local sidereal time is equal to its right ascension. Now estimate weather Mintaka is to the /east/west of the local meridian, i.e. if it has already culminated and thus its hour angle will be $HA>0$. Thus, we measure Mintaka's distance from the centre of the starchart (zenith), to estimate its hour angle, d= X cm. Then the fraction outward from the centre of the starchart of radius is, $f=d/r$.
@@ -1262,20 +1277,21 @@ Therefore, the time before midnight $\Delta T$ is simply the difference in the l
 
 $$\Delta T=LST_{0000}'-LST$$
 
-Therefore, the local time of the star chart is $0000h -\Delta T =$ \textbf{ANSWER}. 
+Therefore, the local time of the star chart is $0000h -\Delta T =$ \textbf{ANSWER}. }
 
 \item \textbf{Estimating the position of the Moon on certain local time on Star Chart after certain days.}\\
 
+{\color{blue}
 At the same local (civil) time on the \textbf{next day}, the night sky would have rotated westward by an amount approximately $4^m$ in RA.\\
 
 However, due to the Moon's orbital motion about the Earth (anti-clockwise), it moves eastward relative to the fixed stars and its RA increases by approximately,
 \begin{align*}
 	\Delta RA&=\frac{360^\circ}{T_{\rm sid}}\\
-	&=\frac{360^\circ}{27.3\; days}\\
-	&=13.19^\circ /days\\
-	& \approx 53^m/day
+	&=\frac{360^\circ}{27.3\; \rm days}\\
+	&=13.19^\circ /\rm days\\
+	& \approx 53^m/\rm day
 \end{align*}
-Since the Moon's orbital plane is similar to the rest of the planets, it will thus appear eastward along the ecliptic by about 50 mins.
+Since the Moon's orbital plane is similar to the rest of the planets, it will thus appear eastward along the ecliptic by about 50 mins.}
 
 \item \textbf{Star-trails} Your task in this problem will be to take a photo of star-trails in the sky (stars) they draw due to the rotation of the Earth around its own axis. You can use either method to do this-- several shorter exposures, which you then combine into a single image using appropriate software, or taking one long exposure.\\
 
@@ -1292,6 +1308,24 @@ below the sensor plane $(|\delta_\ast-\delta_c|> 90^\circ)$, this is generally a
 the plane of the sensor, ie.  $|\delta_\ast +\delta_c|< 90^\circ$ and  $|\delta_c- \delta_\ast|< 90^\circ$), it is generally a hyberbola. And in the special case when we have $\delta_\ast = 0$, the cone degenerates into a plane. Stars of the world therefore, the equator draws a line in the image.\\
 
 Note: Star trails start becoming visibly apparent when a source that covers 1px stretches out to span 5px in any direction}
+\end{enumerate}
+
+\subsubsection{Observing Planets}
+
+\begin{enumerate}
+	\item \textbf{Let us say we are observing sky from a dark location and all planets are visible in the sky. Arrange the planets of the solar system in the descending order of their apparent brightness as observed from the Earth.}\\
+	- Venus, Jupiter, Saturn, Mars, Mercury, Uranus and Neptune.\\
+	No penalty if Mars and Mercury’s positions in the list are interchanged.
+	
+	\item (INAO 2018) \textbf{You were observing the sky from a location on the equator on the night of 20-21 March and you made following observations in her diary. Use the information given below to mark positions of the Sun, the Moon and the 5 planets on this circle at 11 am on the Vernal Equinox day (\nth{21} March).}
+	\begin{itemize}
+		\item Today is 11 days prior to the full Moon.
+		\item Saturn is seen in constellation of Sagittarius.
+		\item Jupiter is seen rising at the time of the Moon set.
+		\item Mars’ position was coinciding with the centre of Milky Way.
+		\item Mercury set about 2 hours before the Moon.
+		\item Venus was seen in the evening sky for about 2 hours after sunset.
+	\end{itemize}
 \end{enumerate}
 
 \clearpage
