@@ -18,6 +18,7 @@
 \usepackage{wrapfig}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{lipsum}
+\usepackage[most]{tcolorbox}
 \definecolor{cblue}{HTML}{0F52BA}
 \graphicspath{ {./images/} }
 
@@ -26,7 +27,17 @@
 \fancyhead[L]{Star Charts 101}
 \fancyfoot[C]{\thepage}
 
-
+\newtcolorbox{sol}{
+	enhanced,
+	breakable,
+	boxrule=0pt, frame hidden,
+	borderline west={1pt}{0pt}{green!75!black},
+	colback=green!10!white,
+	sharp corners,
+	boxsep=0pt,       % Inner padding (space) between the text and the box border
+	before skip=4pt,  % Space before the box starts
+	after skip=4pt    % Space after the box ends
+}
 
 \parindent 0ex
 \title{{\fontsize{30}{30}\selectfont\blue{\textbf{Star Charts 101 and Practices}}}}
@@ -53,7 +64,7 @@ New versions can be found -- \url{https://github.com/Rajit13/Star-Maps-101-and-P
 
 \vfill{\LaTeX  \;  compiled and  \copyright \; 2024 by \textsf{Fahim Rajit Hossain Shwadhin} is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/} }\\
 
-\hfill farahoshwadhin.13@gmail.com
+\hfill \url{farahoshwadhin.13@gmail.com}
 \end{titlepage}
 
 \tableofcontents
@@ -419,7 +430,7 @@ The Moon's orbital plane has an inclination of $5^\circ9'$ in relation to the ec
 
 Therefore, in relation to the Celestial Equator, the Moon's orbit has an inclination that varies from $18.4^\circ(23.5^\circ - 5.15^\circ$) to $28.7^\circ(23.5^\circ + 5.15^\circ$).\\
 
-Per day, the Moon moves $\dfrac{360^\circ}{27.3 \; days} \approx 13^\circ$ east in relation to the stars. This movement is a reflection of the Moon's revolution around the Earth, which completes every 27.3 days (sidereal month). The Sun moves $\approx 1^\circ$ east per day, therefore the Moon is $\approx 12^\circ$ east of the Sun per day. Because of this, the Moon crosses the local meridian $12^\circ$ . $\dfrac{4 \;min}{1^\circ} \approx 50$ min later than the previous day.
+Per day, the Moon moves $\dfrac{360^\circ}{27.3 \;\rm days} \approx 13^\circ$ east in relation to the stars. This movement is a reflection of the Moon's revolution around the Earth, which completes every 27.3 days (sidereal month). The Sun moves $\approx 1^\circ$ east per day, therefore the Moon is $\approx 12^\circ$ east of the Sun per day. Because of this, the Moon crosses the local meridian $12^\circ$ . $\dfrac{4 \;\rm min}{1^\circ} \approx 50$ min later than the previous day.
 
 \subsection{Moon's Phase}
 
@@ -428,7 +439,7 @@ Per day, the Moon moves $\dfrac{360^\circ}{27.3 \; days} \approx 13^\circ$ east 
 	\includegraphics[width=0.7\linewidth]{mphase1.eps}
 	\caption{Lunar Phase Geometry}
 \end{figure}
-From the diagram, $\angle SME= \Psi$ এবং $MN= CM \cos \measuredangle CMN=r\cos (90^\circ- \measuredangle CME)=r\cos [90^\circ-(90^\circ-\measuredangle SME)]= r \cos \Psi$. So here $\phi$ is phase of the moon, which is the ratio between illuminated part of lunar disk and total visible disk.।
+From the diagram, $\angle SME= \Psi$ and $MN= CM \cos \measuredangle CMN=r\cos (90^\circ- \measuredangle CME)=r\cos [90^\circ-(90^\circ-\measuredangle SME)]= r \cos \Psi$. So here $\phi$ is phase of the moon, which is the ratio between illuminated part of lunar disk and total visible disk.।
 \[\boxed{0 \leq \phi \leq 1}\] 	
 \begin{align}
 	\phi &=\frac{BN}{AB}=\frac{r+MN}{2r}=\frac{r+r\cos\Psi}{2r} \nonumber \\
@@ -783,38 +794,58 @@ For data related to the problems below refer to the Messier Object List table.
 
 \textbf{Object of consideration:} Butterfly Cluster (M6), Trifid Nebula (M20), Wild Duck Cluster (M11), Ring Nebula (M57), Albireo, Arcturus, Rasalhague, M3.\\
 
-1.1 \textbf{Which object/star cannot be seen at this location at any time of the year?}\\
-    -- M6 as You cannot see any object below $-30^\circ$ declination.\\
-    
-1.2  \textbf{Which object below cannot be seen on the night of the vernal equinox at midnight?}\\
-    -- Wild Duck Cluster (M11), At midnight of the Vernal Equinox, the meridian is 12h. As such, any object within 6h to 18h will not be able to be seen. That is apart from those that are circumpolar.\\
-    
-1.3 \textbf{If M3 is currently at the local meridian, in how many hours will Albireo set?}\\
-    -- If M3 is at the local Meridian, then Albeiro would be just rising. As such, it will set in 12 hours.\\
-    
-1.4 \textbf{Which object will be closest to the zenith when it culminates on the local meridian?}\\
-    -- Ring Nebula (M57), We look for the item with the declination is the closest to +60◦, which is local zenith at that location.\\
-    
-\textsf{\textbf{Question 2}} {\color{red} A deep-sky object located directly at the celestial equator with an angular diameter of $10'$ is viewed from the eyepiece of a telescope with a true field of view of $0.8^\circ$. Object tracking on the telescope is disabled and the object is aligned at the edge of the field of view. Assuming the object moves along the diameter of the eyepiece before disappearing, calculate the time it takes for the object to drift out of view of the eyepiece.}\\
+1.1 \textbf{Which object/star cannot be seen at this location at any time of the year?}
+\begin{sol}
+    -- M6 as You cannot see any object below $-30^\circ$ declination.
+\end{sol}
 
-    -- Objects on the Celestial Equator in the sky rotate once every sidereal day, that is, $360^\circ$ in $23^h56^m4.1^s$. This gives $0.251^\circ$/min. The time it takes to drift out of the eyepiece is thus--
     
-    \[\frac{0.8^\circ}{0.251^\circ/\rm min}=3.19\; \rm min\]
+1.2  \textbf{Which object below cannot be seen on the night of the vernal equinox at midnight?}
+\begin{sol}
+    -- Wild Duck Cluster (M11), At midnight of the Vernal Equinox, the meridian is 12h. As such, any object within 6h to 18h will not be able to be seen. That is apart from those that are circumpolar.	
+\end{sol}
+
     
+1.3 \textbf{If M3 is currently at the local meridian, in how many hours will Albireo set?}
+
+\begin{sol}
+    -- If M3 is at the local Meridian, then Albeiro would be just rising. As such, it will set in 12 hours.
+\end{sol}
+
+    
+1.4 \textbf{Which object will be closest to the zenith when it culminates on the local meridian?}
+
+\begin{sol}
+	  -- Ring Nebula (M57), We look for the item with the declination is the closest to +60◦, which is local zenith at that location.
+\end{sol}
+  
+    
+\textsf{\textbf{Question 2}} {\color{red} A deep-sky object located directly at the celestial equator with an angular diameter of $10'$ is viewed from the eyepiece of a telescope with a true field of view of $0.8^\circ$. Object tracking on the telescope is disabled and the object is aligned at the edge of the field of view. Assuming the object moves along the diameter of the eyepiece before disappearing, calculate the time it takes for the object to drift out of view of the eyepiece.}
+
+\begin{sol}
+-- Objects on the Celestial Equator in the sky rotate once every sidereal day, that is, $360^\circ$ in $23^h56^m4.1^s$. This gives $0.251^\circ$/min. The time it takes to drift out of the eyepiece is thus--
+
+\[\frac{0.8^\circ}{0.251^\circ/\rm min}=3.19\; \rm min\]	
+\end{sol}
+
 \textsf{\textbf{Question 3}} {\color{red} Imagine that you are in a post-COVID world without travel restrictions and are currently on a stargazing trip in a remote location at a latitude of $35^\circ$ N. Capella (RA/DE: 5h 18m / +46 deg 01min) is currently 3 degrees above the western horizon. The following table shows a list of DSOs you have decided to try to observe for tonight.} \\
 
 \textbf{Object of consideration:} Heart Nebula, Omega Centauri, Black-Eye Galaxy, Dumbbell Nebula. \\
 
-\textbf{In what order, from highest to lowest priority, should you arrange your observations so as to maximise your chances of seeing every one of the DSOs on your list?}\\
+\textbf{In what order, from highest to lowest priority, should you arrange your observations so as to maximise your chances of seeing every one of the DSOs on your list?}
+
+\begin{sol}
     -- Omega Centauri, Black Eye Galaxy, Dumbbell Nebula, Heart Nebula\\
     
-    A quick calculation ($90^\circ-61^\circ= 29^\circ$) shows us that the Heart Nebula is circumpolar and thus has lower priority. Ideally, one would want to view it when it is near the meridian, and judging by the RA (which is earlier than Capella), it is around its lower culmination. The Dumbbell Nebula has a RA of 20h, indicating that it is on the eastern side of the sky and thus would have lower priority. Between Omega Centauri and the Black Eye Galaxy, the latter has a slightly earlier RA and thus is normally prioritized if we are near the equator. However, at northern latitudes, objects with more southern declinations spend less time above the horizon and thus set faster. While we normally need spherical trigonometry to ascertain which objects set earlier, there is a very small difference in RA between Omega Centauri and Black Eye Galaxy (31 minutes). Omega Centauri will set earlier and thus should be prioritized. (Note: Omega Centauri is very barely visible.)\\
+    A quick calculation ($90^\circ-61^\circ= 29^\circ$) shows us that the Heart Nebula is circumpolar and thus has lower priority. Ideally, one would want to view it when it is near the meridian, and judging by the RA (which is earlier than Capella), it is around its lower culmination. The Dumbbell Nebula has a RA of 20h, indicating that it is on the eastern side of the sky and thus would have lower priority. Between Omega Centauri and the Black Eye Galaxy, the latter has a slightly earlier RA and thus is normally prioritized if we are near the equator. However, at northern latitudes, objects with more southern declinations spend less time above the horizon and thus set faster. While we normally need spherical trigonometry to ascertain which objects set earlier, there is a very small difference in RA between Omega Centauri and Black Eye Galaxy (31 minutes). Omega Centauri will set earlier and thus should be prioritized. (Note: Omega Centauri is very barely visible.)
+\end{sol}
  
  
 \textsf{\textbf{Question 4}} \textbf{Object of consideration:} Triangulum Galaxy, Andromeda Galaxy, Orion Nebula, Dumbbell Nebula and Eskimo Nebula where it has apparent magnitude of 10.1 and apparent size of $0.8\times 0.8$. \\ 
 
-\textbf{Calculate the surface brightness of each DSO in $\rm mag/arcsec^2$, and hence arrange them in order of increasing surface brightness.} \\
+\textbf{Calculate the surface brightness of each DSO in $\rm mag/arcsec^2$, and hence arrange them in order of increasing surface brightness.} 
 
+\begin{sol}
 -- Triangulum Galaxy, Andromeda Galaxy, Orion Nebula, Dumbbell nebula, Eskimo
 Nebula.\\
 The calculated surface brightness of the objects are\\
@@ -822,39 +853,50 @@ The calculated surface brightness of the objects are\\
 • Andromeda: 22.5\\
 • Orion: 21.87\\
 • Dumbbell: 20.6\\
-• Eskimo: 18.5\\
+• Eskimo: 18.5	
+\end{sol}
 
-\fbox{\begin{minipage}{44em}
+
+\fbox{\begin{minipage}{42em}
 $^{\color{red} \ast}$\textbf{Surface Brightness:} The total luminosity emitted by a column of linear area $dA =\Omega r^2$. Generally presented as,
 $$\Sigma \approx \frac{F}{\Omega} \approx \frac{L}{4\pi d^2 \, \pi (R/d)^2} \approx \frac{L}{4\pi^2 R^2}; \quad \;\rm Unit:  Wm^{-2}ster^{-1}$$  
 Surface Magnitude: Logarithmic form of Surface brightness, generally presented as, 
 $$\mu = -2.5\, \log\, \Sigma +C$$
 Just like any other magnitude term you can't easily multiply, add or subtract $\mu$. The unit of $\mu$ is $\rm mag/arcsec^2$. To understand this suppose a star has a surface magnitude of $13\, \rm mag/arcsec^2$, it is actually comparable to a star with angular area of $1\, \rm arcsec^2$ to seem to have an apparent magnitude of $13^m$.
 \end{minipage}}
-\vspace{1.5 cm}
+\vspace{0.5 cm}
 
 \textsf{\textbf{Question 5}} You are given a list of the following planetary nebulae for an upcoming observation session near the Equator. \\
 
 \textbf{Object of consideration:} M27 (Dumbbell Nebula), M57 (Ring Nebula), M76 (Little Dumbbell Nebula), M97 (Owl Nebula), C39 (Eskimo Nebula), C63 (Helix Nebula).\\
 
-What are planetary nebulae? Briefly describe how they are formed.\\
+\textbf{What are planetary nebulae? Briefly describe how they are formed.}
+\begin{sol}
 -- They are emission nebulae surrounding the cores of old red giants. As these stars exhaust their fuel, the core contracts under its own gravity, increasing its temperature and
-increasing the luminosity. These conditions cause the red giant star to lose most of its outer layers to space, which are subsequently ionised by the hot remnant core/white dwarf to form these planetary nebulae.\\
+increasing the luminosity. These conditions cause the red giant star to lose most of its outer layers to space, which are subsequently ionised by the hot remnant core/white dwarf to form these planetary nebulae.	
+\end{sol}
 
-A proper observation plan should be sorted by the time objects rise. Sort the objects in this list by the order in which they rise, with the earliest object first.\\
--- M76 $\rightarrow$ C39 $\rightarrow$ M97 $\rightarrow$ M57 $\rightarrow$ M27 $\rightarrow$ C63\\
+\textbf{A proper observation plan should be sorted by the time objects rise. Sort the objects in this list by the order in which they rise, with the earliest object first.}
+\begin{sol}
+-- M76 $\rightarrow$ C39 $\rightarrow$ M97 $\rightarrow$ M57 $\rightarrow$ M27 $\rightarrow$ C63	
+\end{sol}
 
-Suppose that during one night, you notice that the Owl Nebula is
+\textbf{Suppose that during one night, you notice that the Owl Nebula is
 setting. Other than the Owl Nebula, what objects are above the
-horizon right now?\\
--- M57, M27, C63.\\
+horizon right now?}
+\begin{sol}
+-- M57, M27, C63.	
+\end{sol}
 
-\textsf{\textbf{Question 6}} \textbf{In a mildly light-polluted night sky with a surface brightness of $19.4\; \rm mag/arcsec^2$, which of the above objects are visible with the naked eye}.\\
--- Orion Nebula and Andromeda Galaxy,\\
+\textsf{\textbf{Question 6}} \textbf{In a mildly light-polluted night sky with a surface brightness of $19.4\; \rm mag/arcsec^2$, which of the above objects are visible with the naked eye}.
+\begin{sol}
+	-- Orion Nebula and Andromeda Galaxy,\\
+	
+	Dumbbell Nebula and Eskimo Nebula are too small to be seen with the naked eye. Triangulum Galaxy requires very dark skies (around Bortle 2 and below, which is around a surface brightness of 21 and above). Surface brightness is not a completely reliable predictor of visibility. Other factor like the actual luminosity distribution of the object are more important in affecting visibility. For instance, both the Orion Nebula and Andromeda Galaxy have extremely bright central cores.\\
+	
+	\underline{Note:} This question would benefit those who have actually burnt midnight oil to go stargazing.
+\end{sol}
 
-Dumbbell Nebula and Eskimo Nebula are too small to be seen with the naked eye. Triangulum Galaxy requires very dark skies (around Bortle 2 and below, which is around a surface brightness of 21 and above). Surface brightness is not a completely reliable predictor of visibility. Other factor like the actual luminosity distribution of the object are more important in affecting visibility. For instance, both the Orion Nebula and Andromeda Galaxy have extremely bright central cores.\\
-
-\underline{Note:} This question would beenfit those who have actually burnt midnight oil to go stargazing.\\
 
 \textsf{\textbf{Question 7}} \textbf{Observe the Andromeda Galaxy (M31) then draw the approximate shape and size of the galaxy that you see through the binoculars in the frame below with correct orientation.}
 \begin{figure}[H]
@@ -995,17 +1037,14 @@ The precession of the equinoxes is a gradual changing in the direction of the Ea
 Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
 
 Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$ 
-
 \begin{gather*}
 	\sin\beta=\cos\varepsilon \sin\delta_{old}-\sin\varepsilon\cos\delta_{old}\sin\alpha_{old}\\
 	\sin\lambda_{old}=\frac{\sin\delta_{old}-\cos\varepsilon \sin\beta}{\sin\varepsilon \cos\beta}\\
 	\cos\lambda_{old}=\frac{\cos\delta_{old}\cos\alpha_{old}}{\cos\beta}
 \end{gather*}
-
 Again, 
-
 \begin{gather*}
-	\lambda_{new}=\lambda_{old}+\frac{t}{26000\; years}\ast 360^\circ\\
+	\lambda_{new}=\lambda_{old}+\frac{t}{26000\;\rm years}\ast 360^\circ\\
 	\delta_{new}=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})\\
 	\sin\alpha_{new}=\frac{\cos\varepsilon\sin\delta_{new}-\sin\beta}{\sin\varepsilon\cos\delta_{new}}\\
 	\cos\alpha_{new}=\frac{\cos\beta\cos\lambda_{new}}{\cos\delta_{new}}
@@ -1026,7 +1065,7 @@ Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thu
 	\item Find the equatorial coordinate of Polaris when Thuban was the ``north pole star''.
 \end{enumerate}
 
-\textbf{Answers}\\
+\begin{sol}
 \textbf{Q2} We can find the north ecliptic pole by drawing two circles with its radius of $23.5^\circ$ which the center of each circle is on Polaris and Thuban. We will get 2 intersections, E and the other one.\\
 By considering the ecliptic line, we know that \textbf{E} is the north ecliptic pole (white circle), not the other one.
 
@@ -1058,7 +1097,7 @@ From sin rule, we get $\angle ETP = 58.1^\circ$ or $3^h52^m30^s$. (for sin rule 
 \end{align*}
 
 Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (21^h 52^m 30^s,\, 64.2^\circ)$
-
+\end{sol}
 
 \clearpage 
 \subsubsection{Mercator Projections}
@@ -1150,20 +1189,30 @@ Positional astronomy requires the use of methods that are not usually used in an
 
 \textsf{\textbf{Practice Questions}}
 \begin{enumerate}
-	\item \textbf{Name the constellations where the Milky Way passes through that are visible from Northern and Southern hemisphere}\\
+	\item \textbf{Name the constellations where the Milky Way passes through that are visible from Northern and Southern hemisphere}
+	\begin{sol}
 	The rotational Galactic Center of the Milky Way lies in the direction of Sagittarius, with the glowing band of hazy light then stretching all the way across to its anticenter in Auriga, before returning back to Sagittarius. From Earth, stargazers can see 30 constellations contained in this region of sky, some of which only faintly touch the region.\\
 	
 	- \textsf{Northern}: Monoceros, Canis Major, Orion, Gemini, Taurus, Auriga, Perseus, Cassiopeia, Lacerta, Cepheus, Cygnus, Vulpecula, Sagitta, Aquila, Serpens, Sagittarius, Scutum, Ophiuchus, Scorpius.\\
 	
 	- \textsf{Southern}: Norma, Lupus, Ara, Circinus, Triangulum, Crux, Musca, Carina, Vela, Pyxis, Puppis.
-	
+	\end{sol}
 
-	\item \textbf{Write down any five constellations that lie on current celestial equator}\\
-	- Virgo (Vir), Serpens (Ser), Ophiuchus (Oph), Aquila (Aql), Aquarius (Aqr), Pisces (Psc), Cetus (Cet), Libra (Lib), Hercules ( Her), Scutum (Sct), Delphinus (Del), Equuleus (Equ), Pegasus (Peg).
-	\item \textbf{How to find/point at the vernal equinox?}\\
-	- The vernal equinox is located slightly south of the circlet of Pisces. There is no bright star near its exact location hence it can be identified only through practice.
-	\item \textbf{In order to know your latitude from stargazing alone, what other piece(s) of information do you need?}\\
+	\item \textbf{Write down any five constellations that lie on current celestial equator}
+	\begin{sol}
+		- Virgo (Vir), Serpens (Ser), Ophiuchus (Oph), Aquila (Aql), Aquarius (Aqr), Pisces (Psc), Cetus (Cet), Libra (Lib), Hercules (Her), Scutum (Sct), Delphinus (Del), Equuleus (Equ), Pegasus (Peg).
+	\end{sol}
+	
+	\item \textbf{How to find/point at the vernal equinox?}
+	\begin{sol}
+		- The vernal equinox is located slightly south of the circlet of Pisces. There is no bright star near its exact location hence it can be identified only through practice.
+	\end{sol}
+	
+	\item \textbf{In order to know your latitude from stargazing alone, what other piece(s) of information do you need?}
+	\begin{sol}
 	- Stars' altitude and declination.
+	\end{sol}
+
 	
 	\item \textbf{Name the Zodic constellations according to sun's yearly path.} 
 	
@@ -1177,59 +1226,82 @@ Positional astronomy requires the use of methods that are not usually used in an
 		\includegraphics[width=0.8\linewidth]{zodiac_dec.png}
 	\end{figure}
 	
-	\item \textbf{Which of these stars cannot be observed by an observer at certain location?}\\
-	
+	\item \textbf{Which of these stars cannot be observed by an observer at certain location?}
+
+\begin{sol}
 	\textsf{Circumpolar Stars}\\
 	
-	This question relies on your comprehension of the night sky and rough idea of where the major stars are located. A concept introduced by this question is of circumpolar stars: they are stars that either never set or never rise. As the question asks the star that cannot be observed, it means that it asks for the lower circumpolar stars(stars that never rise) for an observer at certain location.
+	This question relies on your comprehension of the night sky and rough idea of where the major stars are located. A concept introduced by this question is of circumpolar stars: they are stars that either never set or never rise. As the question asks the star that cannot be observed, it means that it asks for the lower circumpolar stars (stars that never rise) for an observer at certain location.
 	The only challenge is to realize that lower circumpolar stars peak at an altitude of $\delta+ 90^\circ -\phi$,
 	where $\delta$ is the declination of a star and $\phi$ is the latitude of the observer. The condition for lower
 	circumpolar stars would be that this altitude $< 0^\circ$. Therefore, the condition becomes $90^\circ + \delta <\phi$.
+\end{sol}
+	
+
 	
 	
-	\item \textbf{Give some practical advice for maximizing the number of meteors observed from a meteor shower during a short (3-4 hour observation session). Be specific and detailed.}\\
+	\item \textbf{Give some practical advice for maximizing the number of meteors observed from a meteor shower during a short (3-4 hour observation session). Be specific and detailed.}
 	
-	- Observe during the peak night(s) of the specific shower!\\
-	- Observe from a dark location, preferably when the Moon is not up. This is so as to see as many meteors as possible\\
-	- Do not use a telescope/binoculars. Rather, just lie back and scan a large patch of sky (the larger the better) or\\
-	- In the Northern Hemisphere, where must one point the polar axis of the equatorial mount towards, such that moving the telescope in Right Ascension will most precisely mimic the motion of the sky over the course of a night?\\ 
-	- Generally, observe after local midnight as Earth would usually be moving into the stream of meteors then.\\
-	- If possible, observe when the radiant of the shower has a high altitude.
-	\item \textbf{In the constellation Crux, the} $\alpha\,, \beta, \,\gamma$ and $\delta$ \textbf{stars are named in which order?}\\
-	- Clockwise
+	\begin{sol}
+		- Observe during the peak night(s) of the specific shower!\\
+		- Observe from a dark location, preferably when the Moon is not up. This is so as to see as many meteors as possible\\
+		- Do not use a telescope/binoculars. Rather, just lie back and scan a large patch of sky (the larger the better) or\\
+		- In the Northern Hemisphere, where must one point the polar axis of the equatorial mount towards, such that moving the telescope in Right Ascension will most precisely mimic the motion of the sky over the course of a night?\\ 
+		- Generally, observe after local midnight as Earth would usually be moving into the stream of meteors then.\\
+		- If possible, observe when the radiant of the shower has a high altitude.
+	\end{sol}
+		\item \textbf{In the constellation Crux, the} $\alpha\,, \beta, \,\gamma$ and $\delta$ \textbf{stars are named in which order?}
+		\begin{sol}
+				- Clockwise
+		\end{sol}
+	
+
+	
+	
 	\item \textbf{During an overnight observation session in December, a local astronomy club painstakingly recorded its observations. However, those notes ended being mixed up with observation logs from previous months. Which of the following objects is unlikely to have been observed during this December night?}\\
+
+- [Options] 
+\begin{sol}
+	A. {\color{red} Lagoon Nebula (M8) in Sagittarius} \quad [$\surd$]
+\end{sol}
+B. Orion Nebula (M42) in Orion\\
+C. The Double Cluster (C14) in Perseus\\
+D. The Andromeda Galaxy (M31) in Andromeda\\
+E. Praesepe (M44) in Cancer
 	
-	- [Options] \\
-	A. {\color{red} Lagoon Nebula (M8) in Sagittarius} \quad [$\surd$]\\
-	B. Orion Nebula (M42) in Orion\\
-	C. The Double Cluster (C14) in Perseus\\
-	D. The Andromeda Galaxy (M31) in Andromeda\\
-	E. Praesepe (M44) in Cancer
-	
-\item \textbf{On a winter evening, Aquila the Eagle is found to be setting. You are given that Altair has a right ascension of $19^h52^m$ and a declination of $+8^\circ55'25''$. Assuming that you are on the equator, what is the local sidereal time?}\\
+\item \textbf{On a winter evening, Aquila the Eagle is found to be setting. You are given that Altair has a right ascension of $19^h52^m$ and a declination of $+8^\circ55'25''$. Assuming that you are on the equator, what is the local sidereal time?}
+\begin{sol}
+- Sidereal time is calculated from the hour angle + RA of a particular object, where the hour angle is the number of hours after the object has passed the meridian. In other words if 0h is the local meridian, 18h would be at the western horizon. In this case, it is given that 19h52min is at that horizon. This means that the correct local sidereal time is 1h52m. 	
+\end{sol}
 
-- Sidereal time is calculated from the hour angle + RA of a particular object, where the hour angle is the number of hours after the object has passed the meridian. In other words if 0h is the local meridian, 18h would be at the western horizon. In this case, it is given that 19h52min is at that horizon. This means that the correct local sidereal time is 1h52m. 
+\item \textbf{Filters are often used in practical astronomy for image enhancement, especially when imaging deep-sky objects as they appear very dim even through a telescope. When imaging an emission nebula, which color/combination of filter(s) can be used to minimise light from background sources, thus allowing the nebula to stand out better?}
 
-\item \textbf{Filters are often used in practical astronomy for image enhancement, especially when imaging deep-sky objects as they appear very dim even through a telescope. When imaging an emission nebula, which color/combination of filter(s) can be used to minimise light from background sources, thus allowing the nebula to stand out better?}\\
-
+\begin{sol}
 - An emission nebula emits light that is dominated by the H-$\alpha$ spectral line (657 nm) of the Balmer series (ionized hydrogen emission). Hence, an emission nebula appears red. To enhance the image, one should minimize light from other background sources (non-red light) to enter the eye. Hence,
 one should use a red color filter to allow the nebula to stand out more.Yellow filters are generally used when trying to look at the yellow dust tails of comets and not DSOs. Stacking all of the filters listed defeats the purpose of using a color filter, which is to expose the sensor to light of a
-certain wavelength (color).
+certain wavelength (color).	
+\end{sol}
 
-\item \textbf{For an observer in the Northern Hemisphere, how does the right ascension of the Sun change from the start to the end of Summer?}\\ 
-
+\item \textbf{For an observer in the Northern Hemisphere, how does the right ascension of the Sun change from the start to the end of Summer?}
+\begin{sol}
 \textit{NB: we define the start of a season by its corresponding equinox/solstice. So the summer solstice marks the start of Summer.}\\
 
-- Recall that during the northern vernal equinox, the Sun is at 0h by definition. The right ascension of the sun increases as the season progresses. Further, after 1 season, the Earth would have moved along 1/4 of its orbit, leading to From 6h to 12h.
-\item \textbf{Suppose your latitude is $45^\circ$ N. What is the Sun's elevation above the southern horizon at noon on the summer solstice?}\\
-- The celestial equator is tilted at an angle equal to your latitude from the zenith. In this case, the celestial equator is $45^\circ$ from your zenith and therefore $45^\circ$ above the southern horizon. The Sun is $23.5^\circ$ above the celestial equator on the summer solstice. Therefore the Sun is $23.5^\circ+ 45^\circ= 68.5^\circ$ above the southern horizon.
+- Recall that during the northern vernal equinox, the Sun is at 0h by definition. The right ascension of the sun increases as the season progresses. Further, after 1 season, the Earth would have moved along 1/4 of its orbit, leading to From 6h to 12h.	
+\end{sol}
 
-\item \textbf{Estimating the Local Sidereal Time (LST) from Star Chart.}\\ 
+\item \textbf{Suppose your latitude is $45^\circ$ N. What is the Sun's elevation above the southern horizon at noon on the summer solstice?}
+\begin{sol}
+- The celestial equator is tilted at an angle equal to your latitude from the zenith. In this case, the celestial equator is $45^\circ$ from your zenith and therefore $45^\circ$ above the southern horizon. The Sun is $23.5^\circ$ above the celestial equator on the summer solstice. Therefore the Sun is $23.5^\circ+ 45^\circ= 68.5^\circ$ above the southern horizon.
+\end{sol}
+
+\item \textbf{Estimating the Local Sidereal Time (LST) from Star Chart.}
+
+\begin{sol}
 
 \textsf{Method 1: Using RA of known object and estimating LHA to obtain LST}\\
 
 From the definitions of the following variables, the following equation relates LST, RA at meridian and local hour angle (LHA),
-$$LHA_{\rm obj}=LST-RA_{\rm obj}$$
+\[LHA_{\rm obj}=LST-RA_{\rm obj}\]
 Then, find an object with known RA, and estimate its LHA. For an object on the meridian, $LHA = 0$. For rising and setting objects, $LHA < 0$ or $LHA > 0$ respectively.\\
 
 e.g. Arcturus has a RA of $14^h15^m$; it is estimated to have crossed the meridian (LHA) about 30 mins ago, i.e. $LHA_{\rm Arcturus} = 0^h30^m$.
@@ -1243,28 +1315,28 @@ By definition, the $LST = LHA_{\rm Vernal \;Equinox}$, and $RA_{\rm Vernal\; Equ
 In a tropical (calendar) year, there are 365.25 solar days, but 366.25 sidereal days. By definition, \textbf{at local noon} on the day of Vernal Equinox (usually around March 20-21), the vernal equinox is at the local meridian everywhere, thus $LST = 0^h$.\\
 
 Thus, the $LST$ at local noon every day after that increases by a small amount equal to the time required for the Earth to rotate an extra small angle due to its orbital motion, i.e. for each complete solar day the Earth completes a small fraction of the extra sidereal day. This amount is,
-$$\Delta LST=\frac{1\; \rm day}{366.25\; \rm day}\times 24^h00^m= 3.93^m=3^m56^s$$
+\[\Delta LST=\frac{1\; \rm day}{366.25\; \rm day}\times 24^h00^m= 3.93^m=3^m56^s\]
 
 If we take January 28, approximately 10 months and 7 days after Vernal Equinox (there is inaccuracy introduced here as each month is not of equal length),
-$$LST_{\text{noon of 28 Jan}}=\left(\frac{10}{12}\times 365.25+7 \right)\times 3^h56^m= 1197^m=20.40^h$$
+\[LST_{\text{noon of 28 Jan}}=\left(\frac{10}{12}\times 365.25+7 \right)\times 3^h56^m= 1197^m=20.40^h\]
 
 If we do have a calendar, we can get a more accurate calculation, with 313 days between March 21 and January 28
-$$LST_{\text{noon of 28 Jan}}=313\times 3^h56^m=1231^m=20.51^h$$
+\[LST_{\text{noon of 28 Jan}}=313\times 3^h56^m=1231^m=20.51^h\]
  
 Now if we know time when any starchart is taken, Suppos the starchart was taken at 06:15 UTC, i.e. 6.15am at the Greenwich
 Meridian,
-$$LST_{\text{6.15 am on 28 Jan}} \approx 20.51^h-(12^h-6.25^h)=14.76^h \approx \mathbf{14^h45^m}$$
+\[LST_{\text{6.15 am on 28 Jan}} \approx 20.51^h-(12^h-6.25^h)=14.76^h \approx \mathbf{14^h45^m}\]
+\end{sol} 
 
 \item \textbf{Estimating the Local Time (LT) from Star Chart.}\\ 
 
-{\color{blue}
+\begin{sol}
 For this you must know coordinates of a star lying on Celestial Equator. Recall that Orion lies along the celestial equator – and that one notable feature of the Belt of Orion are the declination of the belt stars, that is, their declination is close to $0^\circ$.\\
 
 As an estimate, we take Mintaka’s declination to be $0^\circ$, such that it would culminate at the zenith (centre of the starchart) when the local sidereal time is equal to its right ascension. Now estimate weather Mintaka is to the /east/west of the local meridian, i.e. if it has already culminated and thus its hour angle will be $HA>0$. Thus, we measure Mintaka's distance from the centre of the starchart (zenith), to estimate its hour angle, d= X cm. Then the fraction outward from the centre of the starchart of radius is, $f=d/r$.
 
 Then, to a first approximation, ignoring distortion from the stereographic projection, the hour angle $HA$ of Mintaka from the zenith is approximately, $HA= 90^\circ \times f$. Then the local sidereal time at the time of the starchart is (right ascension of Mintaka $\alpha=5^h 33^m$) 
-$$LST=HA+\alpha$$
-
+\[LST=HA+\alpha\]
 Let's take a star chart  that is dated 11 Mar, close to the vernal equinox 21 March, we can take the $LST_{0000}$ at local solar midnight as approximately $12^h-10\times 4^m= 11^h0^m$.\\
 
 Then, to find the local sidereal time at local civil midnight, we need to introduce a correction as Observer's timezone (UTC+LT) is not in alignment with its longitude ($\lambda$),
@@ -1274,14 +1346,14 @@ Then, to find the local sidereal time at local civil midnight, we need to introd
 \end{align*}
 
 Therefore, the time before midnight $\Delta T$ is simply the difference in the local sidereal times at the time of the starchart and at local civil midnight, 
+\[\Delta T=LST_{0000}'-LST\]
 
-$$\Delta T=LST_{0000}'-LST$$
+Therefore, the local time of the star chart is $0000h -\Delta T =$ \textbf{ANSWER}. 
+\end{sol}
 
-Therefore, the local time of the star chart is $0000h -\Delta T =$ \textbf{ANSWER}. }
+\item \textbf{Estimating the position of the Moon on certain local time on Star Chart after certain days.}
 
-\item \textbf{Estimating the position of the Moon on certain local time on Star Chart after certain days.}\\
-
-{\color{blue}
+\begin{sol}
 At the same local (civil) time on the \textbf{next day}, the night sky would have rotated westward by an amount approximately $4^m$ in RA.\\
 
 However, due to the Moon's orbital motion about the Earth (anti-clockwise), it moves eastward relative to the fixed stars and its RA increases by approximately,
@@ -1291,16 +1363,16 @@ However, due to the Moon's orbital motion about the Earth (anti-clockwise), it m
 	&=13.19^\circ /\rm days\\
 	& \approx 53^m/\rm day
 \end{align*}
-Since the Moon's orbital plane is similar to the rest of the planets, it will thus appear eastward along the ecliptic by about 50 mins.}
+Since the Moon's orbital plane is similar to the rest of the planets, it will thus appear eastward along the ecliptic by about 50 mins.
+\end{sol}
 
 \item \textbf{Star-trails} Your task in this problem will be to take a photo of star-trails in the sky (stars) they draw due to the rotation of the Earth around its own axis. You can use either method to do this-- several shorter exposures, which you then combine into a single image using appropriate software, or taking one long exposure.\\
 
 a) Take a photo of the star-trails so that the image contains the North Pole. Try to be as long as possible so that arcs form, the corresponding hour angle should definitely exceed $0^h10^m$. Describe in detail the procedure taking a picture. Record the time and place of acquisition, the length of individual exposures and parameters in the solution camera. Attach a printed photo in inverted colors to your solution.\\ 
 
 b) What curves do the stars plot in the photograph depending on the declination $\delta_\ast$ of the star and also on
-declination $\delta_c$ of the center of the frame? Justify your answer.\\
-
-{\color{blue}
+declination $\delta_c$ of the center of the frame? Justify your answer.
+\begin{sol}
 To solve this problem, we will assume for simplicity that the rays are coming from infinity as it passes through the lens does not change direction when passing through the optical center. Then it is clear that such rays from a given star describe the mantle of a cone during the day
 with an apex angle of $180^\circ - 2\delta_\ast$, the axis of which intersects the plane of the camera sensor at an angle
 $\delta_c$. The trajectories of the stars in the image will therefore be conic sections. If the star never sets
@@ -1308,14 +1380,18 @@ below the sensor plane $(|\delta_\ast-\delta_c|> 90^\circ)$, this is generally a
 the plane of the sensor, ie.  $|\delta_\ast +\delta_c|< 90^\circ$ and  $|\delta_c- \delta_\ast|< 90^\circ$), it is generally a hyberbola. And in the special case when we have $\delta_\ast = 0$, the cone degenerates into a plane. Stars of the world therefore, the equator draws a line in the image.\\
 
 Note: Star trails start becoming visibly apparent when a source that covers 1px stretches out to span 5px in any direction}
+\end{sol}
 \end{enumerate}
 
 \subsubsection{Observing Planets}
 
 \begin{enumerate}
-	\item \textbf{Let us say we are observing sky from a dark location and all planets are visible in the sky. Arrange the planets of the solar system in the descending order of their apparent brightness as observed from the Earth.}\\
+	\item \textbf{Let us say we are observing sky from a dark location and all planets are visible in the sky. Arrange the planets of the solar system in the descending order of their apparent brightness as observed from the Earth.}
+\begin{sol}
 	- Venus, Jupiter, Saturn, Mars, Mercury, Uranus and Neptune.\\
-	No penalty if Mars and Mercury’s positions in the list are interchanged.
+No penalty if Mars and Mercury’s positions in the list are interchanged.	
+\end{sol}
+
 	\item \textbf{What would be the maximum altitude of inner planets as seen in the western sky?}
 	\begin{figure}[H]
 		\centering
@@ -1335,6 +1411,8 @@ Note: Star trails start becoming visibly apparent when a source that covers 1px 
 
 \clearpage
 \subsection{Telescope Aided Observation}
+Naked eye observations are fun (and necessary for the competition), but the real fun begins when we help our eye out by using telescopes - powerful instruments that reveal a whole new side to the starry sky! Telescopes can mainly be classified based on whether they use refraction or reflection for magnification, as well as their mounts and what coordinate system they are set up to follow. In this section, we will give a short introduction to all of these classifications that are necessary for you as a competitior in the IOAA to know.\\
+
 \textbf{1. Eyepiece}\\ 
 
 Lens placed near the focal point of the telescope.\\
@@ -1350,17 +1428,12 @@ If the aperture ratio is large, near unity, one has a powerful, ``fast'' telesco
 \textsf{\textbf{Question}} A special telescope features a 3x optical scope  with a diameter of 25mm, and a length of 120mm. Find the f-number of the scope.\\
 
 \textbf{3. Magnification}\\
-
-So for a given telescope, changing the eyepiece to another with a lower focal length will increase the magnification. 
-
-$$\text{Magnification}=\frac{\text{Telescope focal length}}{\text{Eyepiece focal length}}=\frac{\text{Aperture}\times \text{Focal Ratio}}{\text{Eye Piece Focal Length}}$$ 
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{tel_magnify.png}
+	\includegraphics[width=0.8\linewidth]{tel_magnify.png}
 \end{figure}
-
-\clearpage 
+So for a given telescope, changing the eyepiece to another with a lower focal length will increase the magnification. 
+\[\text{Magnification}=\frac{\text{Telescope focal length}}{\text{Eyepiece focal length}}=\frac{\text{Aperture}\times \text{Focal Ratio}}{\text{Eye Piece Focal Length}}\]
 \textbf{4. Field of View}\\
 
 In general, the field of view (FOV) describes the area of a target (measured as an angle from the location of viewing) that can be seen on the chip of a CCD-camera or when looking through an eyepiece.\\
@@ -1371,8 +1444,9 @@ In general, the field of view (FOV) describes the area of a target (measured as 
 	\centering
 	\includegraphics[width=0.9\linewidth]{FOV1.png}
 \end{figure}
-{\color{red}
-	$$\text{FoV[deg]}= \omega \times t \times \cos(\text{declination})=\frac{360^\circ}{23^h56^m4^s.1}\times t\times \cos\delta$$}
+\begin{sol}
+	\[\text{FoV[deg]}= \omega \times t \times \cos(\text{declination})=\frac{360^\circ}{23^h56^m4^s.1}\times t\times \cos\delta\]
+\end{sol}
 
 If the star passes through the chord of the field of view, you can measure the magnitude of the central angle, which rests on this chord. $t$ - is the time during which the star passes through this chord. Then this chord $= vt \times \cos\delta $. The same chord $=a\cdot \sin\frac{\gamma}{2}$. 
 
@@ -1386,9 +1460,9 @@ If the star passes through the chord of the field of view, you can measure the m
 \textsf{Apparent field of view (AFOV):} it is a measure of the angular size of the image viewed through the eyepiece, in other words, how large the image appears (as distinct from the magnification). This is constant for any given eyepiece of fixed focal length, and may be used to calculate what the actual field of view will be when the eyepiece is used with a given telescope. The measurement ranges from 30 to 110 degrees.\\
 
 If the apparent field of view is known, the actual field of view can be calculated from the following approximate formula:
-$$\text{TFOV}=\frac{\rm AFOV}{M}$$
+\[\text{TFOV}=\frac{\rm AFOV}{M}\]
 For a telescope with focal length of $f$, object image size of $d$,
-$$\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)$$ 
+\[\text{AFOV}=2\cdot \tan^{-1}\left(\frac{d}{2f}\right)\]
 
 \begin{figure}[H]
 	\centering
@@ -1456,6 +1530,7 @@ Note that, in the second equation, if the altitude (a) approaches $90^\circ$, th
 \begin{wrapfigure}{r}{0.5\linewidth}
 	\centering
 	\includegraphics[width=\linewidth]{fieldrot.eps}
+	\vspace{-1.5cm}
 	\caption{Field Rotation: Alt-Az and Equatorial Mounts}
 \end{wrapfigure}
 
@@ -1494,101 +1569,124 @@ where $\omega_\oplus=4.178 \times 10^{-3}$ degrees/second; Earth’s rotation. \
 If we only consider changing the values of the
 azimuth in Equation 1, the least amount of field rotation (zero) is along the prime vertical (due east or west) because east is 90° from north (cos 90°=0) and west is 270° from north (cos 270°=0). Looking toward the other directions, the maximum rate of field rotation is when the star is due south (180° from north; cos 180°=1) or directly north where cos 0°=1.
 
-$$\text{Least ROR}_{E,W}= \frac{\omega_\oplus \ast \cos(\text{Lat}) \ast 0}{\cos\text{(Alt)}}=0;\quad \text{(Az = 90 or 270)}$$
-
-
-$$	\text{MAX ROR}_{N,S}= \frac{\omega_\oplus \ast \cos(\text{Lat}) \ast 1}{\cos\text{(Alt)}};\quad \text{(Az = 0 or 180)}$$
+\begin{gather*}
+	\text{Least ROR}_{E,W}= \frac{\omega_\oplus \ast \cos(\text{Lat}) \ast 0}{\cos\text{(Alt)}}=0;\quad \text{(Az = 90 or 270)}\\
+	\text{MAX ROR}_{N,S}= \frac{\omega_\oplus \ast \cos(\text{Lat}) \ast 1}{\cos\text{(Alt)}};\quad \text{(Az = 0 or 180)}
+\end{gather*}
 
 The altitude function deals with values between
 the horizon (0°) and the zenith (90°), so only considering changes to the values of the altitude in Equation 1 and using the trig values given above we get to following.
-$$	\text{RoR}_{Horizon}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{1}; \quad \text{Alt = 0}$$
+\[\text{RoR}_{Horizon}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{1}; \quad \text{Alt = 0}\]
 so the rate depends solely on the latitude and azimuth.
-$$	\text{RoR}_{Zenith}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{0}; \quad \text{Alt = 90}$$
-which is an undefined quantity and not allowed.
+\[	\text{RoR}_{Zenith}= \frac{\omega_\oplus \ast \cos(\text{Latitude}) \ast \cos(\text{Azimuth})}{0}; \quad \text{Alt = 90}\]
+which is an undefined quantity and not allowed.\\
 
 
-\clearpage
+
 \textsc{\textbf{Practice QnA}}
 \begin{enumerate}
-	\item \textbf{In what situation would polar alignment be necessary?}\\
-	- To track stars/to counter diurnal motion
-	\item\textbf{ What is the purpose of using a finderscope?}\\
-	- Find objects more easily due to larger FOV. Image is upside down and left-right inverted.
-	Magnification: 6 $\times$ 30, or 8 $\times$ 50 typically.
-	\item \textbf{When not in use, how should accessories (eyepieces, diagonals, binoculars, finderscopes, etc.) be stored?}\\
-	- Store in dry box/Ziploc bag to combat humidity, with foam/cushion to add stability and protection.
-	\item \textbf{How do you polar‐align your telescope near the equator, where Polaris cannot be seen most
-		of the time?}\\
+	\item \textbf{In what situation would polar alignment be necessary?}
+	\begin{sol}
+		- To track stars/to counter diurnal motion.
+	\end{sol}
 	
-	- Use compass to find magnetic North for alignment of azimuthal axis, then adjust mount's elevation/altitude to Singapore’s latitude  (less accurate), or\\
+	\item\textbf{ What is the purpose of using a finderscope?}
+	\begin{sol}
+		- Find objects more easily due to larger FOV. Image is upside down and left-right inverted.
+		Magnification: 6 $\times$ 30, or 8 $\times$ 50 typically.
+	\end{sol}
 	
-	Drift alignment: observe North/South drift then adjust altitudinal axis, observe East/West (RA) drift then adjust azimuthal axis (more accurate).
-	\item  \textbf{After assembling, if you can move the main optical tube easily, is the counter weight located at the correct or incorrect position? }\\
+	\item \textbf{When not in use, how should accessories (eyepieces, diagonals, binoculars, finderscopes, etc.) be stored?}
+	\begin{sol}
+		- Store in dry box/Ziploc bag to combat humidity, with foam/cushion to add stability and protection.
+	\end{sol}
 	
-	- Correct position. The counter weight should balance with the OT, so a little force should move it smoothly. 
-	\item \textbf{Why do we need to align an equatorial telescope towards the North Celestial Pole / Polaris?}\\
-	- As stars revolve around Polaris every $23^h56^m$, we can use only one knob to trace the star easily.
+	\item \textbf{How do you polar‐align your telescope near the equator, where Polaris cannot be seen most of the time?}
+	
+	\begin{sol}
+		- Use compass to find magnetic North for alignment of azimuthal axis, then adjust mount's elevation/altitude to Singapore’s latitude  (less accurate), or\\
+		
+		Drift alignment: observe North/South drift then adjust altitudinal axis, observe East/West (RA) drift then adjust azimuthal axis (more accurate).
+	\end{sol}
+	
+	\item  \textbf{After assembling, if you can move the main optical tube easily, is the counter weight located at the correct or incorrect position? }
+	\begin{sol}
+		- Correct position. The counter weight should balance with the OT, so a little force should move it smoothly. 
+	\end{sol}
+	\item \textbf{Why do we need to align an equatorial telescope towards the North Celestial Pole / Polaris?}
+	\begin{sol}
+	- As stars revolve around Polaris every $23^h56^m$, we can use only one knob to trace the star easily.		
+	\end{sol}
 	
 	\item \textbf{Given a telescope with an aperture of 100mm and a focal length of 1600mm, when a 1.25-inch eyepiece
 	of focal length 40mm is used, what is the effective magnification?}
-
+\begin{sol}
 - Telescope magnification is calculated by dividing the focal length of the telescope by the focal
 length of the eyepiece. So $\mathbf{40\times}$. Again too find the magnification, we can use
-$$\text{Magnification}=\frac{\text{Aperture}\times \text{Focal Ratio}}{\text{Eye Piece Focal Length}}$$
+\[\text{Magnification}=\frac{\text{Aperture}\times \text{Focal Ratio}}{\text{Eye Piece Focal Length}}\]
+\end{sol}
 
-	
-	\item \textbf{You would like to maximise your view of the Pleiades star cluster ($110'$) in your eyepiece. Given the following details of your telescope, which eyepiece should you choose? (1 inch = 2.54cm)}\\
-	
-	\textbf{Telescope: 5-inch aperture, f/6}\\
+\item \textbf{You would like to maximise your view of the Pleiades star cluster ($110'$) in your eyepiece. Given the following details of your telescope, which eyepiece should you choose? (1 inch = 2.54cm)}\\
+\textbf{Telescope: 5-inch aperture, f/6}\\
 
-{\color{blue}  Let the eyepiece focal length be x mm and apparent field-of-view be $y^\circ$.
+\begin{sol}
+Let the eyepiece focal length be x mm and apparent field-of-view be $y^\circ$.
 	
-focal length = (aperture size) $\times$ (focal ratio) = $5 \times 2.54 \times 6 \times 10 = 762$ mm.\\
+focal length = (aperture size) $\times$ (focal ratio) = $5 \times 2.54 \times 6 \times 10 = 762$ mm.
 
-$$\text{magnification}=\frac{\text{focal length of telescope}}{\text{focal length of eyepiece}}=\frac{762}{x}$$.
-$$\text{true field-of-view}=\frac{\text{apparent field-of-view}}{\text{magnification}}\times 60= \frac{y}{\text{magnification}}=\frac{60xy}{762}\; \rm arcminutes$$
+\begin{gather*}
+	\text{magnification}=\frac{\text{focal length of telescope}}{\text{focal length of eyepiece}}=\frac{762}{x}\\
+	\text{true field-of-view}=\frac{\text{apparent field-of-view}}{\text{magnification}}\times 60= \frac{y}{\text{magnification}}=\frac{60xy}{762}\; \rm arcminutes
+\end{gather*}
 
 Calculate for each option with the different values of $x$ and $y$. This gives 35 mm focal length, $40^\circ$ apparent field-of-view.}
-	
-\item \textbf{You brought out your club’s $6''$ F/6 Newtonian telescope to observe M6. With a quick search you realise M6 is 2$5'$ in angular diameter. Which eyepiece would you attach to the telescope to maximise your view of M6 while still ensuring the whole of M6 can be seen in the eyepiece? (FL=Focal length,
-AFOV= Apparent field of view, 1 inch = 2.54cm)}	\\
+\end{sol}
+\item \textbf{You brought out your club’s $6''$ F/6 Newtonian telescope to observe M6. With a quick search you realise M6 is 2$5'$ in angular diameter. Which eyepiece would you attach to the telescope to maximise your view of M6 while still ensuring the whole of M6 can be seen in the eyepiece? (FL=Focal length, AFOV= Apparent field of view, 1 inch = 2.54cm)}	\\
 
 \textit{Options}\\
 A. FL: 32mm, AFOV: 50$^\circ$\\
 B. FL: 40mm, AFOV: 40$^\circ$\\
 C. FL: 13mm, AFOV: 50$^\circ$\\
 D. FL: 7mm, AFOV: 60$^\circ$\\
-E. FL: 4mm, AFOV: 70$^\circ$\\
+E. FL: 4mm, AFOV: 70$^\circ$
 
-Focal length = aperture $\times$ Focal ratio = $(6\times 2.54) \times 6 \times 10  = 914.4$ mm.\\
-$$\text{Magnification} =\frac{914,4}{x}$$
+\begin{sol}
+Focal length = aperture $\times$ Focal ratio = $(6\times 2.54) \times 6 \times 10  = 914.4$ mm.
+\[\text{Magnification} =\frac{914,4}{x}\]
 \begin{align*}
 	\text{TFOV}=&\frac{\rm AFOV}{M}\\
 	\text{TFOV [in arcmin]}=&\text{TFOV [in degrees]} \times 60\\
 	>& 25'
 \end{align*}
 
-Option \textbf{D} matches the perfect condition.
+Option \textbf{D} matches the perfect condition.	
+\end{sol}
 
-\item \textbf{The Celestron C8 is a Schmidt-Cassegrain reflective telescope with a focal ratio of 10 and a diameter of 203.2 mm. Using an objective lens (eyepiece) with a focus of 25 mm, a circular squirrel with a diameter of 25 cm fills the field of view completely. Assuming an apparent field of view of $50^\circ$.}\\
 
+
+\item \textbf{The Celestron C8 is a Schmidt-Cassegrain reflective telescope with a focal ratio of 10 and a diameter of 203.2 mm. Using an objective lens (eyepiece) with a focus of 25 mm, a circular squirrel with a diameter of 25 cm fills the field of view completely. Assuming an apparent field of view of $50^\circ$.}
+\begin{sol}
 The focal length of the telescope is 203.2 cm. Using the focal ratio, we can infer that the focus is ten times longer, i.e.
 2032 mm.\\
 
-Using, $FoV =\dfrac{50}{M}=50\times \dfrac{f_{oc}}{f_{ob}}=37'$.\\
+Using, $\text{FoV} =\dfrac{50}{M}=50\times \dfrac{f_{oc}}{f_{ob}}=37'$.\\
 
 The distance from the squirrel to the observer is 2328 cm. The distance can be obtaind using trigonometry. Specifically, $d=\dfrac{h}{\tan \alpha}$, where $\alpha = 50^\circ$.\\
 
-The resolving power is $0.68''$ from $\theta =1.22\dfrac{\lambda}{D}$. \\
+The resolving power is $0.68''$ from $\theta =1.22\dfrac{\lambda}{D}$. \end{sol}
 
-\item \textbf{The Celestron Advanced VX Y Go-To Reflector Telescope has an $Y''$ optical tube assembly with specification f/5, where Y is an unknown value. The focal length of the optical tube is 1016 mm. Two eyepieces, one with diameter 8 mm and another with diameter 25 mm were provided. Determine the minimum size of a crater on the Moon that can be resolved by this telescope. Assume light of wavelength 550 nm.}\\
+\item \textbf{The Celestron Advanced VX Y Go-To Reflector Telescope has an $Y''$ optical tube assembly with specification f/5, where Y is an unknown value. The focal length of the optical tube is 1016 mm. Two eyepieces, one with diameter 8 mm and another with diameter 25 mm were provided. Determine the minimum size of a crater on the Moon that can be resolved by this telescope. Assume light of wavelength 550 nm.}
 
+\begin{sol}
 The aperture diameter is determined by
-$$D=\frac{f}{N}=\frac{1016}{5}= 203.2 \; \rm mm$$
+\[D=\frac{f}{N}=\frac{1016}{5}= 203.2 \; \rm mm\]
 Using the formula for the Rayleigh criterion $\theta =1.22\dfrac{\lambda}{D}$ with $\lambda= 550$ nm, $D = 203.2$ mm, we get that the minimum angle that can be resolved is $0.0001892^\circ$.\\
 
 Using $s = r\theta$ and the Earth-Moon distance of $3.843\times 10^8$ m, we see that the minimum distance on the Moon that can be resolved is
-$$s=5.843\times 10^8 \times  \frac{0.0001892}{360}\times 2\pi =1.27\; \rm km.$$
+\[s=5.843\times 10^8 \times  \frac{0.0001892}{360}\times 2\pi =1.27\; \rm km.\]
+\end{sol}
+
+
 \end{enumerate}
 
 \textbf{\textit{Try Yourself}}
@@ -1633,7 +1731,7 @@ In this problem, we explore the physics of the liquid mirror telescope. Consider
 	length of the \textit{Large Zenith Telescope}.\\
 	\textbf{Hint:} The Cartesian equation of a parabola is given by $y = 4fx^2$.
 \end{enumerate}
-\fbox{\begin{minipage}{44em}
+\begin{sol}
 \textbf{a.} Consider an element along the surface of the mirror, a radial distance $r$ from the centre
 The buoyant force (green arrow) must provide for the centripetal force, and also counter the gravitational force on the element
 $$\frac{dy}{dr}=\tan \theta=\frac{\sin\theta}{\cos\theta}=\frac{m\omega^2 r}{mg}$$
@@ -1645,10 +1743,12 @@ It is technically not required to integrate; so long the participant has a quali
 answer can be arrived at through finding the area under the straight line graph with gradient $\omega^2/g$.\\
 
 \textbf{c.} For a parabola, we have $x^2=4fy$ where $f$ is the focal length. Rearranging, $y=\dfrac{1}{4f}r^2$,
-$$\frac{1}{4f}=\frac{\omega^2}{2f}\rightarrow f=\frac{g}{2\omega^2}=9.0\; m$$
-$$\frac{f}{D}=\frac{9}{6}=1.5$$
-$$p=\frac{206265}{9m}=22.9''/mm=23''/mm$$
-\end{minipage}}
+\begin{gather*}
+	\frac{1}{4f}=\frac{\omega^2}{2f}\rightarrow f=\frac{g}{2\omega^2}=9.0\; m\\
+	\frac{f}{D}=\frac{9}{6}=1.5\\
+	p=\frac{206265}{9m}=22.9''/mm=23''/mm
+\end{gather*}
+\end{sol}
 
 \subsubsection{Alt-azimuthal Mount}
 In the Poland during IOAA at a site with latitude = $50^\circ$, an observer centered his altazimuth-mounted telescope at a star with declination $\delta = -18^\circ$ at the moment of its culmination in the South. He then started an automated motion of the telescope along its vertical axis with a period of one sidereal day $T= 86 164$ s. Half an hour later ($t = 1800$s), he came back to the telescope and found that the star had left the field of view.\\
@@ -1663,7 +1763,7 @@ The observer is now interested to know if he can observe the star after replacin
 	Hint: For $a,b\neq 0$, the function $f(x)=a\sin x+b \cos x$ attains its minimum/maximum in the open interval $x \; \epsilon \; (0,180^\circ)$ exactly at the point $x=\arctan\left(\frac{a}{b}\right)$
 \end{enumerate}
 
-\fbox{\begin{minipage}{44em}
+\begin{sol}
 \textbf{a.} The zenith distance $z_D$ did not change with the displacement of the telescope and is $z_D = \phi - \delta = 68^\circ$. The azimuth has the value $a_D =\dfrac{t}{T} \cdot 360^\circ = 7.5^\circ$.	\\
 
 \textbf{b.} For this we will use the spherical triangle $SZH$, where $S$ is the north celestial pole, $Z$ is the zenith and $H$ is the observed star. We determine the zenith distance from $H$ of the star using the cosine theorem for the sides
@@ -1674,10 +1774,8 @@ $$z_H = \arccos (\sin \delta \sin \phi + \cos \delta \cos \phi \cos \alpha)= 68.
 We determine the azimuth $a_H$ of the stars from the sine theorem
 $$\frac{\sin|ZH|}{\sin\alpha}=\frac{\sin|SH|}{\sin(180^\circ -a_H)} \Rightarrow \arcsin \left(\frac{\cos\delta \sin\alpha }{\sin z_H}\right)=7.70^\circ,$$
 
-where $|ZH| = z_H$ is the zenith distance of the star $H$. It should be noted that the previous equation has two solutions on the interval $[0, 180^\circ]$. However, since $t\ll T$, only one solution on the interval $[0, 90^\circ]$ makes physical sense. Formally, it is possible to verify this by substituting into the cosine theorem for the side $SH$, whose opposite interior angle is $180^\circ- a_H$.
-\end{minipage}}
-\clearpage
-\fbox{\begin{minipage}{44em}
+where $|ZH| = z_H$ is the zenith distance of the star $H$. It should be noted that the previous equation has two solutions on the interval $[0, 180^\circ]$. However, since $t\ll T$, only one solution on the interval $[0, 90^\circ]$ makes physical sense. Formally, it is possible to verify this by substituting into the cosine theorem for the side $SH$, whose opposite interior angle is $180^\circ- a_H$.\\
+
 \textbf{c.} Now that we know the azimuthal coordinates of the star $H$ and the field of view of the telescope $D$, we can determine their mutual angular distance l using the cosine theorem for the sides of the spherical triangle $ZDH$
 $$l = \arccos (\cos z_D \cos z_H + \sin z_D \sin z_H \cos (a_H − a_D))= 0.36^\circ $$
 Since $l > d/2 = 0.25^\circ$, it is not possible to observe the star even after changing the eyepiece.\\
@@ -1695,7 +1793,7 @@ $$z_D'=\arctan\left(\frac{\sin z_H \cos(a_H-a_D)}{\cos z_H}\right)=\arctan (\tan
 Let us emphasize that $z_D'\neq z_H$, as follows from the presence of the term $\cos (a_H-a_D)$ in the relation for $z_D'$. By re-substituting $z_D'$ into the relationship for $l'$, we get the minimum possible angular distance of the star $H$ from the center of the field of view of the telescope as it moves around the horizontal axis
 $$l' = \arccos (\cos z_D' \cos z_H + \sin z_D' \sin z_H \cos (a_H - a_D))= 0.16^\circ.$$
 Since $l' < d/2 = 0.25^\circ$, the observer can observe the star after moving the telescope around its horizontal axis, if he sets the center of the field of view to the zenith distance $z_D'$.
-\end{minipage}}
+\end{sol}
 
 
 \clearpage
