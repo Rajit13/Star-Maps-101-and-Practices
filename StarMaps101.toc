@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {4.1}Coordinate Lines}{42}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Projections}{44}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Horizon Views}{44}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Round Maps}{46}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2}Round Maps}{45}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Pole View Maps}{49}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}The precession of the equinoxes}{50}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}Mercator Projections}{54}{subsubsection.4.3.2}%
