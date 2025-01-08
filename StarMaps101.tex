@@ -1458,6 +1458,7 @@ No penalty if Mars and Mercury’s positions in the list are interchanged.
 		\centering
 		\includegraphics[width=0.6\linewidth]{elong_planets.eps}
 	\end{figure}
+	\item Given Jupiter is the only solar system object visible on a star chart on Taurus constellation. Given that its elongation is currently 150$^\circ$W, estimate the month this picture was taken in?
 	
 	\item (INAO 2018) \textbf{You were observing the sky from a location on the equator on the night of 20-21 March and you made following observations in her diary. Use the information given below to mark positions of the Sun, the Moon and the 5 planets on this circle at 11 am on the Vernal Equinox day (\nth{21} March).} \label{INAO18}
 	\begin{itemize}
@@ -1493,8 +1494,10 @@ If the aperture ratio is large, near unity, one has a powerful, ``fast'' telesco
 	\centering
 	\includegraphics[width=0.8\linewidth]{tel_magnify.png}
 \end{figure}
-So for a given telescope, changing the eyepiece to another with a lower focal length will increase the magnification. 
-\[\text{Magnification}=\frac{\text{Telescope focal length}}{\text{Eyepiece focal length}}=\frac{\text{Aperture}\times \text{Focal Ratio}}{\text{Eye Piece Focal Length}}\]
+So for a given telescope, changing the eyepiece to another with a lower focal length will increase the magnification.
+\begin{defi}
+	\[\text{Magnification}=\frac{\text{Telescope focal length}}{\text{Eyepiece focal length}}=\frac{\text{Aperture}\times \text{Focal Ratio}}{\text{Eye Piece Focal Length}}\]
+\end{defi} 
 \textbf{4. Field of View}\\
 
 In general, the field of view (FOV) describes the area of a target (measured as an angle from the location of viewing) that can be seen on the chip of a CCD-camera or when looking through an eyepiece.\\
@@ -1505,9 +1508,9 @@ In general, the field of view (FOV) describes the area of a target (measured as 
 	\centering
 	\includegraphics[width=0.9\linewidth]{FOV1.png}
 \end{figure}
-\begin{sol}
+\begin{defi}
 	\[\text{FoV[deg]}= \omega \times t \times \cos(\text{declination})=\frac{360^\circ}{23^h56^m4^s.1}\times t\times \cos\delta\]
-\end{sol}
+\end{defi}
 
 If the star passes through the chord of the field of view, you can measure the magnitude of the central angle, which rests on this chord. $t$ - is the time during which the star passes through this chord. Then this chord $= vt \times \cos\delta $. The same chord $=a\cdot \sin\frac{\gamma}{2}$. 
 
@@ -1923,7 +1926,7 @@ Practice problems are from Bangladesh Olympiad on Astronomy and Astrophysics (BD
 
 \subsection{How OBS Marking Works}
 
-The observation/star chart round is all about PENALTIES! You can lose more points due to silly mistakes than the ones you earn from correct answers. This happened to one student from Bangladesh in IOAA 2024. When answering or drawing on star charts, keep the following in mind:
+The observation/star chart round is all about {\color{red}PENALTIES}! You can lose more points due to silly mistakes than the ones you earn from correct answers. This happened to one student from Bangladesh in IOAA 2024. When answering or drawing on star charts, keep the following in mind:
 
 \begin{enumerate}[\textbf{Tip} 1]
 	\item \textsf{Answer exactly what is asked.} For example, if the question specifies that star names should be written in IAU designation only, do so. Avoid writing something like: Alpha Ori/Rigel. \\
@@ -1970,7 +1973,7 @@ The observation/star chart round is all about PENALTIES! You can lose more point
 
 So you see, you need to precise within arcseconds/seconds not arcminutes or several minutes! Recommended answers typically lies within $\sim 5-10\%$ range. How to do that!? $\Rightarrow$ PRACTICE your senses and buildup intuition, observe the sky in real time! 
 	
-	\item \textsf{Be precise with locations in charts.} Most of the marks depend on your accuracy. Deviating too much from the correct position will result in penalties. Let me show you the boundaries for drawing equator, ecliptic and meridian line:  
+	\item \textsf{Be precise with locations in charts.} Most of the marks depend on your accuracy. Deviating too much from the correct position will result in penalties. Let me show you the boundaries for drawing equator, ecliptic and meridian line (IOAA 2024):  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{boundari_map.png}
@@ -1983,7 +1986,7 @@ So you see, you need to precise within arcseconds/seconds not arcminutes or seve
 \end{itemize}
 \end{sol}
 {\color{red} Each correct line drawing has full mark within the range, if you divert outside the recommended range some penalty ($\sim 50\%$) will be applied. Answer outside the range will result in 0 points.} 
-
+\item \textsf{Work with printed maps!} Before IOAA be sure to create star maps of the host country for the duration of the event.
 \end{enumerate}
 
 
@@ -2375,7 +2378,7 @@ The figure \ref{GeCAA_1} shows a star chart of the night sky. The location of co
 
 \begin{enumerate}[a.]
     \item Name the five brightest stars in the field shown. Please use IAU star names in your answer (i.e. like Sirius or Rigel). Sort the brightest stars visible on the figure in descending order of brightness.
-    \item Write the latin name abbreviation (you can find accepted abbreviated names\footnote{\url{https://en.wikipedia.org/wiki/IAU_designated_constellations}} of the constellation in which the Sun is present on 31st July 2020.
+    \item Write the latin name abbreviation (you can find accepted abbreviated names\footnote{\url{https://en.wikipedia.org/wiki/IAU_designated_constellations}} of the constellation in which the Sun is present on \nth{31} July 2020.
     
 \begin{figure}[H]
     \centering
@@ -2389,7 +2392,7 @@ The figure \ref{GeCAA_1} shows a star chart of the night sky. The location of co
 \end{enumerate}
 \subsubsection{Problem 4}
 
-On the Figure \ref{GeCAA_2}, a star chart is shown for Tallinn, Estonia (Lat 59.43 N, Long: 24.75 E) on \nth{14} September 2020 at 22:00 (UTC+3). The chart is not distorted and shows all laltitudes from $0^\circ$ to $90^\circ$. Stars to magnitude $+4.7^m$ and one planet are shown.
+On the Figure \ref{GeCAA_2}, a star chart is shown for Tallinn, Estonia (Lat 59.43$^\circ$ N, Long: 24.75$^\circ$ E) on \nth{14} September 2020 at 22:00 (UTC+3). The chart is not distorted and shows all laltitudes from $0^\circ$ to $90^\circ$. Stars to magnitude $+4.7^m$ and one planet are shown.
 \begin{enumerate}[a.]
     \item Four relatively bright (about $1.5^m- 3.5^m$) stars in well-known constellations or asterisms are missing. Identify them (in any order) using the Bayer classification.
     \item Mark all the planets that should be visible at this time on this chart. Mars is marked as a red dot. 
@@ -2410,20 +2413,22 @@ On the Figure \ref{GeCAA_2}, a star chart is shown for Tallinn, Estonia (Lat 59.
 	\centering
 	\includegraphics[width=0.7\linewidth]{ioaa22_1.png}
 \end{figure}
-For each one, choose the correct name from the list below. (3 points each)\\
+For each one, choose the correct name from the list below. \hfill(3 points each)\\
 (A) Newtonian (B) Pfund (C) Gregorian (D) Herschelian (E) Keplerian (F) Coudé (G) Galilean (H) Cassegrain\\
 
 \textbf{O6} The equatorial constellations are listed below. Fill in the missing ones in the correct order. Use the IAU codes or official names accepted by the IAU.\\
 
 1. Serpens (Ser) 2. Ophiuchus (Oph) 3. \rule{1cm}{0.15mm} 4. Aquarius (Aqr) 5. Pisces (Psc).     6. Cetus  (Cet)7.\rule{1cm}{0.15mm}   8. \rule{1cm}{0.15mm} 9. \rule{1cm}{0.15mm} 10. Monoceros (Mon) 11. Canis Minor (CMi) 12. \rule{1cm}{0.15mm} 13. \rule{1cm}{0.15mm} 14. \rule{1cm}{0.15mm} 15. Virgo (Vir)\\
+
 Which of these 15 constellations are also on the ecliptic? If you give more than the required number of constellations, only the first ones you write (in order) will be considered.\\
 
 \textbf{O8} There are three additional and two missing stars on the figure given below. Circle them and number them as 1, 2, 3 (additional stars), 4, 5 and 6 (missing stars). 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{ioaa22_3.png}
+	\includegraphics[width=0.76\linewidth]{ioaa22_3.png}
 	\caption{IOAA 2022 NO8}
 \end{figure}
+\clearpage
 \textbf{O9} Calculate the time interval between the two figures given below if the first figure occurs earlier than the second one, and the time interval is less than one sidereal day.
 \begin{figure}[H]
 	\centering
