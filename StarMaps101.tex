@@ -22,10 +22,15 @@
 \definecolor{cblue}{HTML}{0F52BA}
 \graphicspath{ {./images/} }
 
+\allowdisplaybreaks
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Star Charts 101}
 \fancyfoot[C]{\thepage}
+
+\titleformat{\section}{\normalfont\sffamily\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\sffamily\large\bfseries}{\thesubsection}{1em}{}
 
 \newtcolorbox{sol}{
 	enhanced,
@@ -1214,6 +1219,57 @@ Positional astronomy requires the use of methods that are not usually used in an
 
 \subsection{Naked Eye Observation}
 
+\textsf{\textbf{Upper and Lower Culmination}}
+
+For an observer in the northern hemisphere, the altitude of a celestial body is maximum when it passes through the meridian, in the southern direction. In this case, the body is said to be in upper culmination and its hour angle is $H= 0^h$. The altitude is minimum when the object is passing through the anti-meridian. Now, the body is said to be in lower culmination and its hour angle is $H = 12^h$. In the derivation that follows, we consider only the case of an observer in the
+northern hemisphere, so $\phi \geq 0^\circ$.\\
+
+I've used a 2D geometry of the situations described. I'll denote Upper culmination south of zenith as $h_{U1}$, Upper culmination north of zenith as $h_{U2}$ and lower culmination as $h_l$.
+\begin{multicols}{2}
+Now for $h_{U1}$ and $\delta=-\rm ve$,
+\begin{align*}
+	90^\circ &=\phi+ (-\delta)+ h_{U1}\\
+	h_{U1} &= 90-\phi+\delta 
+\end{align*} 
+
+Now for $h_{U1}$ and $\delta=+\rm ve$,
+\begin{align*}
+	90^\circ &=\delta+ h_{U11}\\
+	h_{U11} &= 90-\phi+\delta 
+\end{align*} 
+\end{multicols}
+For, Upper culmination, $h_{U2}$ and $\delta>0$ always
+\begin{align*}
+	90^\circ &= \phi +PU_2+ZA\\
+	&= \underbrace{\phi+ (90^\circ-\delta)}_{h_{U2}}+ZA\\
+	h_{U2} &=90-\delta +\phi
+\end{align*}
+
+So we can write in total 
+\begin{equation}
+	\boxed{h_U =\begin{cases}
+			90^\circ - \phi + \delta, & \text{if the object culminates south of zenith;} \\
+			90^\circ + \phi - \delta, & \text{if the object culminates north of zenith.}
+	\end{cases}}
+\end{equation}
+
+The altitude of lower culmination $h_l$, measured by convention from the northern horizon, is then:
+\begin{align*}
+	90^\circ&= h_{l}+PU_l+(90^\circ-\phi)\\
+	h_l&=90^\circ -(90^\circ-\delta)-(90^\circ-\phi)  \quad [\because PU_l=PU_2]
+\end{align*}
+
+\begin{equation}
+	\boxed{h_l=\delta+\phi-90^\circ}
+\end{equation}
+Let us examine some special cases:
+\begin{itemize}
+	\itemsep0em 
+	\item when $h_l>0$ i.e $\delta >90^\circ -\phi$, the object is circumpolar and it never sets;
+	\item when $h_U<0$ i.e $\delta <\phi-90^\circ$, it is never visible;
+	\item $\phi-90^\circ <\delta<90^\circ-\phi$, the object rises and sets
+\end{itemize}
+
 \textsf{\textbf{Practice Questions}}
 \begin{enumerate}
 	\item \textbf{Name the constellations where the Milky Way passes through that are visible from Northern and Southern hemisphere}
@@ -1286,7 +1342,7 @@ Positional astronomy requires the use of methods that are not usually used in an
 		\centering
 		\includegraphics[width=0.8\linewidth]{zodiac_dec.png}
 	\end{figure}
-\clearpage	
+
 	\item \textbf{Which of these stars cannot be observed by an observer at certain location?}
 
 \begin{sol}
@@ -1319,7 +1375,7 @@ Positional astronomy requires the use of methods that are not usually used in an
 
 	
 	
-	\item \textbf{During an overnight observation session in December, a local astronomy club painstakingly recorded its observations. However, those notes ended being mixed up with observation logs from previous months. Which of the following objects is unlikely to have been observed during this December night?}\\
+	\item \textbf{During an overnight observation session in December, a local astronomy club painstakingly recorded its observations. However, those notes ended being mixed up with observation logs from previous months. Which of the following objects is unlikely to have been observed during this December night?}
 
 - [Options] 
 \begin{sol}
@@ -1353,6 +1409,22 @@ certain wavelength (color).
 \item \textbf{Suppose your latitude is $45^\circ$ N. What is the Sun's elevation above the southern horizon at noon on the summer solstice?}
 \begin{sol}
 - The celestial equator is tilted at an angle equal to your latitude from the zenith. In this case, the celestial equator is $45^\circ$ from your zenith and therefore $45^\circ$ above the southern horizon. The Sun is $23.5^\circ$ above the celestial equator on the summer solstice. Therefore the Sun is $23.5^\circ+ 45^\circ= 68.5^\circ$ above the southern horizon.
+\end{sol}
+
+\item \textbf{Let’s consider stars for which it is true at the same time: (i) in their diurnal motion they cross the horizon, and (ii) their upper culmination occurs to the north of the zenith. Express the fraction of such stars as a function of latitude $\phi$. Assume that stars are distributed uniformly over the celestial sphere.}
+
+\begin{sol}
+\begin{eqnarray*}
+	\text{Case 1:} & \varphi \leq -45^\circ & \implies -(90^\circ + \varphi) \leq \delta \leq 90^\circ + \varphi; \\
+	\text{Case 2:} & -45^\circ \leq \varphi \leq 0^\circ & \implies \varphi \leq \delta \leq 90^\circ + \varphi; \\
+	\text{Case 3:} & 0^\circ \leq \varphi \leq 45^\circ & \implies \varphi \leq \delta \leq 90^\circ - \varphi; \\
+	\text{Case 4:} & \varphi \geq 45^\circ & \implies \delta \in \emptyset.
+\end{eqnarray*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{circum_dia.pdf}
+	\caption{Selecting areas that meet the conditions of the problem}
+\end{figure}
 \end{sol}
 
 \item \textbf{Estimating the Local Sidereal Time (LST) from Star Chart.}
@@ -1389,6 +1461,7 @@ Meridian,
 \[LST_{\text{6.15 am on 28 Jan}} \approx 20.51^h-(12^h-6.25^h)=14.76^h \approx \mathbf{14^h45^m}\]
 \end{sol} 
 
+\clearpage
 \item \textbf{Estimating the Local Time (LT) from Star Chart.}\\ 
 
 \begin{sol}
@@ -1427,12 +1500,14 @@ However, due to the Moon's orbital motion about the Earth (anti-clockwise), it m
 Since the Moon's orbital plane is similar to the rest of the planets, it will thus appear eastward along the ecliptic by about 50 mins.
 \end{sol}
 
-\item \textbf{Star-trails} Your task in this problem will be to take a photo of star-trails in the sky (stars) they draw due to the rotation of the Earth around its own axis. You can use either method to do this-- several shorter exposures, which you then combine into a single image using appropriate software, or taking one long exposure.\\
+\item \textbf{Star-trails} Your task in this problem will be to take a photo of star-trails in the sky (stars) they draw due to the rotation of the Earth around its own axis. You can use either method to do this-- several shorter exposures, which you then combine into a single image using appropriate software, or taking one long exposure.
 
-a) Take a photo of the star-trails so that the image contains the North Pole. Try to be as long as possible so that arcs form, the corresponding hour angle should definitely exceed $0^h10^m$. Describe in detail the procedure taking a picture. Record the time and place of acquisition, the length of individual exposures and parameters in the solution camera. Attach a printed photo in inverted colors to your solution.\\ 
+\begin{enumerate}[(a)]
+	\item Take a photo of the star-trails so that the image contains the North Pole. Try to be as long as possible so that arcs form, the corresponding hour angle should definitely exceed $0^h10^m$. Describe in detail the procedure taking a picture. Record the time and place of acquisition, the length of individual exposures and parameters in the solution camera. Attach a printed photo in inverted colors to your solution.
+	\item What curves do the stars plot in the photograph depending on the declination $\delta_\ast$ of the star and also on
+	declination $\delta_c$ of the center of the frame? Justify your answer.
+\end{enumerate}
 
-b) What curves do the stars plot in the photograph depending on the declination $\delta_\ast$ of the star and also on
-declination $\delta_c$ of the center of the frame? Justify your answer.
 \begin{sol}
 To solve this problem, we will assume for simplicity that the rays are coming from infinity as it passes through the lens does not change direction when passing through the optical center. Then it is clear that such rays from a given star describe the mantle of a cone during the day
 with an apex angle of $180^\circ - 2\delta_\ast$, the axis of which intersects the plane of the camera sensor at an angle
@@ -1452,13 +1527,13 @@ Note: Star trails start becoming visibly apparent when a source that covers 1px 
 	- Venus, Jupiter, Saturn, Mars, Mercury, Uranus and Neptune.\\
 No penalty if Mars and Mercury’s positions in the list are interchanged.	
 \end{sol}
-
+	\item \textbf{Given Jupiter is the only solar system object visible on a star chart on Taurus constellation. Given that its elongation is currently 150$^\circ$W, estimate the month this picture was taken in?}
 	\item \textbf{What would be the maximum altitude of inner planets as seen in the western sky?}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.6\linewidth]{elong_planets.eps}
 	\end{figure}
-	\item Given Jupiter is the only solar system object visible on a star chart on Taurus constellation. Given that its elongation is currently 150$^\circ$W, estimate the month this picture was taken in?
+
 	
 	\item (INAO 2018) \textbf{You were observing the sky from a location on the equator on the night of 20-21 March and you made following observations in her diary. Use the information given below to mark positions of the Sun, the Moon and the 5 planets on this circle at 11 am on the Vernal Equinox day (\nth{21} March).} \label{INAO18}
 	\begin{itemize}
@@ -1534,7 +1609,7 @@ For a telescope with focal length of $f$, object image size of $d$,
 	\caption{Same magnification but different AFoV and TFoV}
 \end{figure}
 
-\textsf{\textbf{5. Planetary (color) filters:}} Colour filters are mostly used to enhance the colour contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognise the differences.
+\textbf{5. Planetary (color) filters:} Colour filters are mostly used to enhance the colour contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognise the differences.
 
 {\color{blue} UHC} \quad Ultra High Contrast filter. Increases the contrast of planetary and emission nebulas.\\
 {\color{blue} OIII} \quad Oxygen-III filter. Similar to UHC, but higher contrast on certain nebulas.\\
