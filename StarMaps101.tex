@@ -1199,6 +1199,7 @@ as well as at sea.
 Positional astronomy requires the use of methods that are not usually used in any other content seen in schools or in other Olympiads, and for this reason it can and will be a little difficult to advance through the problems in this topic, especially for students who are just starting out, but even those who have qualified for the more advanced phases can make fatal mistakes when solving these questions. However, there are some tips that can help progress in this field.
 
 \begin{enumerate}
+	\itemsep0em 
 	\item \textbf{Make a 3D drawing of the situation}
 	
 	The first step to solving any positional astronomy problem is to understand and visualize what is happening, and good drawing is fundamental in this process. In general, it is strongly recommended to make a three-dimensional drawing for all situations\footnote{For meridian crossing problems, a 2D section of the celestial sphere is sufficient, however a 3D drawing can facilitate visualization}, especially in questions of spherical trigonometry.
@@ -1233,29 +1234,37 @@ I've used a 2D geometry of the situations described. I'll denote Upper culminati
 Now for $h_{U1}$ and $\delta=-\rm ve$,
 \begin{align*}
 	90^\circ &=\phi+ (-\delta)+ h_{U1}\\
-	h_{U1} &= 90-\phi+\delta 
+	h_{U1} &= 90^\circ-\phi+\delta 
 \end{align*} 
 
 Now for $h_{U1}$ and $\delta=+\rm ve$,
 \begin{align*}
-	90^\circ &=\delta+ h_{U11}\\
-	h_{U11} &= 90-\phi+\delta 
+	90^\circ &=\delta-\phi + h_{U11}\\
+	h_{U11} &= 90^\circ-\phi+\delta 
 \end{align*} 
 \end{multicols}
-For, Upper culmination, $h_{U2}$ and $\delta>0$ always
+For, Upper culmination, $h_{U2}$, and we denote zenith angle of upper culmination, $ZA_{U2}=\delta-\phi$ and $\delta>0$ always
 \begin{align*}
-	90^\circ &= \phi +PU_2+ZA\\
-	&= \underbrace{\phi+ (90^\circ-\delta)}_{h_{U2}}+ZA\\
+	90^\circ &= \phi +PU_2+ZA_{U2}\\
+	&= \underbrace{\phi+ (90^\circ-\delta)}_{h_{U2}}+ZA_{U2}\\
 	h_{U2} &=90-\delta +\phi
 \end{align*}
 
 So we can write in total 
+
+\begin{defi}
 \begin{equation}
 	\boxed{h_U =\begin{cases}
 			90^\circ - \phi + \delta, & \text{if the object culminates south of zenith;} \\
 			90^\circ + \phi - \delta, & \text{if the object culminates north of zenith.}
 	\end{cases}}
-\end{equation}
+\end{equation}	
+\end{defi}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{circumpolar.pdf}
+\end{figure}
 
 The altitude of lower culmination $h_l$, measured by convention from the northern horizon, is then:
 \begin{align*}
@@ -1273,6 +1282,10 @@ Let us examine some special cases:
 	\item when $h_U<0$ i.e $\delta <\phi-90^\circ$, it is never visible;
 	\item $\phi-90^\circ <\delta<90^\circ-\phi$, the object rises and sets
 \end{itemize}
+For a circumpolar star we can write, 
+\begin{defi}
+\[\boxed{\delta=\frac{1}{2}(h_U+h_l)}\quad\quad\boxed{\phi=90^\circ- \frac{1}{2}(h_U-h_l)}\]	
+\end{defi}
 
 \textsf{\textbf{Practice Questions}}
 \begin{enumerate}
@@ -1289,7 +1302,7 @@ Let us examine some special cases:
 	\begin{sol}
 		- Virgo (Vir), Serpens (Ser), Ophiuchus (Oph), Aquila (Aql), Aquarius (Aqr), Pisces (Psc), Cetus (Cet), Libra (Lib), Hercules (Her), Scutum (Sct), Delphinus (Del), Equuleus (Equ), Pegasus (Peg).
 	\end{sol}
-	
+	\clearpage
 	\item \textbf{How to find/point at the vernal equinox?}
 	\begin{sol}
 		- The vernal equinox is located slightly south of the circlet of Pisces. There is no bright star near its exact location hence it can be identified only through practice.
@@ -1299,7 +1312,20 @@ Let us examine some special cases:
 	\begin{sol}
 	- Stars' altitude and declination.
 	\end{sol}
+			\item \textbf{In the constellation Crux, the} $\alpha\,, \beta, \,\gamma$ and $\delta$ \textbf{stars are named in which order?}
+	\begin{sol}
+		- Clockwise
+	\end{sol}
+	\item \textbf{Which of these stars cannot be observed by an observer at certain location?}
 
+\begin{sol}
+	\textsf{Circumpolar Stars}\\
+	
+	This question relies on your comprehension of the night sky and rough idea of where the major stars are located. A concept introduced by this question is of circumpolar stars: they are stars that either never set or never rise. As the question asks the star that cannot be observed, it means that it asks for the lower circumpolar stars (stars that never rise) for an observer at certain location.
+	The only challenge is to realize that lower circumpolar stars peak at an altitude of $\delta+ 90^\circ -\phi$,
+	where $\delta$ is the declination of a star and $\phi$ is the latitude of the observer. The condition for lower
+	circumpolar stars would be that this altitude $< 0^\circ$. Therefore, the condition becomes $90^\circ + \delta <\phi$.
+\end{sol}
 	
 	\item \textbf{Name the Zodic constellations according to sun's yearly path.} 
 	
@@ -1346,20 +1372,6 @@ Let us examine some special cases:
 		\centering
 		\includegraphics[width=0.8\linewidth]{zodiac_dec.png}
 	\end{figure}
-
-	\item \textbf{Which of these stars cannot be observed by an observer at certain location?}
-
-\begin{sol}
-	\textsf{Circumpolar Stars}\\
-	
-	This question relies on your comprehension of the night sky and rough idea of where the major stars are located. A concept introduced by this question is of circumpolar stars: they are stars that either never set or never rise. As the question asks the star that cannot be observed, it means that it asks for the lower circumpolar stars (stars that never rise) for an observer at certain location.
-	The only challenge is to realize that lower circumpolar stars peak at an altitude of $\delta+ 90^\circ -\phi$,
-	where $\delta$ is the declination of a star and $\phi$ is the latitude of the observer. The condition for lower
-	circumpolar stars would be that this altitude $< 0^\circ$. Therefore, the condition becomes $90^\circ + \delta <\phi$.
-\end{sol}
-	
-
-	
 	
 	\item \textbf{Give some practical advice for maximizing the number of meteors observed from a meteor shower during a short (3-4 hour observation session). Be specific and detailed.}
 	
@@ -1371,13 +1383,6 @@ Let us examine some special cases:
 		- Generally, observe after local midnight as Earth would usually be moving into the stream of meteors then.\\
 		- If possible, observe when the radiant of the shower has a high altitude.
 	\end{sol}
-		\item \textbf{In the constellation Crux, the} $\alpha\,, \beta, \,\gamma$ and $\delta$ \textbf{stars are named in which order?}
-		\begin{sol}
-				- Clockwise
-		\end{sol}
-	
-
-	
 	
 	\item \textbf{During an overnight observation session in December, a local astronomy club painstakingly recorded its observations. However, those notes ended being mixed up with observation logs from previous months. Which of the following objects is unlikely to have been observed during this December night?}
 
@@ -1465,7 +1470,6 @@ Meridian,
 \[LST_{\text{6.15 am on 28 Jan}} \approx 20.51^h-(12^h-6.25^h)=14.76^h \approx \mathbf{14^h45^m}\]
 \end{sol} 
 
-\clearpage
 \item \textbf{Estimating the Local Time (LT) from Star Chart.}\\ 
 
 \begin{sol}
@@ -1505,8 +1509,8 @@ Since the Moon's orbital plane is similar to the rest of the planets, it will th
 \end{sol}
 
 \item \textbf{Star-trails} Your task in this problem will be to take a photo of star-trails in the sky (stars) they draw due to the rotation of the Earth around its own axis. You can use either method to do this-- several shorter exposures, which you then combine into a single image using appropriate software, or taking one long exposure.
-
 \begin{enumerate}[(a)]
+	\itemsep0em 
 	\item Take a photo of the star-trails so that the image contains the North Pole. Try to be as long as possible so that arcs form, the corresponding hour angle should definitely exceed $0^h10^m$. Describe in detail the procedure taking a picture. Record the time and place of acquisition, the length of individual exposures and parameters in the solution camera. Attach a printed photo in inverted colors to your solution.
 	\item What curves do the stars plot in the photograph depending on the declination $\delta_\ast$ of the star and also on
 	declination $\delta_c$ of the center of the frame? Justify your answer.
@@ -1550,7 +1554,6 @@ No penalty if Mars and Mercury’s positions in the list are interchanged.
 	\end{itemize}
 \end{enumerate}
 
-\clearpage
 \subsection{Telescope Aided Observation}
 Naked eye observations are fun (and necessary for the competition), but the real fun begins when we help our eye out by using telescopes - powerful instruments that reveal a whole new side to the starry sky! Telescopes can mainly be classified based on whether they use refraction or reflection for magnification, as well as their mounts and what coordinate system they are set up to follow. In this section, we will give a short introduction to all of these classifications that are necessary for you as a competitior in the IOAA to know.\\
 
