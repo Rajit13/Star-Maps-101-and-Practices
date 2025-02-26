@@ -1068,30 +1068,51 @@ Pole view maps are interesting as here the edge of the map represents both the o
 
 \subsubsection{The precession of the equinoxes}
 
-The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift through the constellations at a continuous rate of roughly 20 arcseconds per year. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
+The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift through the constellations at a continuous rate of roughly \textbf{20 arcseconds per year}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
 
 Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
 
-Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$ 
-\begin{gather*}
-	\sin\beta=\cos\varepsilon \sin\delta_{old}-\sin\varepsilon\cos\delta_{old}\sin\alpha_{old}\\
-	\sin\lambda_{old}=\frac{\sin\delta_{old}-\cos\varepsilon \sin\beta}{\sin\varepsilon \cos\beta}\\
-	\cos\lambda_{old}=\frac{\cos\delta_{old}\cos\alpha_{old}}{\cos\beta}
-\end{gather*}
-Again, 
-\begin{gather*}
-	\lambda_{new}=\lambda_{old}+\frac{t}{26000\;\rm years}\ast 360^\circ\\
-	\delta_{new}=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})\\
-	\sin\alpha_{new}=\frac{\cos\varepsilon\sin\delta_{new}-\sin\beta}{\sin\varepsilon\cos\delta_{new}}\\
-	\cos\alpha_{new}=\frac{\cos\beta\cos\lambda_{new}}{\cos\delta_{new}}
-\end{gather*}
+The precession of the Earth's rotation axis causes the ecliptic longitude to change linearly but the ecliptic latitude remains constant. Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$: 
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7 \linewidth]{presc1.png}
-	\caption{Precessional Circle}
-	\label{pcircle}
+	\begin{subfigure}{0.6\linewidth}
+		\includegraphics[width=\linewidth]{presc1.png}
+		\caption{Precessional Circle}
+		\label{pcircle}
+	\end{subfigure}
+	\begin{subfigure}{0.35\linewidth}
+		\includegraphics[width=\linewidth]{potd65a.pdf}
+		\vspace{3cm}
+	\end{subfigure}
 \end{figure}
+From spherical triangle shown above:
+\begin{align*}
+	\cos(90^\circ-\beta)&=\cos\varepsilon \sin\delta_{old}+\sin\varepsilon\cos\delta_{old}\cos(90^\circ+\alpha)\\
+	\sin\beta&=\cos\varepsilon \sin\delta_{old}-\sin\varepsilon\cos\delta_{old}\sin\alpha_{old}
+\end{align*}
+Again, 
+\[	\sin\delta_{old} =\sin \beta_\star \cos\varepsilon+\cos\beta_\star \sin\varepsilon \sin\lambda_{old} \implies \sin\lambda_{old}=\frac{\sin\delta_{old}-\cos\varepsilon \sin\beta}{\sin\varepsilon \cos\beta}\]
+\[	\frac{\cos \lambda_{old} }{\cos \delta_{old}}=\frac{\cos\alpha_{old}}{\cos\beta_\star} \implies 
+\cos\lambda_{old}=\frac{\cos\delta_{old}\cos\alpha_{old}}{\cos\beta}\]
+Now the new Ecliptic Coordinates after Precession: 
+   \begin{gather*}
+	\beta_{new} =\beta_{old}\\
+	\lambda_{new}=\lambda_{old}+\Delta \lambda= \lambda_{old}+\frac{t}{26000\;\rm years}\ast 360^\circ
+\end{gather*}
+Equatorial Coordinates after Precession (Similarly):
+\begin{align*}
+	\sin\delta'_\star&=\sin\beta'_\star\cos\varepsilon+\cos\beta'_\star \sin \varepsilon \cos(90^\circ+\alpha'_\star)\\		\delta_{new}&=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})
+\end{align*}
+\begin{gather*}
+	\begin{cases}
+		\sin\alpha_{new}=\dfrac{\cos\varepsilon\sin\delta_{new}-\sin\beta}{\sin\varepsilon\cos\delta_{new}}\\
+		\cos\alpha_{new}=\dfrac{\cos\beta\cos\lambda_{new}}{\cos\delta_{new}}
+	\end{cases}
+\end{gather*}
+
+\subsection*{Finding new Pole Star}
 Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thuban ($\alpha$ Draco) was the ``north pole star'' when it was around 3000 BC.
 
 \begin{enumerate}[Q1.]
@@ -1112,7 +1133,8 @@ By considering the ecliptic line, we know that \textbf{E} is the north ecliptic 
 	\label{precession}
 \end{figure}
 
-\textbf{Q3} First, we measure the angle of $\angle PET$ .There are some ways to measure this angle. Some possible methods are:
+
+\textbf{Q3} First, we measure the angle of $\angle PET$. There are some ways to measure this angle. Some possible methods are:
 \begin{itemize}
 	\item Measure PT $\rightarrow$ PT = $25.8^\circ$.
 	Using cosine rule we get $\rightarrow \cos\angle PET =0.361$ or $\angle PET= 68.8^\circ$.\\

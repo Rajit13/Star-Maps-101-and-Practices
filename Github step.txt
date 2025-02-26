@@ -3,7 +3,7 @@ To add updates from your local repository to the remote repository, you need to 
 1. First, make sure you are in the root directory of your local Git repository. You can use the `cd` command as you mentioned to navigate to the correct directory:
 
    ```shell
-   cd C:/Users/FAHIM/Star-Maps-101-and-Practices
+   cd D:/Projects/Star-Maps-101-and-Practices
    ```
 
 2. Check the status of your local repository to see if there are any changes that need to be committed. Use the following command:
