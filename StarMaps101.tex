@@ -981,7 +981,7 @@ To help with navigation, some star maps include coordinate lines that allow you 
 		Equatorial                                                & \begin{tabular}[c]{@{}l@{}}$\delta$: declination\\ $\alpha$: right Ascension\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \delta \leq +90^\circ$\\ 0h $\leq \alpha \leq$ 24h\end{tabular}  \\ \hline
 		Horizontal                                                & \begin{tabular}[c]{@{}l@{}}$a$: altitude\\ $A$: azimuth\end{tabular}                     & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq a \leq +90^\circ$\\ $0^\circ \leq A \leq 360^\circ$\end{tabular} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Equatorial\\ Time\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\delta$: declination\\ $H$: hour angle\end{tabular}          & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \delta \leq +90^\circ$\\ 0h $\leq H \leq$ 24h\end{tabular}       \\ \hline
-		Ecliptic                                                  & \begin{tabular}[c]{@{}l@{}}$b$: ecliptic latitude\\ $l$: ecliptic longitude\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq b \leq +90^\circ$\\ $0^\circ \leq l \leq 360^\circ$\end{tabular}      \\ \hline
+		Ecliptic                                                  & \begin{tabular}[c]{@{}l@{}}$\beta$: ecliptic latitude\\ $\lambda$: ecliptic longitude\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \beta \leq +90^\circ$\\ $0^\circ \leq \lambda \leq 360^\circ$\end{tabular}      \\ \hline
 		Galactic                                                  & \begin{tabular}[c]{@{}l@{}}$B$: galactic latitude\\ $L$: galactic longitude\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq B \leq +90^\circ$\\ $0^\circ \leq L \leq 360^\circ$\end{tabular} \\ \hline
 	\end{tabular}
 	\caption{Summery of Celestial Coordinate Systems}
@@ -1072,11 +1072,12 @@ Pole view maps are interesting as here the edge of the map represents both the o
     \caption{View from South Celestial Pole}
 \end{figure}
 
-\subsubsection{The precession of the equinoxes}
+\subsubsection{The precession of the Equinoxes}
 
-The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift through the constellations at a continuous rate of roughly \textbf{20 arcseconds per year}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
+The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift westward through the constellations at a continuous rate of roughly \textbf{$\mathbf{50\frac{1}{4}''}$ annually}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
 
-Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
+The precessional motion causes the north and south rotational poles
+to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25600$ year). Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
 
 The precession of the Earth's rotation axis causes the ecliptic longitude to change linearly but the ecliptic latitude remains constant. Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$: 
 
@@ -1109,7 +1110,7 @@ Now the new Ecliptic Coordinates after Precession:
 \end{gather*}
 Equatorial Coordinates after Precession (Similarly):
 \begin{align*}
-	\sin\delta'_\star&=\sin\beta'_\star\cos\varepsilon+\cos\beta'_\star \sin \varepsilon \cos(90^\circ+\alpha'_\star)\\		\delta_{new}&=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})
+	\sin\delta'_\star&=\sin\beta'_\star\cos\varepsilon+\cos\beta'_\star \sin \varepsilon \sin\lambda_{old}\\		\delta_{new}&=\arcsin(\cos\varepsilon\sin\beta+\sin\varepsilon\cos\beta \sin\lambda_{new})
 \end{align*}
 \begin{gather*}
 	\begin{cases}
@@ -1122,6 +1123,7 @@ Equatorial Coordinates after Precession (Similarly):
 Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thuban ($\alpha$ Draco) was the ``north pole star'' when it was around 3000 BC.
 
 \begin{enumerate}[Q1.]
+	\itemsep0em 
 	\item Mark Thuban on Figure \ref{precession}
 	\item We know that Thuban was passed by north celestial pole, and Polaris is also passed by north celestial pole. Based on this, we can find the north ecliptic pole. Find the north ecliptic pole!
 	\item Measure the period of the precession.
@@ -1129,16 +1131,14 @@ Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thu
 \end{enumerate}
 
 \begin{sol}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{thuban.png}
+		\caption{Thuban as North Pole}
+		\label{precession}
+	\end{figure}
 \textbf{Q2} We can find the north ecliptic pole by drawing two circles with its radius of $23.5^\circ$ which the center of each circle is on Polaris and Thuban. We will get 2 intersections, E and the other one.\\
-By considering the ecliptic line, we know that \textbf{E} is the north ecliptic pole (white circle), not the other one.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{thuban.png}
-	\caption{Thuban as North Pole}
-	\label{precession}
-\end{figure}
-
+By considering the ecliptic line, we know that \textbf{E} is the north ecliptic pole (white circle), not the other one.\\
 
 \textbf{Q3} First, we measure the angle of $\angle PET$. There are some ways to measure this angle. Some possible methods are:
 \begin{itemize}
@@ -1162,7 +1162,18 @@ From sin rule, we get $\angle ETP = 58.1^\circ$ or $3^h52^m30^s$. (for sin rule 
 
 Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (21^h 52^m 30^s,\, 64.2^\circ)$
 \end{sol}
+\begin{pro}
+	\textbf{Problem: Drifting Equinox} The Vernal Equinox occurs nowadays when the Sun is in the constellation of Pisces. Pisces covers a section of the ecliptic
+	from longitude $352^\circ$ to longitude $28^\circ$; at longitude $28^\circ$ the ecliptic passes into Aries.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.65\linewidth]{vernal_point.pdf}
+	\end{figure}
+	How many years would we have to go back, to find the Sun at ``the First Point of Aries'' at the Vernal Equinox?
+\end{pro}
 
+
+Because of precession, our framework of Right Ascension and declination is constantly changing. Consequently, it is necessary to state the equator and equinox of the coordinate system to which any position is referred. Astronomers will report the coordinates of an object based on the celestial equator and vernal equinox of a specific time and date; this is called the epoch. Certain dates (e.g. 1950.0, 2000.0) are taken as standard epochs, and used for star catalogues, etc.   
 \clearpage 
 \subsubsection{Mercator Projections}
 [\textbf{To be completed}] Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.

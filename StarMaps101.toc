@@ -13,7 +13,7 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Horizon Views}{44}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Round Maps}{45}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Pole View Maps}{49}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}The precession of the equinoxes}{50}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}The precession of the Equinoxes}{50}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}Mercator Projections}{54}{subsubsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.4}Monthly Sky Chats}{55}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Celestial Navigation}{61}{section.5}%
