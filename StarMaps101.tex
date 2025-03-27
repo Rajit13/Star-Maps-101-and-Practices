@@ -1077,7 +1077,7 @@ Pole view maps are interesting as here the edge of the map represents both the o
 The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift westward through the constellations at a continuous rate of roughly \textbf{$\mathbf{50\frac{1}{4}''}$ annually}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
 
 The precessional motion causes the north and south rotational poles
-to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25600$ year). Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
+to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25770$ year). Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
 
 The precession of the Earth's rotation axis causes the ecliptic longitude to change linearly but the ecliptic latitude remains constant. Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$: 
 
@@ -1582,7 +1582,7 @@ Note: Star trails start becoming visibly apparent when a source that covers 1px 
 \end{enumerate}
 
 \clearpage
-\subsubsection{Observing Planets}
+\subsection{Observing Planets}
 
 \begin{enumerate}
 	\item \textbf{Let us say we are observing sky from a dark location and all planets are visible in the sky. Arrange the planets of the solar system in the descending order of their apparent brightness as observed from the Earth.}
@@ -1609,6 +1609,175 @@ No penalty if Mars and Mercury’s positions in the list are interchanged.
 	\end{itemize}
 \end{enumerate}
 
+\subsubsection{Plotting the Moon and Planets}
+\begin{multicols}{2}
+	
+In this task, you have a map of the entire sky in the Mercator projection, in which the ecliptic coordinates are displayed as a rectangular grid. The map shows the ecliptic, the equator, and the position of the Sun. The local sidereal time is 14 h 30 min. Your task is to plot the positions of the planets and the Moon on the map, assuming that all of these objects are on the ecliptic at the given time. You can use the following information.
+	
+	\begin{itemize}
+		\itemsep0em 
+		\item \textbf{Mercury} is in the most ideal position possible to be observed in the morning before sunrise.
+		\item \textbf{Venus} has a phase as in Figure \ref{venus1} (the top of the image points north).
+		\item The \textbf{Moon} is in the first quarter.
+		\item The \textbf{Mars} is observed with an angular diameter of $17.92''$.
+		\item We observe \textbf{Jupiter} with an angular diameter of $31.12''$
+		\item \textbf{Saturn} has an ecliptic longitude of $150^\circ$.
+		\item \textbf{Uranus} has a right ascension of $12^h$
+		\item \textbf{Neptune} is highest above the horizon
+	\end{itemize}
+	For each object, at least briefly justify your procedure.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{venus_phase.png}
+		\caption{Venus Phase}
+		\label{venus1}
+	\end{figure}
+\end{multicols}
+\begin{sol}
+	The blue line on the map is the ecliptic and the green is the equator. Thanks to the Mercator projection, the ecliptic longitudes are displayed evenly, which greatly simplifies drawing objects on the map. All you need to do is determine the angular distance of the planets and the Moon from the Sun and convert it to the distance from the Sun in cm on the map.\\
+	
+	\begin{wrapfigure}{r}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{mercury_pos.pdf}
+		\caption{}
+		\label{mercury_tri}
+	\end{wrapfigure}
+	
+	\textbf{Mercury}\\
+	
+
+	The ideal conditions for observing Mercury are when it is at maximum elongation. We observe it in the morning before sunrise, so it is west of the Sun, i.e. at maximum western elongation. Mercury's orbit has a large eccentricity, so the actual distance of Mercury from the Sun significantly affects the maximum angular distance it can reach from the Sun when viewed from Earth. We are interested in the ideal conditions, which occur at the greatest possible angular distance of Mercury from the Sun. Mercury must then be at aphelion, its distance from the Sun is
+	
+	\[r_a=a_M(1+e_M)\]
+	We calculate the angular distance of Mercury from the Sun based on Fig. \ref{mercury_tri}
+	\[\sin\Delta \lambda =\frac{r_a}{r_\oplus}=\frac{a_M}{a_\oplus}(1+e_M)\]
+	
+	Therefore $\Delta \lambda\approx
+	28^\circ$\\
+	
+	\textbf{Venus}
+	
+	\begin{multicols}{2}
+	
+	From the photo of Venus we can find its phase angle, from which we can then determine the angular distance of Venus from the Sun. First we measure the diameter of the Venus disk $2r$ and the distance $r'$. The radius of Venus in the image is $r = 2.8$ cm (of course, it depends on the scale in which the image is printed). The distance of the boundary between light and shadow from the center of the Venus disk is $r'=1.3$ cm.\\
+	
+	Figure \ref{venus2} shows a schematic drawing of the view of Venus from Earth and from above. The angle $\xi$ is calculated as
+	
+	\[\xi=\frac{r'}{r}\]
+	
+	The line pointing towards the Sun is perpendicular to the boundary between light and shadow, therefore the sum of the angle $\xi$ and the phase angle $\psi$ is equal to $90^\circ$. Therefore, for the phase angle,
+	\[\cos\psi=\frac{r'}{r}\]
+	
+	Numerically we get $\psi= 62^\circ$.
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{venus_pos1.pdf}
+	\caption{Calculation of the phase angle of Venus.}
+	\label{venus2}
+\end{figure}
+
+The angular distance between Venus and the Sun can be obtained from the sine law for the Sun-Earth-Venus triangle, see Fig. \ref{venus3}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{venus_pos2.pdf}
+	\caption{}
+	\label{venus3}
+\end{figure}
+\begin{gather*}
+	\frac{a_V}{\sin\Delta \lambda}=\frac{a_\oplus}{\sin\psi}\\
+	\Delta \lambda =\arcsin\left(\frac{a_v}{a_\oplus}\sin\psi\right) \approx 40^\circ
+\end{gather*}
+As stated in the assignment, the north is up in the image. The shadow is on the right, which means that Venus is west of the Sun.
+
+\end{multicols}
+
+
+\textbf{Moon}\\
+
+The Moon is in first quarter, meaning it is located $90^\circ$ east of the Sun.\\
+
+\textbf{Mars}\\
+
+In the case of Mars and Jupiter, we only know their angular diameter. We will try to calculate their angular diameters in significant aspects to see if they match the given values. We will try opposition and conjunction first, in which the planets have the largest and smallest angular diameters. For Mars, we get
+\begin{gather*}
+	\theta_{\text{M,c}} = \frac{2R_{\text{M}}}{a_{\text{M}} + a_{\oplus}} = 1.8 \cdot 10^{-5} \text{ rad} = 3.7'',\\
+	\theta_{\text{M,o}} = \frac{2R_{\text{M}}}{a_{\text{M}} - a_{\oplus}} = 8.66 \cdot 10^{-5} \text{ rad} = 17.9''.
+\end{gather*}
+We see that the angular diameter of Mars at the opposition matches the value given in the assignment. Mars is therefore $180^\circ$ away from the Sun.\\
+
+\textbf{Jupiter}\\
+
+The angular diameter of Jupiter in conjunction and opposition is
+\begin{gather*}
+	\theta_{\text{Jup,c}} = \frac{2R_{\text{Jup}}}{a_{\text{Jup}} + a_{\oplus}} = 1.51 \cdot 10^{-4} \text{ rad} = 31.1'',\\
+	\theta_{\text{Jup,o}} = \frac{2R_{\text{Jup}}}{a_{\text{Jup}} - a_{\oplus}} = 2.22 \cdot 10^{-4} \text{ rad} = 45.8''.
+\end{gather*}
+
+
+The given value matches Jupiter's angular diameter in conjunction, so Jupiter will be positioned in the same location on the map as the Sun.\\
+
+\textbf{Saturn}\\
+
+Saturn has an ecliptic longitude of \(150^\circ\), so on the map, you only need to measure the corresponding distance of \(150^\circ\). Ecliptic longitude is measured from the vernal equinox towards the east. Since the distance from the vernal equinox to the edge of the map is insufficient, Saturn will be positioned at the right edge of the map.\\
+
+\textbf{Uranus}\\
+
+Uranus has a right ascension of \(12^h\), meaning it is located at the autumnal equinox. This point is in the constellation of Virgo, where the ecliptic intersects the equator.
+
+\textbf{Neptune}
+
+From the given problem, we know that Neptune is currently culminating, meaning it is on the meridian. Its meridian position can either be estimated (less accurately) or calculated using spherical formulas. The hour angle of objects on the meridian is \(0^h\), so its right ascension is equal to the sidereal time:
+
+\[
+\alpha = 14^h 30^m = 217.5^\circ.
+\]
+
+Right ascension is not the same as ecliptic longitude, but we can assume similar values for practical purposes. Neptune will be plotted at an ecliptic longitude of \(\lambda = 217.5^\circ\). Both values should be approximately the same. To obtain the exact longitude \(\lambda\), spherical trigonometry formulas must be used.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{liptosvka4.pdf}
+	\caption{Ec-Eq Coordinate Transformation}
+	\label{eq_ec}
+\end{figure}
+
+In Figure 2.2.6, we have a spherical triangle used for converting between ecliptic and equatorial coordinates. The problem assumes that all planets lie precisely on the ecliptic, meaning their ecliptic latitude is \(\beta = 0^\circ\). Since we know \(\beta\), \(\alpha\), and the obliquity of the ecliptic \(\varepsilon\), we apply the cosine rule:
+\[
+\sin \beta = \sin \delta \cos \varepsilon + \cos \delta \sin \varepsilon \cos(90^\circ + \alpha),
+\]
+which, using \(\sin \beta = 0\), simplifies further to
+\[
+\tan \delta = \tan \varepsilon \cos(90^\circ + \alpha).
+\]
+
+Using the properties of sine and cosine, this expression can be further simplified:
+\begin{gather*}
+	\cos(90^\circ + \alpha) = -\cos(90^\circ - \alpha) = -\sin \alpha,\\
+	\tan \delta = \tan \varepsilon \sin \alpha.
+\end{gather*}
+
+The declination of Neptune is \(\delta = -15^\circ\). We calculate its ecliptic longitude using the sine rule (with additional simplifications using sine and cosine properties):
+
+\[
+\cos \lambda = \frac{\cos \delta}{\cos \beta \cos \alpha}.
+\]
+
+Using the \(\arccos\) function on a calculator, we obtain \(\lambda' = 140^\circ\), which is not the correct result—it should be close to the right ascension. Using the cosine property \(\cos x = \cos(360^\circ - x)\), we find \(\lambda = 220^\circ\). Since the difference from the right ascension is only \(2.5^\circ\), we see that \(\lambda = \alpha\) is a reasonable approximation. When plotting on the map, this positional difference is negligible.
+\end{sol}
+\begin{pro}
+Plot all planets and the Moon in Figure \ref{planets_plot} on the next page!
+\end{pro}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{slovak_obs.png}
+	\caption{Planets Plotter}
+	\label{planets_plot}
+\end{figure}
+
+\clearpage
 \subsection{Telescope Aided Observation}
 Naked eye observations are fun (and necessary for the competition), but the real fun begins when we help our eye out by using telescopes - powerful instruments that reveal a whole new side to the starry sky! Telescopes can mainly be classified based on whether they use refraction or reflection for magnification, as well as their mounts and what coordinate system they are set up to follow. In this section, we will give a short introduction to all of these classifications that are necessary for you as a competitior in the IOAA to know.\\
 
