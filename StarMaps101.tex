@@ -1513,12 +1513,12 @@ Thus, the $LST$ at local noon every day after that increases by a small amount e
 \[\Delta LST=\frac{1\; \rm day}{366.25\; \rm day}\times 24^h00^m= 3.93^m=3^m56^s\]
 
 If we take January 28, approximately 10 months and 7 days after Vernal Equinox (there is inaccuracy introduced here as each month is not of equal length),
-\[LST_{\text{noon of 28 Jan}}=\left(\frac{10}{12}\times 365.25+7 \right)\times 3^h56^m= 1197^m=20.40^h\]
+\[LST_{\text{noon of 28 Jan}}=\left(\frac{10}{12}\times 365.25+7 \right)\times 3^m56^s= 1197^m=20.40^h\]
 
 If we do have a calendar, we can get a more accurate calculation, with 313 days between March 21 and January 28
-\[LST_{\text{noon of 28 Jan}}=313\times 3^h56^m=1231^m=20.51^h\]
+\[LST_{\text{noon of 28 Jan}}=313\times 3^m56^s=1231^m=20.51^h\]
  
-Now if we know time when any starchart is taken, Suppos the starchart was taken at 06:15 UTC, i.e. 6.15am at the Greenwich
+Now if we know time when any starchart is taken, Suppose the starchart was taken at 06:15 UTC, i.e. 6.15am at the Greenwich
 Meridian,
 \[LST_{\text{6.15 am on 28 Jan}} \approx 20.51^h-(12^h-6.25^h)=14.76^h \approx \mathbf{14^h45^m}\]
 \end{sol} 
@@ -1529,7 +1529,7 @@ Meridian,
 \begin{sol}
 For this you must know coordinates of a star lying on Celestial Equator. Recall that Orion lies along the celestial equator – and that one notable feature of the Belt of Orion are the declination of the belt stars, that is, their declination is close to $0^\circ$.\\
 
-As an estimate, we take Mintaka’s declination to be $0^\circ$, such that it would culminate at the zenith (centre of the starchart) when the local sidereal time is equal to its right ascension. Now estimate weather Mintaka is to the /east/west of the local meridian, i.e. if it has already culminated and thus its hour angle will be $HA>0$. Thus, we measure Mintaka's distance from the centre of the starchart (zenith), to estimate its hour angle, d= X cm. Then the fraction outward from the centre of the starchart of radius is, $f=d/r$.
+As an estimate, we take Mintaka’s declination to be $0^\circ$, such that it would culminate at the zenith (center of the starchart) when the local sidereal time is equal to its right ascension. Now estimate weather Mintaka is to the /east/west of the local meridian, i.e. if it has already culminated and thus its hour angle will be $HA>0$. Thus, we measure Mintaka's distance from the center of the starchart (zenith), to estimate its hour angle, d= X cm. Then the fraction outward from the center of the starchart of radius is, $f=d/r$.
 
 Then, to a first approximation, ignoring distortion from the stereographic projection, the hour angle $HA$ of Mintaka from the zenith is approximately, $HA= 90^\circ \times f$. Then the local sidereal time at the time of the starchart is (right ascension of Mintaka $\alpha=5^h 33^m$) 
 \[LST=HA+\alpha\]
@@ -1574,8 +1574,8 @@ Since the Moon's orbital plane is similar to the rest of the planets, it will th
 To solve this problem, we will assume for simplicity that the rays are coming from infinity as it passes through the lens does not change direction when passing through the optical center. Then it is clear that such rays from a given star describe the mantle of a cone during the day
 with an apex angle of $180^\circ - 2\delta_\ast$, the axis of which intersects the plane of the camera sensor at an angle
 $\delta_c$. The trajectories of the stars in the image will therefore be conic sections. If the star never sets
-below the sensor plane $(|\delta_\ast-\delta_c|> 90^\circ)$, this is generally an ellipse (in the special case, when the world pole is in the center of the image, ie. $\delta_c = 90^\circ$, the stars will draw circle). If the lower culmination of the star occurs in the plane of the sensor, it is a parabola  $(|\delta_\ast+\delta_c|=90^\circ)$. If the star falls below the plane of the sensor (but also rises above
-the plane of the sensor, ie.  $|\delta_\ast +\delta_c|< 90^\circ$ and  $|\delta_c- \delta_\ast|< 90^\circ$), it is generally a hyberbola. And in the special case when we have $\delta_\ast = 0$, the cone degenerates into a plane. Stars of the world therefore, the equator draws a line in the image.\\
+below the sensor plane $(|\delta_\ast-\delta_c|> 90^\circ)$, this is generally an ellipse (in the special case, when the world pole is in the center of the image, i.e, $\delta_c = 90^\circ$, the stars will draw circle). If the lower culmination of the star occurs in the plane of the sensor, it is a parabola  $(|\delta_\ast+\delta_c|=90^\circ)$. If the star falls below the plane of the sensor (but also rises above
+the plane of the sensor, i.e,  $|\delta_\ast +\delta_c|< 90^\circ$ and  $|\delta_c- \delta_\ast|< 90^\circ$), it is generally a hyperbola. And in the special case when we have $\delta_\ast = 0$, the cone degenerates into a plane. Stars of the world therefore, the equator draws a line in the image.\\
 
 Note: Star trails start becoming visibly apparent when a source that covers 1px stretches out to span 5px in any direction
 \end{sol}
@@ -1603,13 +1603,13 @@ No penalty if Mars and Mercury’s positions in the list are interchanged.
 		\item Today is 11 days prior to the full Moon.
 		\item Saturn is seen in constellation of Sagittarius.
 		\item Jupiter is seen rising at the time of the Moon set.
-		\item Mars’ position was coinciding with the centre of Milky Way.
+		\item Mars’ position was coinciding with the center of Milky Way.
 		\item Mercury set about 2 hours before the Moon.
 		\item Venus was seen in the evening sky for about 2 hours after sunset.
 	\end{itemize}
 \end{enumerate}
 
-\subsubsection{Plotting the Moon and Planets}
+\subsubsection{Problem: Plotting the Moon and Planets}
 \begin{multicols}{2}
 	
 In this task, you have a map of the entire sky in the Mercator projection, in which the ecliptic coordinates are displayed as a rectangular grid. The map shows the ecliptic, the equator, and the position of the Sun. The local sidereal time is 14 h 30 min. Your task is to plot the positions of the planets and the Moon on the map, assuming that all of these objects are on the ecliptic at the given time. You can use the following information.
@@ -1634,9 +1634,7 @@ In this task, you have a map of the entire sky in the Mercator projection, in wh
 		\label{venus1}
 	\end{figure}
 \end{multicols}
-\begin{sol}
-	The blue line on the map is the ecliptic and the green is the equator. Thanks to the Mercator projection, the ecliptic longitudes are displayed evenly, which greatly simplifies drawing objects on the map. All you need to do is determine the angular distance of the planets and the Moon from the Sun and convert it to the distance from the Sun in cm on the map.\\
-	
+\begin{sol}	
 	\begin{wrapfigure}{r}{0.2\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{mercury_pos.pdf}
@@ -1654,7 +1652,9 @@ In this task, you have a map of the entire sky in the Mercator projection, in wh
 	\[\sin\Delta \lambda =\frac{r_a}{r_\oplus}=\frac{a_M}{a_\oplus}(1+e_M)\]
 	
 	Therefore $\Delta \lambda\approx
-	28^\circ$\\
+	28^\circ$
+	
+\newpage
 	
 	\textbf{Venus}
 	
@@ -1725,7 +1725,7 @@ Saturn has an ecliptic longitude of \(150^\circ\), so on the map, you only need 
 
 \textbf{Uranus}\\
 
-Uranus has a right ascension of \(12^h\), meaning it is located at the autumnal equinox. This point is in the constellation of Virgo, where the ecliptic intersects the equator.
+Uranus has a right ascension of \(12^h\), meaning it is located at the autumnal equinox. This point is in the constellation of Virgo, where the ecliptic intersects the equator.\\
 
 \textbf{Neptune}
 
@@ -1744,7 +1744,7 @@ Right ascension is not the same as ecliptic longitude, but we can assume similar
 	\label{eq_ec}
 \end{figure}
 
-In Figure 2.2.6, we have a spherical triangle used for converting between ecliptic and equatorial coordinates. The problem assumes that all planets lie precisely on the ecliptic, meaning their ecliptic latitude is \(\beta = 0^\circ\). Since we know \(\beta\), \(\alpha\), and the obliquity of the ecliptic \(\varepsilon\), we apply the cosine rule:
+In Figure \ref{eq_ec}, we have a spherical triangle used for converting between ecliptic and equatorial coordinates. The problem assumes that all planets lie precisely on the ecliptic, meaning their ecliptic latitude is \(\beta = 0^\circ\). Since we know \(\beta\), \(\alpha\), and the obliquity of the ecliptic \(\varepsilon\), we apply the cosine rule:
 \[
 \sin \beta = \sin \delta \cos \varepsilon + \cos \delta \sin \varepsilon \cos(90^\circ + \alpha),
 \]
@@ -1768,8 +1768,11 @@ The declination of Neptune is \(\delta = -15^\circ\). We calculate its ecliptic 
 Using the \(\arccos\) function on a calculator, we obtain \(\lambda' = 140^\circ\), which is not the correct result—it should be close to the right ascension. Using the cosine property \(\cos x = \cos(360^\circ - x)\), we find \(\lambda = 220^\circ\). Since the difference from the right ascension is only \(2.5^\circ\), we see that \(\lambda = \alpha\) is a reasonable approximation. When plotting on the map, this positional difference is negligible.
 \end{sol}
 \begin{pro}
-Plot all planets and the Moon in Figure \ref{planets_plot} on the next page!
+\textbf{Task}: Plot all planets and the Moon in Figure \ref{planets_plot} on the next page!
 \end{pro}
+\begin{defi}
+	The blue line on the map is the ecliptic and the green is the equator. Thanks to the Mercator projection, the ecliptic longitudes are displayed evenly, which greatly simplifies drawing objects on the map. All you need to do is determine the angular distance of the planets and the Moon from the Sun and convert it to the distance from the Sun in cm on the map.
+\end{defi}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{slovak_obs.png}
@@ -1779,7 +1782,7 @@ Plot all planets and the Moon in Figure \ref{planets_plot} on the next page!
 
 \clearpage
 \subsection{Telescope Aided Observation}
-Naked eye observations are fun (and necessary for the competition), but the real fun begins when we help our eye out by using telescopes - powerful instruments that reveal a whole new side to the starry sky! Telescopes can mainly be classified based on whether they use refraction or reflection for magnification, as well as their mounts and what coordinate system they are set up to follow. In this section, we will give a short introduction to all of these classifications that are necessary for you as a competitior in the IOAA to know.\\
+Naked eye observations are fun (and necessary for the competition), but the real fun begins when we help our eye out by using telescopes - powerful instruments that reveal a whole new side to the starry sky! Telescopes can mainly be classified based on whether they use refraction or reflection for magnification, as well as their mounts and what coordinate system they are set up to follow. In this section, we will give a short introduction to all of these classifications that are necessary for you as a competitor in the IOAA to know.\\
 
 \textbf{1. Eyepiece}\\ 
 
@@ -1840,7 +1843,7 @@ For a telescope with focal length of $f$, object image size of $d$,
 	\caption{Same magnification but different AFoV and TFoV}
 \end{figure}
 
-\textbf{5. Planetary (color) filters:} Colour filters are mostly used to enhance the colour contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognise the differences.
+\textbf{5. Planetary (color) filters:} Color filters are mostly used to enhance the color contrast differences between surface features on the moon or planets. The filters screw into a standard eyepiece barrel. The contrast differences are subtle and some observers report little or no observable differences. It may take patience and experience to recognize the differences.
 
 {\color{blue} UHC} \quad Ultra High Contrast filter. Increases the contrast of planetary and emission nebulas.\\
 {\color{blue} OIII} \quad Oxygen-III filter. Similar to UHC, but higher contrast on certain nebulas.\\
@@ -1848,7 +1851,7 @@ For a telescope with focal length of $f$, object image size of $d$,
 {\color{blue} Polariser} \quad Darkening the moon and enhancing contrast on the planets.\\
 {\color{blue} IR pass} \quad Infrared pass filter is useful for getting steady views of the planets because IR is less disturbed by the atmosphere.\\
 {\color{blue} Light pollution} \quad A filter to increase contrast of objects when observing from
-urban areas. Darkens the sky by blocking street-lights whilst passing light from other colours.\\
+urban areas. Darkens the sky by blocking street-lights whilst passing light from other colors.\\
 
 \textbf{6. Finderscope}\\
 
@@ -1894,7 +1897,7 @@ Telescope moves up/down (altitude) and left/right
 and,
 \[\sin A=-\frac{\sin H \sin \delta}{\cos a}\]
 
-Note that, in the second equation, if the altitude (a) approaches $90^\circ$, the azimuth (A) approaches infinity. What this means, of course, is that for an object which passes through the zenith, as it does so, its azimuth jumps instantaneously from $90^\circ$ East to $90^\circ$ West (or from $90^\circ$ to $270^\circ$). In practice, it means that for objects near the zenith, it is very difficult to transform quickly enough and accurately enough from equatorial to horizontal co-ordinates and a small patch of sky near the zenith is effectively inaccessible, even though the telescope can easily point there. Simple observing programme planning should avoid problems from this source.\\
+Note that, in the second equation, if the altitude (a) approaches $90^\circ$, the azimuth (A) approaches infinity. What this means, of course, is that for an object which passes through the zenith, as it does so, its azimuth jumps instantaneously from $90^\circ$ East to $90^\circ$ West (or from $90^\circ$ to $270^\circ$). In practice, it means that for objects near the zenith, it is very difficult to transform quickly enough and accurately enough from equatorial to horizontal co-ordinates and a small patch of sky near the zenith is effectively inaccessible, even though the telescope can easily point there. Simple observing program planning should avoid problems from this source.\\
 
 
 \begin{wrapfigure}{r}{0.5\linewidth}
@@ -1910,14 +1913,10 @@ Alt-az mounts are to be avoided due to a phenomenon
 known as field rotation. Field rotation occurs due to
 the design of the alt-az mount. One axis, the azimuth
 axis, rotates around a vertical line passing from the
-center of the telescope to the zenith (left to right). The altitude axis rotates about a horizontal axis (up and down). Both axes must rotate at different rates to maintain the object in the field of view (FOV). As the Earth rotates about its axis, the central object in the field of view will remain centered but other objects in the FOV will appear to rotate with elapsed time. Field Rotation is an undesirable effect on time-exposure astrophotographs caused when an ``Alt-Az" (``altitude-azimuth" or altazimuth) mount (sometimes called a ``Dobsonian" or ``fork mount") is used to hold and point a telescope with a camera. It is also sometimes called Frame Rotation because the objects framed by the photograph seem to have rotated while the picture was taken.\\
+center of the telescope to the zenith (left to right). The altitude axis rotates about a horizontal axis (up and down). Both axes must rotate at different rates to maintain the object in the field of view (FOV). As the Earth rotates about its axis, the central object in the field of view will remain centered but other objects in the FOV will appear to rotate with elapsed time. Field Rotation is an undesirable effect on time-exposure astrophotographs caused when an ``Alt-Az" (``altitude-azimuth" or alt-azimuth) mount (sometimes called a ``Dobsonian" or ``fork mount") is used to hold and point a telescope with a camera. It is also sometimes called Frame Rotation because the objects framed by the photograph seem to have rotated while the picture was taken.\\
 
-Let the FOV of the telescope be represented by a
-square and follow the motion of Sagittarius as it
-rises in the east. Because the alt-az mount can only
-move around the azimuth axis and the up and down
-on the altitude axis, the FOV remains fixed with the
-bottom parallel to the horizon. The objects in the sky, however, are rotating around the celestial pole star, Polaris. So asterisms and binary stars appear to rotate in the FOV. An equatorially mounted telescope does not suffer field rotation because the telescope is polar aligned and the FOV does not remain horizontal as it tracks; the telescope rotates. So the FOV matches the rotation of the object and it remains in the same fixed position.\\
+Let the FOV of the telescope be represented by a square and follow the motion of Sagittarius as it rises in the east. Because the alt-az mount can only move around the azimuth axis and the up and down
+on the altitude axis, the FOV remains fixed with the bottom parallel to the horizon. The objects in the sky, however, are rotating around the celestial pole star, Polaris. So asterisms and binary stars appear to rotate in the FOV. An equatorial mounted telescope does not suffer field rotation because the telescope is polar aligned and the FOV does not remain horizontal as it tracks; the telescope rotates. So the FOV matches the rotation of the object and it remains in the same fixed position.\\
 
 \textbf{Mathematical Concepts Behind Field Rotation}
 Stars appear to rise in the east and set in the west, rotating about the north celestial pole star, Polaris. Rising stars will reach their highest elevation in the sky as they cross the local meridian, due south of the line between Polaris and the zenith. The altitude indicates the vertical position of the star with $0^\circ$ at the horizon and $90^\circ$ at the zenith. From direct observation, the following aspects are known about rate of rotation
