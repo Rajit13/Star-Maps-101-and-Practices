@@ -2,6 +2,9 @@
 
 Get the latest pdf version [here](StarMaps101.pdf)
 
+<span class="image main"><img src="download.png" alt="" /></span>
+
+
 ---
 
 **Star Maps 101 and Practices** is a notebook/guide that I made in preparation for *the International Olympiad on Astronomy and Astrophysics*. This contains a detailed description of Star Map/Chart analysis as well as a brief introduction to Astronomical Observations practically. This book is used in the training of the Bangladesh team at the [Bangladesh Olympiad on Astronomy and Astrophysics](https://bdoaa.org). 
