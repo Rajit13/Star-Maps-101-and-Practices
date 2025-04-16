@@ -1,6 +1,6 @@
 # Star Maps 101 and Practices
 
-Get the latest pdf version [Go here](StarMaps101.pdf) and follow instructions showing below
+Get the latest pdf version [Go here](StarMaps101.pdf) and follow the instructions shown below
 
 <span class="image main"><img src="download.png" alt="" /></span>
 
