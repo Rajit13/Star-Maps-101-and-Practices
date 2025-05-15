@@ -9,21 +9,21 @@
 \contentsline {subsection}{\numberline {3.1}Short Problems and Solutions on DSOs}{39}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Star Charts \& Positions of Stars}{42}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Coordinate Lines}{42}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Naked Eye Observation}{43}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Projections}{47}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Horizon Views}{47}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Round Maps}{48}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Pole View Maps}{52}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}The precession of the Equinoxes}{53}{subsubsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.5}Mercator Projections}{57}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Monthly Sky Chats}{58}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Celestial Navigation}{64}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Problem Solving Tips}{64}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Observing Planets}{73}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Problem: Plotting the Moon and Planets}{74}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.3}Telescope Aided Observation}{79}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Astrophotography}{89}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Guessing the correct Magnitude}{89}{subsection.5.5}%
+\contentsline {subsection}{\numberline {4.2}Projections}{43}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Horizon Views}{44}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Round Maps}{45}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Pole View Maps}{49}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}The precession of the Equinoxes}{50}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Mercator Projections}{54}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Monthly Sky Chats}{55}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Celestial Navigation}{61}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Problem Solving Tips}{61}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Naked Eye Observation}{62}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Observing Planets}{73}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Problem: Plotting the Moon and Planets}{74}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.4}Telescope Aided Observation}{79}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Astrophotography}{89}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Guessing the correct Magnitude}{89}{subsection.5.6}%
 \contentsline {section}{\numberline {6}Practice Olympiad Problems}{90}{section.6}%
 \contentsline {subsection}{\numberline {6.1}General Instructions in typical IOAA}{90}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}How OBS Marking Works}{90}{subsection.6.2}%

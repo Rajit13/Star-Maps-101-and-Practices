@@ -980,167 +980,19 @@ To help with navigation, some star maps include coordinate lines that allow you 
 	\end{tabular}
 	\caption{Summery of Celestial Coordinate Systems}
 \end{table}
-\subsection{Naked Eye Observation}
-
-\textsf{\textbf{Upper and Lower Culmination}}
-
-For an observer in the northern hemisphere, the altitude of a celestial body is maximum when it passes through the meridian, in the southern direction. In this case, the body is said to be in upper culmination and its hour angle is $HA= 0^h$. The altitude is minimum when the object is passing through the anti-meridian. Now, the body is said to be in lower culmination and its hour angle is $HA = 12^h$. In the derivation that follows, we consider only the case of an observer in the
-northern hemisphere, so $\phi \geq 0^\circ$.\\
-
-I've used a 2D geometry of the situations described. I'll denote Upper culmination south of zenith as $h_{U1}$, Upper culmination north of zenith as $h_{U2}$ and lower culmination as $h_l$.
-\begin{multicols}{2}
-	Now for $h_{U1}$ and $\delta=-\rm ve$,
-	\begin{align*}
-		90^\circ &=\phi+ (-\delta)+ h_{U1}\\
-		h_{U1} &= 90^\circ-\phi+\delta 
-	\end{align*} 
-	
-	Now for $h_{U1}$ and $\delta=+\rm ve$,
-	\begin{align*}
-		90^\circ &=\delta-\phi + h_{U11}\\
-		h_{U11} &= 90^\circ-\phi+\delta 
-	\end{align*} 
-\end{multicols}
-For, Upper culmination, $h_{U2}$, and we denote zenith angle of upper culmination, $ZA_{U2}=\delta-\phi$ and $\delta>0$ always
-\begin{align*}
-	90^\circ &= \phi +PU_2+ZA_{U2}\\
-	&= \underbrace{\phi+ (90^\circ-\delta)}_{h_{U2}}+ZA_{U2}\\
-	h_{U2} &=90-\delta +\phi
-\end{align*}
-
-So we can write in total 
-
-\begin{defi}
-	\begin{equation}
-		\boxed{h_U =\begin{cases}
-				90^\circ - \phi + \delta, & \text{if the object culminates south of zenith;} \\
-				90^\circ + \phi - \delta, & \text{if the object culminates north of zenith.}
-		\end{cases}}
-	\end{equation}	
-\end{defi}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\linewidth]{circumpolar.pdf}
-\end{figure}
-
-The altitude of lower culmination $h_l$, measured by convention from the northern horizon, is then:
-\begin{align*}
-	90^\circ&= h_{l}+PU_l+(90^\circ-\phi)\\
-	h_l&=90^\circ -(90^\circ-\delta)-(90^\circ-\phi)  \quad [\because PU_l=PU_2]
-\end{align*}
-\begin{equation}
-	\boxed{h_l=\delta+\phi-90^\circ}
-\end{equation}
-Let us examine some special cases:
-\begin{itemize}
-	\itemsep0em 
-	\item when $h_l>0$ i.e $\delta >90^\circ -\phi$, the object is circumpolar and it never sets;
-	\item when $h_U<0$ i.e $\delta <\phi-90^\circ$, it is never visible;
-	\item $\phi-90^\circ <\delta<90^\circ-\phi$, the object rises and sets
-\end{itemize}
-For a circumpolar star we can write, 
-\begin{defi}
-	\[\boxed{\delta=\frac{1}{2}(h_U+h_l)}\quad\quad\boxed{\phi=90^\circ- \frac{1}{2}(h_U-h_l)}\]	
-\end{defi}
-
-\vspace{0.5cm}
-\textsf{\textbf{Local Sidereal Time}}\\
-
-\begin{wrapfigure}{r}{0.4\linewidth}
-	\centering
-	\includegraphics[width=\linewidth]{lst_cel.pdf}
-\end{wrapfigure}
-Our wrist watches keep track of when the sun will be at transit. The solar time-keeping system we use ensures that our working day contains repeats with the rising and setting of the sun. Astronomers are however more interested in keeping track of the stars, since they want to observe them. They therefore use a sidereal time-keeping system to keep track of the vernal equinox (instead of the sun).\\
-
-Once you know the time before or since the vernal equinox was at transit you can easily determine when any other star will be at transit. This is true, since there exists a simple relation between the hour angle of a celestial body and your local sidereal time which is given by:
-
-\[\boxed{\text{LST}= \text{RA}_\star + \text{HA}_\star=\text{HA}_{\aries}} \]
-
-\subsection*{Coordinate Transformation}
-
-Coordinate conversion is very common in Olympiad questions and real academic research. For example, the position triangle plays the role of converting equatorial coordinates into horizontal coordinates or vice versa, in addition to making it possible to relate them to the hour angle of a star. This chapter will test your understanding of the previous chapters on spherical geometry and celestial coordinate systems. Fortunately, we only need two formulas - the cosine formula and the sine formula. You should also understand why the following
-simplifications are true:
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{ll}
-		$\cos (-\theta) = \cos \theta$ &\quad $\sin (360^\circ - \theta) = -\sin \theta$ \\
-		$\sin (-\theta) = -\sin \theta$ &\quad $\cos (90^\circ - \theta) = \sin \theta$ \\
-		$\cos (360^\circ + \theta) = \cos \theta$ &\quad $\sin (90^\circ - \theta) = \cos \theta$ \\
-		$\sin (360^\circ + \theta) = \sin \theta$ &\quad $\cos (90^\circ + \theta) = -\sin \theta$ \\
-		$\cos (360^\circ - \theta) = \cos \theta$ &\quad $\sin (90^\circ + \theta) = \cos \theta$ \\
-	\end{tabular}
-\end{table}
-
-
-If you are skeptical about any of the equations above, draw a triangle in a unit circle to experience the joy of discovery. \\
-
-Now, let's just look at the conversion between horizontal and equatorial coordinates, since the relationships between other systems apply the same idea.
-
-\begin{center}
-\textbf{Horizontal $\leftrightarrows$ Equatorial Time}
-\end{center}
-
-   \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{potd6a}
-	\caption{Celestial Sphere to get a Spherical Triangle}
-	\label{transformation1}
-\end{figure}
-The coordinate conversion formulas can be easily derived from a celestial sphere diagram \ref{transformation1}. Here we derive the formulas for a star $X$ for an observer at latitude $\phi$. Note that we use $P$ for North Celestial Pole (NCP) for conciseness.\\
-
-If we wish to convert from horizontal
-coordinates to equatorial coordinates, we must know the altitude and azimuth of the star, and the latitude of the observer. We can then fully solve the spherical triangle $PZX$ since we already have 3 known variables! We'll derive the relation in \textbf{3 Steps}
-\begin{enumerate}[\textbf{Step} 1]
-	\item In a spherical triangle $PZX$ by the \textbf{cosine} theorem
-	\begin{align*}
-		\cos PX &= \cos PZ \cos XZ + \sin PZ \sin XZ \cos PZX\\
-		\cos (90^\circ-\delta)&=\cos (90^\circ-\phi)\,\cos (90^\circ-a)+ \sin (90^\circ-\phi)\,\sin (90^\circ-a)\, \cos (180^\circ-Az)\\
-		\Aboxed{\sin\delta &= \sin a \sin \phi + \cos a \cos \phi \; \cos Az}
-	\end{align*}
-	\item  In a spherical triangle $PZX$ by the \textbf{sine} theorem
-	\begin{align*}
-		\frac{\sin ZX}{\sin \measuredangle ZPX}&=\frac{\sin PR}{\sin \measuredangle PZX}\\
-		\frac{\sin(90^\circ-a)}{\sin HA}&=\frac{\sin(90^\circ-\delta)}{\sin(360^\circ-A)}\\
-		\cos \delta \cos HA &=\cos a \cos Az\\
-		\Aboxed{\sin HA &= -\frac{\sin Az \cos a}{\cos\delta }}
-	\end{align*}
-	\item Similarly we again move to \textbf{cosine} formula, 
-	\begin{align*}
-		\cos ZX &= \cos PZ \cos PX + \sin PZ \sin PX \cos ZPX\\
-		\cos (90^\circ-a)&=\cos (90^\circ-\phi)\,\cos (90^\circ-\delta)+ \sin (90^\circ-\phi)\,\sin (90^\circ-\delta)\, \cos (180^\circ-HA)\\
-		\Aboxed{\sin a &= \sin \delta \sin \phi + \cos \delta \cos \phi \; \cos HA}
-	\end{align*}	
-\end{enumerate}
-Now, at the rising or setting of the celestial body,
-its height $a=0^\circ$,
-\begin{align*}
-	\sin a &= \sin \delta \sin \phi + \cos \delta \cos \phi \; \cos HA\\
-	\cos HA&=\frac{\sin a -\sin \delta \sin \phi}{\cos \delta \cos \phi}\\
-	\Aboxed{\cos HA&= - \tan \delta \tan \phi} \implies \text{Sunrise Equation}
-\end{align*}
-the hour angle ($HA$) is the time from the moment of the upper culmination.\\
-
-\begin{pro}
-	\begin{enumerate}[a.]
-		\itemsep0em
-		\item Calculate the height of the upper and lower culmination of the star El-Nat ($\beta$ Tau) the city of Dhaka ($\phi =23^\circ 81'$). The declination of the star $\delta =+ 28^\circ 37'$.  
-		\item Under what conditions will the star never rise in St. Martin Island ($\phi =20^\circ 61'$)? 
-		\item What time is the star Aldebaran ($\alpha$ Tau, $\delta=16^\circ33'$) is located above the horizon in Dhaka during the starry day?
-	\end{enumerate}
-\end{pro}
-
-More Coming....
 
 
 
 
 
-\clearpage
 \subsection{Projections}
 A stereographic projection is mostly used, as is the convention for printed star maps. A planisphere is this type of star chart. But you might encounter different projects or a map of Horizon Views, showing the stars above the horizon as seen from a specified observing site at a given date and time. Another famous projection style which we also use for geographical position is Mercator projections. You'll encounter basically these 3 types of map projections. Now we will discuss each type of these maps and their pros and cons. 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{stereo_projection.pdf}
+\end{figure}
+\clearpage
 \subsubsection{Horizon Views}
 
 Horizon views shows the portion of the sky that is viewed by a Telescope Field of View (FOV) or Human eye. In astronomy, the field of view is the amount of sky you can see, whether with your unaided vision, binoculars, or a telescope. The FOV of a telescope varies due to usage of different telescope eyepieces whereas human eye spans approximately $120^\circ$ of arc. So FOV is an important part of these maps as they also provide us with a crucial information--the Range of the Sky! Also, a telescope which has a much smaller field of view will have significant advantages, such as greater magnification and light-gathering power. 
@@ -1407,6 +1259,159 @@ Positional astronomy requires the use of methods that are not usually used in an
 	
 	In questions of spherical trigonometry, it is usually necessary to use inverse trigonometric functions to obtain numerical results. However, they do not provide unique values. Therefore, you may need to find both the sine and cosine of an angle to determine its value\footnote{To do this, it would be necessary to use more than one law of spherical trigonometry}. Furthermore, if your drawing is very well done, it is possible to identify which of the values is the true one.
 \end{enumerate}
+\subsection{Naked Eye Observation}
+
+\textsf{\textbf{Upper and Lower Culmination}}
+
+For an observer in the northern hemisphere, the altitude of a celestial body is maximum when it passes through the meridian, in the southern direction. In this case, the body is said to be in upper culmination and its hour angle is $HA= 0^h$. The altitude is minimum when the object is passing through the anti-meridian. Now, the body is said to be in lower culmination and its hour angle is $HA = 12^h$. In the derivation that follows, we consider only the case of an observer in the
+northern hemisphere, so $\phi \geq 0^\circ$.\\
+
+I've used a 2D geometry of the situations described. I'll denote Upper culmination south of zenith as $h_{U1}$, Upper culmination north of zenith as $h_{U2}$ and lower culmination as $h_l$.
+\begin{multicols}{2}
+	Now for $h_{U1}$ and $\delta=-\rm ve$,
+	\begin{align*}
+		90^\circ &=\phi+ (-\delta)+ h_{U1}\\
+		h_{U1} &= 90^\circ-\phi+\delta 
+	\end{align*} 
+	
+	Now for $h_{U1}$ and $\delta=+\rm ve$,
+	\begin{align*}
+		90^\circ &=\delta-\phi + h_{U11}\\
+		h_{U11} &= 90^\circ-\phi+\delta 
+	\end{align*} 
+\end{multicols}
+For, Upper culmination, $h_{U2}$, and we denote zenith angle of upper culmination, $ZA_{U2}=\delta-\phi$ and $\delta>0$ always
+\begin{align*}
+	90^\circ &= \phi +PU_2+ZA_{U2}\\
+	&= \underbrace{\phi+ (90^\circ-\delta)}_{h_{U2}}+ZA_{U2}\\
+	h_{U2} &=90-\delta +\phi
+\end{align*}
+
+So we can write in total 
+
+\begin{defi}
+	\begin{equation}
+		\boxed{h_U =\begin{cases}
+				90^\circ - \phi + \delta, & \text{if the object culminates south of zenith;} \\
+				90^\circ + \phi - \delta, & \text{if the object culminates north of zenith.}
+		\end{cases}}
+	\end{equation}	
+\end{defi}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{circumpolar.pdf}
+\end{figure}
+
+The altitude of lower culmination $h_l$, measured by convention from the northern horizon, is then:
+\begin{align*}
+	90^\circ&= h_{l}+PU_l+(90^\circ-\phi)\\
+	h_l&=90^\circ -(90^\circ-\delta)-(90^\circ-\phi)  \quad [\because PU_l=PU_2]
+\end{align*}
+\begin{equation}
+	\boxed{h_l=\delta+\phi-90^\circ}
+\end{equation}
+Let us examine some special cases:
+\begin{itemize}
+	\itemsep0em 
+	\item when $h_l>0$ i.e $\delta >90^\circ -\phi$, the object is circumpolar and it never sets;
+	\item when $h_U<0$ i.e $\delta <\phi-90^\circ$, it is never visible;
+	\item $\phi-90^\circ <\delta<90^\circ-\phi$, the object rises and sets
+\end{itemize}
+For a circumpolar star we can write, 
+\begin{defi}
+	\[\boxed{\delta=\frac{1}{2}(h_U+h_l)}\quad\quad\boxed{\phi=90^\circ- \frac{1}{2}(h_U-h_l)}\]	
+\end{defi}
+
+\vspace{0.5cm}
+\textsf{\textbf{Local Sidereal Time}}\\
+
+\begin{wrapfigure}{r}{0.4\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{lst_cel.pdf}
+\end{wrapfigure}
+Our wrist watches keep track of when the sun will be at transit. The solar time-keeping system we use ensures that our working day contains repeats with the rising and setting of the sun. Astronomers are however more interested in keeping track of the stars, since they want to observe them. They therefore use a sidereal time-keeping system to keep track of the vernal equinox (instead of the sun).\\
+
+Once you know the time before or since the vernal equinox was at transit you can easily determine when any other star will be at transit. This is true, since there exists a simple relation between the hour angle of a celestial body and your local sidereal time which is given by:
+
+\[\boxed{\text{LST}= \text{RA}_\star + \text{HA}_\star=\text{HA}_{\aries}} \]
+
+\subsection*{Coordinate Transformation}
+
+Coordinate conversion is very common in Olympiad questions and real academic research. For example, the position triangle plays the role of converting equatorial coordinates into horizontal coordinates or vice versa, in addition to making it possible to relate them to the hour angle of a star. This chapter will test your understanding of the previous chapters on spherical geometry and celestial coordinate systems. Fortunately, we only need two formulas - the cosine formula and the sine formula. You should also understand why the following
+simplifications are true:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+		$\cos (-\theta) = \cos \theta$ &\quad $\sin (360^\circ - \theta) = -\sin \theta$ \\
+		$\sin (-\theta) = -\sin \theta$ &\quad $\cos (90^\circ - \theta) = \sin \theta$ \\
+		$\cos (360^\circ + \theta) = \cos \theta$ &\quad $\sin (90^\circ - \theta) = \cos \theta$ \\
+		$\sin (360^\circ + \theta) = \sin \theta$ &\quad $\cos (90^\circ + \theta) = -\sin \theta$ \\
+		$\cos (360^\circ - \theta) = \cos \theta$ &\quad $\sin (90^\circ + \theta) = \cos \theta$ \\
+	\end{tabular}
+\end{table}
+
+
+If you are skeptical about any of the equations above, draw a triangle in a unit circle to experience the joy of discovery. \\
+
+Now, let's just look at the conversion between horizontal and equatorial coordinates, since the relationships between other systems apply the same idea.
+
+\begin{center}
+	\textbf{Horizontal $\leftrightarrows$ Equatorial Time}
+\end{center}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{potd6a}
+	\caption{Celestial Sphere to get a Spherical Triangle}
+	\label{transformation1}
+\end{figure}
+The coordinate conversion formulas can be easily derived from a celestial sphere diagram \ref{transformation1}. Here we derive the formulas for a star $X$ for an observer at latitude $\phi$. Note that we use $P$ for North Celestial Pole (NCP) for conciseness.\\
+
+If we wish to convert from horizontal
+coordinates to equatorial coordinates, we must know the altitude and azimuth of the star, and the latitude of the observer. We can then fully solve the spherical triangle $PZX$ since we already have 3 known variables! We'll derive the relation in \textbf{3 Steps}
+\begin{enumerate}[\textbf{Step} 1]
+	\item In a spherical triangle $PZX$ by the \textbf{cosine} theorem
+	\begin{align*}
+		\cos PX &= \cos PZ \cos XZ + \sin PZ \sin XZ \cos PZX\\
+		\cos (90^\circ-\delta)&=\cos (90^\circ-\phi)\,\cos (90^\circ-a)+ \sin (90^\circ-\phi)\,\sin (90^\circ-a)\, \cos (180^\circ-Az)\\
+		\Aboxed{\sin\delta &= \sin a \sin \phi + \cos a \cos \phi \; \cos Az}
+	\end{align*}
+	\item  In a spherical triangle $PZX$ by the \textbf{sine} theorem
+	\begin{align*}
+		\frac{\sin ZX}{\sin \measuredangle ZPX}&=\frac{\sin PR}{\sin \measuredangle PZX}\\
+		\frac{\sin(90^\circ-a)}{\sin HA}&=\frac{\sin(90^\circ-\delta)}{\sin(360^\circ-A)}\\
+		\cos \delta \cos HA &=\cos a \cos Az\\
+		\Aboxed{\sin HA &= -\frac{\sin Az \cos a}{\cos\delta }}
+	\end{align*}
+	\item Similarly we again move to \textbf{cosine} formula, 
+	\begin{align*}
+		\cos ZX &= \cos PZ \cos PX + \sin PZ \sin PX \cos ZPX\\
+		\cos (90^\circ-a)&=\cos (90^\circ-\phi)\,\cos (90^\circ-\delta)+ \sin (90^\circ-\phi)\,\sin (90^\circ-\delta)\, \cos (180^\circ-HA)\\
+		\Aboxed{\sin a &= \sin \delta \sin \phi + \cos \delta \cos \phi \; \cos HA}
+	\end{align*}	
+\end{enumerate}
+Now, at the rising or setting of the celestial body,
+its height $a=0^\circ$,
+\begin{align*}
+	\sin a &= \sin \delta \sin \phi + \cos \delta \cos \phi \; \cos HA\\
+	\cos HA&=\frac{\sin a -\sin \delta \sin \phi}{\cos \delta \cos \phi}\\
+	\Aboxed{\cos HA&= - \tan \delta \tan \phi} \implies \text{Sunrise Equation}
+\end{align*}
+the hour angle ($HA$) is the time from the moment of the upper culmination.\\
+
+\begin{pro}
+	\begin{enumerate}[a.]
+		\itemsep0em
+		\item Calculate the height of the upper and lower culmination of the star El-Nat ($\beta$ Tau) the city of Dhaka ($\phi =23^\circ 81'$). The declination of the star $\delta =+ 28^\circ 37'$.  
+		\item Under what conditions will the star never rise in St. Martin Island ($\phi =20^\circ 61'$)? 
+		\item What time is the star Aldebaran ($\alpha$ Tau, $\delta=16^\circ33'$) is located above the horizon in Dhaka during the starry day?
+	\end{enumerate}
+\end{pro}
+
+More Coming....
+
 
 
 
