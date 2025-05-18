@@ -1375,20 +1375,20 @@ coordinates to equatorial coordinates, we must know the altitude and azimuth of 
 	\item In a spherical triangle $PZX$ by the \textbf{cosine} theorem
 	\begin{align*}
 		\cos PX &= \cos PZ \cos XZ + \sin PZ \sin XZ \cos PZX\\
-		\cos (90^\circ-\delta)&=\cos (90^\circ-\phi)\,\cos (90^\circ-a)+ \sin (90^\circ-\phi)\,\sin (90^\circ-a)\, \cos (180^\circ-Az)\\
+		\cos (90^\circ-\delta)&=\cos (90^\circ-\phi)\,\cos (90^\circ-a)+ \sin (90^\circ-\phi)\,\sin (90^\circ-a)\, \cos (360^\circ-Az)\\
 		\Aboxed{\sin\delta &= \sin a \sin \phi + \cos a \cos \phi \; \cos Az}
 	\end{align*}
 	\item  In a spherical triangle $PZX$ by the \textbf{sine} theorem
 	\begin{align*}
-		\frac{\sin ZX}{\sin \measuredangle ZPX}&=\frac{\sin PR}{\sin \measuredangle PZX}\\
-		\frac{\sin(90^\circ-a)}{\sin HA}&=\frac{\sin(90^\circ-\delta)}{\sin(360^\circ-A)}\\
-		\cos \delta \cos HA &=\cos a \cos Az\\
+		\frac{\sin ZX}{\sin \measuredangle ZPX}&=\frac{\sin PX}{\sin \measuredangle PZX}\\
+		\frac{\sin(90^\circ-a)}{\sin HA}&=\frac{\sin(90^\circ-\delta)}{\sin(360^\circ-Az)}\\
+		\cos \delta \sin HA &=\cos a \sin Az\\
 		\Aboxed{\sin HA &= -\frac{\sin Az \cos a}{\cos\delta }}
 	\end{align*}
 	\item Similarly we again move to \textbf{cosine} formula, 
 	\begin{align*}
 		\cos ZX &= \cos PZ \cos PX + \sin PZ \sin PX \cos ZPX\\
-		\cos (90^\circ-a)&=\cos (90^\circ-\phi)\,\cos (90^\circ-\delta)+ \sin (90^\circ-\phi)\,\sin (90^\circ-\delta)\, \cos (180^\circ-HA)\\
+		\cos (90^\circ-a)&=\cos (90^\circ-\phi)\,\cos (90^\circ-\delta)+ \sin (90^\circ-\phi)\,\sin (90^\circ-\delta)\, \cos HA\\
 		\Aboxed{\sin a &= \sin \delta \sin \phi + \cos \delta \cos \phi \; \cos HA}
 	\end{align*}	
 \end{enumerate}
