@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {5}Celestial Navigation}{61}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Problem Solving Tips}{61}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Naked Eye Observation}{62}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Observing Planets}{73}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Observing Planets}{72}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Problem: Plotting the Moon and Planets}{74}{subsubsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.4}Telescope Aided Observation}{79}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Astrophotography}{89}{subsection.5.5}%
@@ -33,7 +33,7 @@
 \contentsline {subsubsection}{\numberline {6.3.3}2024}{95}{subsubsection.6.3.3}%
 \contentsline {subsection}{\numberline {6.4}INAO}{96}{subsection.6.4}%
 \contentsline {subsubsection}{\numberline {6.4.1}2019}{96}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}2018}{97}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2}2018}{96}{subsubsection.6.4.2}%
 \contentsline {subsubsection}{\numberline {6.4.3}2016}{97}{subsubsection.6.4.3}%
 \contentsline {subsection}{\numberline {6.5}SAO}{98}{subsection.6.5}%
 \contentsline {subsubsection}{\numberline {6.5.1}P1: The night of Vernal Equinox}{98}{subsubsection.6.5.1}%
