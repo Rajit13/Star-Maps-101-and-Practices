@@ -9,13 +9,13 @@ Get the latest pdf version [Go here](StarMaps101.pdf) and follow the instruction
 
 **Star Maps 101 and Practices** is a notebook/guide that I made in preparation for *the International Olympiad on Astronomy and Astrophysics*. This contains a detailed description of Star Map/Chart analysis as well as a brief introduction to Astronomical Observations practically. This book is used in the training of the Bangladesh team at the [Bangladesh Olympiad on Astronomy and Astrophysics](https://bdoaa.org). 
 
-## Call for contribution
+## Introduction
 
-I started this book immediately after my Olympiad experience in 2016. However, as I joined University and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am later willing to add detailed notes of the Celestial Coordinate System. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete.
+I started this book immediately after my Olympiad experience in 2016. However, as I joined Graduate school and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am willing to add detailed notes on the Celestial Coordinate System. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete. **It seems that due to the file size, I won't be able to update this book anymore :( ** 
 
 ## How to contribute?
 
-This book has been written in [LaTeX](https://www.latex-project.org/) and published via Github, hence a working knowledge of TeX and git is expected. The best way to contribute to this repository is by following these steps:
+This book has been written in [LaTeX](https://www.latex-project.org/) and published via GitHub, hence a working knowledge of TeX and git is expected. The best way to contribute to this repository is by following these steps:
 
 - Fork this repository.
 - Make changes in a separate branch.
