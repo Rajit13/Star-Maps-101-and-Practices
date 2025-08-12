@@ -2247,7 +2247,7 @@ sky. The art of Astrophotography has caught on to become a serious pastime for a
 
 \textsf{Photography Jargon}\\
 
-Before we jump in, we should familiarise a little on some technical jargon that is commonly used in the
+Before we jump in, we should familiarize a little on some technical jargon that is commonly used in the
 photography community. The ultimate goal of a photographer is to control the amount of light captured by the sensor when taking a photo. It cannot be too much light else the photo will come out overexposed (too bright). The converse is true too, when the camera does not capture enough light.
 To achieve a good control over light, photographers concern themselves with 3 main settings:
 
@@ -2328,7 +2328,7 @@ The observation/star chart round is all about {\color{red}PENALTIES}! You can lo
 	\end{figure}
 \end{sol}
 	
-{\color{red} Some students in IOAA24 marked all the stars between $\bm{4 \leq m \leq 6}$ not only within the boundary but all over the map, loosing more points as penalty than earned!}	
+{\color{red} Some students in IOAA-24 marked all the stars between $\bm{4 \leq m \leq 6}$ not only within the boundary but all over the map, loosing more points as penalty than earned!}	
 
 \item \textsf{Observation accuracy in real/simulated sky.} Suppose you're asked to calculate RA/DEC/Mag of a star. The right answer and the marking scheme would look like this, 
 
@@ -2428,10 +2428,71 @@ This is the sky map at local solar midnight on the observation date. The crossha
 		\item How long does Butch have to wait for the rescue team? \hfill[0.5]
 	\end{enumerate}
 	\item Before the rescue team arrives, you have to be at the same place where you're now. Estimate the latitude of your current location. \hfill[1]\\
-	\textit{Hint: The Declication of Polaris is $90^\circ$.}
+	\textit{Hint: The Declination of Polaris is $90^\circ$.}
 \end{enumerate}
 
+\section{Jack finds Amelia's Cup of Youth}
+\textit{Author: Fahim Rajit Hossain, BDOAA 25 TST}\\
 
+You are Captain Jack Sparrow, currently sailing through the Indian Ocean. You've heard that Amelia Earhart\footnote{\url{https://en.wikipedia.org/wiki/Amelia_Earhart}}, the famous aviator, was once flying over the Indian Ocean with the legendary Cup of Youth. However, due to a shortage of fuel, she crash-landed on a remote island and likely perished there. Some native Sentinels later smuggled her diary, which contains valuable navigational data that might reveal the exact location of the island.\\
+
+After killing a rival captain, Berbossa and claiming the diary, you discover that Amelia did not die immediately after the crash—she was severely injured. When the Sentinels arrived at the island, they found only her skeleton, with evidence suggesting coconut crabs had devoured her remains. Unfortunately, the Sentinels are uneducated and unable to provide the precise location of the island.\\
+
+The diary contains the sub-stellar point (the point on Earth directly beneath a star) data for 8 stars on the night of the crash.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lccccc}
+		\hline
+		\textbf{Star} & \textbf{RA (h)} & \textbf{Dec (°)} & \textbf{Latitude (°)} & \textbf{Longitude (°)} \\
+		\hline
+		Arcturus     & 14.26 &  19.18  &  19.18  & 103.48 \\
+		Spica        & 13.42 & -11.16  & -11.16  &  90.88 \\
+		Hadar        & 14.06 & -60.37  & -60.37  & 100.48 \\
+		Regulus      & 10.14 &  11.97  &  11.97  &  41.68 \\
+		Alphard      &  9.46 &  -8.66  &  -8.66  &  31.48 \\
+		Nunki        & 18.92 & -26.30  & -26.30  & 173.38 \\
+		Mizar        & 13.40 &  54.93  &  54.93  &  90.58 \\
+		Rasalhague   & 17.58 &  12.56  &  12.56  & 153.28 \\
+		\hline
+	\end{tabular}
+	\caption{Substellar Points on 2025-05-27 at 15:00:00 UTC}
+\end{table}
+%Zenith       & 13.28 & -18.00  & -18.00  &  88.78 \\
+Now, as you sail through the Indian Ocean, you believe you're very close to the island. A sky chart is provided to you showing the stars currently overhead at 9 PM local time, found in Amelia's diary as well. You also have access to a Mercator projection map of the Indian Ocean.\\
+
+As a captain and a skilled navigator with astronomical knowledge, it is your task to accurately determine your current location using the information from the diary, the sky chart, and your understanding of celestial navigation!
+\begin{enumerate}[a.]
+	\item (4 Points) On the star chart provided \ref{amelia_map}, mark the listed stars from Amelia's diary.
+	\item (4 Points) On the Mercator projection provided \ref{indian_ocean}, mark the sub-stellar point for each corresponding star. 
+	\item (2+2 Points) Find SCP and mark it with $S$. Calculate the latitude of the observing location from the star chart; denote it as $\phi_M$.
+	\item (10 Points) Using the sub-stellar point values, and with the help of both the star chart and the Mercator map of the Indian Ocean, find the exact location ($\phi_C, \lambda_C$) of the island. Do the latitude values match?
+	\item (\textbf{Youth Points}) Now drink Coconut water from the Cup of Youth! Be aware of the Coconut crabs!  3:) 
+\end{enumerate}
+[\textsf{If you find the exact location within an error of 5 km, We will assume you have the Cup of Youth in your hands!}]\\
+
+\textbf{Hints}
+\begin{itemize}
+	\itemsep0em 
+	\item You might already have the Mercator map and the star map printed. If you do not have access to printed maps, you can use a computer program like Paint to work with the images provided. For printed maps, you might need a pencil and a compass!
+	\item Use Star Maps to identify the listed stars and then find the corresponding values needed for calculation. Figure out how sub-stellar points and stars' positions in the sky correlate in real life. Savvy? :v  
+\end{itemize}
+
+%S 18° 11' 11.50", E 90° 41' 54.88" 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\linewidth]{indian.pdf}
+	\caption{}
+	\label{indian_ocean}
+\end{figure}
+\clearpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\linewidth]{amelia.png}
+	\caption{Amelia's Sky}
+	\label{amelia_map}
+\end{figure}
 
 \subsection{INAO}
 
@@ -2443,7 +2504,7 @@ The picture below was taken on \nth{24} December 2019, from some place in India,
     \includegraphics[width=0.9\linewidth]{INAO_19.png}
     \caption{Negative image of certain patch of the sky on \nth{24} December 2019}
 \end{figure}
-Note: The images printed are colour-inverted, i.e. the bright parts of the image appear black and dark parts appear white. Thus, the black dots are stars and planet and the dark cresent is actually bright crescent of the moon.
+Note: The images printed are colour-inverted, i.e. the bright parts of the image appear black and dark parts appear white. Thus, the black dots are stars and planet and the dark crescent is actually bright crescent of the moon.
 \begin{enumerate}[a.]
     \item At which of the following times this picture may have been taken? Give justification for your answer.
     \begin{center}
@@ -2463,7 +2524,14 @@ Refer to \ref{INAO18}
 
 The skymap below [Figure \ref{INAO16}] corresponds to sky above Nagpur ($21^\circ$ N, $79^\circ$ E) at 09:00 am on \nth{1} February 2014. If you are not used to using sky maps, it is important to note that sky map is usually seen lying down on the ground (feet to the South), facing the sky with map in your hand. Thus, East is on the left of the map and West is on the right. Answer the following questions:\\
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{INAI_16.png}
+	\caption{INAO 16 Map}
+	\label{INAO16}
+\end{figure}
 \begin{enumerate}[a.]
+	\itemsep0em 
     \item Mark Polaris with letter ‘\textbf{P}’.
     \item Circumpolar stars for a given place are the stars, which will never go below the horizon. Draw boundary of this region and mark it by the letter ‘\textbf{C}’.
     \item The celestial equator is just a projection of the Earth’s equator in the sky. It will be the locus of points which are equidistant from the north and the south pole. Draw the equator on the map approximately and mark it with ‘\textbf{Q}’.
@@ -2474,28 +2542,21 @@ The skymap below [Figure \ref{INAO16}] corresponds to sky above Nagpur ($21^\cir
     \item Draw a line across sky showing horizon line as at 07:00 am today as ‘\textbf{H}’.
 \end{enumerate}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{INAI_16.png}
-    \caption{INAO 16 Map}
-    \label{INAO16}
-\end{figure}
+
 \subsection{SAO}
 \subsubsection{P1: The night of Vernal Equinox}
-The star chart below shows the night sky at 0000h on the night following the Vernal Equinox (on 21 March 2018), from Singapore (UTC + 08:00), at latitude $1^\circ17'$ N and longitude $103^\circ51'$ E. Complete the questions on the following page. Note that the size of stars and objects are scaled by their brightness in the night sky, with brighter objects appearing larger.
-
+The star chart below shows the night sky at 00:00h on the night following the Vernal Equinox (on 21 March 2018), from Singapore (UTC + 08:00), at latitude $1^\circ17'$ N and longitude $103^\circ51'$ E. Complete the questions on the following page. Note that the size of stars and objects are scaled by their brightness in the night sky, with brighter objects appearing larger.
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{SAO_1.png}
-    \caption{SAO P1}
+	\centering
+	\includegraphics[width=0.9\linewidth]{SAO_1.png}
+	\caption{SAO P1}
 \end{figure}
-
 \begin{enumerate}[a.]
     \item Along the horizon (circumference of the star chart), mark out the approximate location of cardinal West, with a cross $\times$.
     \item Trace out the local meridian with a solid arc, and label it \textbf{M}. 
     \item  Trace out the constellation of \textit{Leo} with solid lines connecting its stars. Label its alpha star $\alpha$ on the star chart.
     \item  The pole star Polaris, $\alpha$ Ursae Minoris, is visible. Mark out the star with an arrow $\rightarrow$. The tip of the arrow should point unambiguously at the star.
-    \item  The following four deep sky objects (DSOs) are visible in the star chart. Mark out any three of these DSOs, each with a hollow circle , and write that DSO’s catalogue designation adjacent to it. The centre of the hollow circle will be taken as the position of that DSO. \\
+    \item  The following four deep sky objects (DSOs) are visible in the star chart. Mark out any three of these DSOs, each with a hollow circle , and write that DSO’s catalog designation adjacent to it. The center of the hollow circle will be taken as the position of that DSO. \\
 (i) M41, an open cluster\\
 (ii) C80, the $\omega$ Centauri Cluster\\
 (iii) C92, the Eta Carinae Nebula\\
@@ -2560,11 +2621,11 @@ Here is their list:
 	
 	\item Draw the galactic plane in the map. \hfill[2]
 \end{enumerate}
-\clearpage
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Cz1.png}
+	\includegraphics[width=0.9\linewidth]{Cz1.png}
 	\caption{Czech P1}
 	\label{cz1}
 \end{figure}
@@ -2590,7 +2651,7 @@ Here is their list:
 \item Draw local meridian for Bhubaneswar on Winter Solstice day (\nth{22} December) at local midnight and label it as ‘\textbf{M}’.
 \end{enumerate}
 
-Refer to the Map \ref{IOAA16_OM} for these problems\footnote{The digital copy of this map isn't available anywhere else. But fortunately I was a participant of IOAA-16 myself and I have my own script still now [2022!]. So I used my own work from IOAA and edited this image!}. 
+Refer to the Map \ref{IOAA16_OM} for these problems\footnote{The digital copy of this map isn't available anywhere else. But fortunately I was a participant of IOAA-16 myself and I have my own script still now [2022!]. I used my own work from IOAA and edited this image!}. 
 
 \subsubsection{Observational Planetarium}
 

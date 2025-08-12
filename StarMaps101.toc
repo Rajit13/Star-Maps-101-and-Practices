@@ -31,28 +31,29 @@
 \contentsline {subsubsection}{\numberline {6.3.1}2019}{93}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}2021}{94}{subsubsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.3}2024}{95}{subsubsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.4}INAO}{96}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}2019}{96}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}2018}{96}{subsubsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.3}2016}{97}{subsubsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.5}SAO}{98}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}P1: The night of Vernal Equinox}{98}{subsubsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.6}Czech}{100}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Observation using Simbad}{100}{subsubsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.7}IOAA 2016 Observation Round}{101}{subsection.6.7}%
-\contentsline {subsubsection}{\numberline {6.7.1}Observational Map}{101}{subsubsection.6.7.1}%
-\contentsline {subsubsection}{\numberline {6.7.2}Observational Planetarium}{102}{subsubsection.6.7.2}%
-\contentsline {subsection}{\numberline {6.8}IOAA 2018 Observation Round}{105}{subsection.6.8}%
-\contentsline {subsubsection}{\numberline {6.8.1}O1}{105}{subsubsection.6.8.1}%
-\contentsline {subsubsection}{\numberline {6.8.2}O2}{106}{subsubsection.6.8.2}%
-\contentsline {subsubsection}{\numberline {6.8.3}O3}{107}{subsubsection.6.8.3}%
-\contentsline {subsubsection}{\numberline {6.8.4}O4}{108}{subsubsection.6.8.4}%
-\contentsline {subsection}{\numberline {6.9}IOAA 2019 Observation Round}{110}{subsection.6.9}%
-\contentsline {subsubsection}{\numberline {6.9.1}Task 01}{110}{subsubsection.6.9.1}%
-\contentsline {subsubsection}{\numberline {6.9.2}Task 02}{111}{subsubsection.6.9.2}%
-\contentsline {subsubsection}{\numberline {6.9.3}Task 03}{112}{subsubsection.6.9.3}%
-\contentsline {subsection}{\numberline {6.10}GeCAA 2020}{114}{subsection.6.10}%
-\contentsline {subsubsection}{\numberline {6.10.1}Problem 1}{114}{subsubsection.6.10.1}%
-\contentsline {subsubsection}{\numberline {6.10.2}Problem 4}{115}{subsubsection.6.10.2}%
-\contentsline {subsection}{\numberline {6.11}IOAA 2022}{117}{subsection.6.11}%
-\contentsline {section}{\numberline {7}Sources}{120}{section.7}%
+\contentsline {section}{\numberline {7}Jack finds Amelia's Cup of Youth}{96}{section.7}%
+\contentsline {subsection}{\numberline {7.1}INAO}{98}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}2019}{98}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}2018}{99}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}2016}{99}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}SAO}{101}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}P1: The night of Vernal Equinox}{101}{subsubsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.3}Czech}{102}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Observation using Simbad}{102}{subsubsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.4}IOAA 2016 Observation Round}{104}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Observational Map}{104}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Observational Planetarium}{104}{subsubsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.5}IOAA 2018 Observation Round}{107}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}O1}{107}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}O2}{108}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}O3}{109}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}O4}{110}{subsubsection.7.5.4}%
+\contentsline {subsection}{\numberline {7.6}IOAA 2019 Observation Round}{112}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Task 01}{112}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Task 02}{113}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}Task 03}{114}{subsubsection.7.6.3}%
+\contentsline {subsection}{\numberline {7.7}GeCAA 2020}{116}{subsection.7.7}%
+\contentsline {subsubsection}{\numberline {7.7.1}Problem 1}{116}{subsubsection.7.7.1}%
+\contentsline {subsubsection}{\numberline {7.7.2}Problem 4}{117}{subsubsection.7.7.2}%
+\contentsline {subsection}{\numberline {7.8}IOAA 2022}{119}{subsection.7.8}%
+\contentsline {section}{\numberline {8}Sources}{122}{section.8}%
