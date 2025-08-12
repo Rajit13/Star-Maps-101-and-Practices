@@ -11,7 +11,7 @@ Get the latest pdf version [Go here](StarMaps101.pdf) and follow the instruction
 
 ## Introduction
 
-I started this book immediately after my Olympiad experience in 2016. However, as I joined Graduate school and my own academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am willing to add detailed notes on the Celestial Coordinate System. Hence, I would like to request any and all Astronomy enthusiasts to contribute towards extending this book and making it more complete. **It seems that due to the file size, I won't be able to update this book anymore :( ** 
+I started this book immediately after my Olympiad experience in 2016. However, as I joined Graduate school and my academics took precedence, I could not fully devote my time and resources to the book. As a result, I have not been able to cover all the topics I had set out to cover. I am currently working on improving the Telescopic observations part and am willing to add detailed notes on the Celestial Coordinate System. Hence, I would like to request that all Astronomy enthusiasts contribute to extending this book and making it more complete. **It seems that due to the file size, I won't be able to update this book anymore.** 
 
 ## How to contribute?
 
