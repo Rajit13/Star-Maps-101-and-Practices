@@ -57,6 +57,7 @@
 	before skip=4pt,  % Space before the box starts
 	after skip=4pt    % Space after the box ends
 }
+\newcommand{\prt}[1]{\textcolor{purple}{#1}}
 
 \newtcolorbox{defi}{
 	enhanced,
@@ -88,9 +89,9 @@
 \end{figure}
 	
 \vspace{1cm}
-This practice book is dedicated to all Astronomy enthusiasts and those aiming for cracking Star Charts part of Astronomy and Earth Science Olympiads. It is not a full star atlas but it will fulfill its duty as a practice book. I'll recommend students to \textbf{Print} it then solve problems. Keep it during your exam days as \textbf{only printed materials} are allowed in IOAA. \\
+This practice book is dedicated to all Astronomy enthusiasts and those aiming for cracking Star Charts/Observational Round of Astronomy and Earth Science Olympiads. It is not a full star atlas but it will fulfill its duty as a practice book. I'll recommend students to \textbf{Print} it then solve problems. Keep it during your exam days as \textbf{only printed materials} are allowed in IOAA. \\
 
-\textit{Written from my experience of both being a participant of two international Olympiads as well as team leader for IOAA since 2018. I've also tried to mix my added experience as a stargazer/amateur astronomer into it!}\\
+\textit{This book is written based on my experience as both a participant in two international Olympiads and as a team leader for IOAA since 2018 (8 years now!). I have also incorporated my experience as a stargazer and amateur astronomer into it.}\\
 
 New versions can be found -- \url{https://github.com/Rajit13/Star-Maps-101-and-Practices}
 
@@ -144,7 +145,7 @@ In Olympiads, students are allowed to use star or constellation names based on t
 
 \subsection{Star Names}
 
-Most of the brighter stars were assigned their first systematic names by the German astronomer Johann Bayer in 1603, in his star atlas \textit{Uranometria}. Bayer assigned a lowercase Greek letter, such as alpha ($\alpha$), beta ($\beta$), gamma ($\gamma$), etc., to each star he catalogued, combined with the Latin name of the star’s parent constellation in genitive (possessive) form. (See 88 modern constellations for the genitive forms later on the table.) For example, Aldebaran is designated $\alpha$ Tauri (pronounced Alpha Tauri), which means ``Alpha of the constellation Taurus".\\
+Most of the brighter stars were assigned their first systematic names by the German astronomer Johann Bayer in 1603, in his star atlas \textit{Uranometria}. Bayer assigned a lowercase Greek letter, such as alpha ($\alpha$), beta ($\beta$), gamma ($\gamma$), etc., to each star he catalogued, combined with the Latin name of the star’s parent constellation in genitive (possessive) form. (See all 88 modern constellations for the genitive forms later on the table \ref{cons_table1}.) For example, Aldebaran is designated $\alpha$ Tauri (pronounced \textit{Alpha Tauri}), which means ``Alpha of the constellation Taurus".\\
 
 A constellation’s most brilliant star is often called Alpha, the first letter in the Greek alphabet. The letters are used with the Latin genitive form of the constellation name, so the Alpha star of Centaurus is called “Alpha Centauri.” But there are few exceptions. For example, Gemini’s brightest star is $\beta$ and that of octans is $\nu$. Here is the lowercase Greek alphabet as used by astronomers:
 
@@ -180,8 +181,8 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 
 \clearpage
 \begin{table}[H]
-\caption{\textbf{Constellation Table}
-}
+\caption{\textbf{Constellation Table}}
+\label{cons_table1}
 \begin{tabular}{llclll}
 \rowcolor[HTML]{EFEFEF} 
 \multicolumn{1}{c}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} \textbf{No.}}} & {\color[HTML]{000000} \textbf{Constellation}} & {\color[HTML]{000000} \textbf{Location}} & {\color[HTML]{000000} \textbf{Supposed Figure}} & \multicolumn{1}{c}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} \textbf{Code}}} & {\color[HTML]{000000} \textbf{Brightest Star}} \\
@@ -292,16 +293,16 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 \begin{table}[H]
 \centering
 \begin{tabular}{lllllll}
-$\alpha$ And                & $\beta$ Aur  & $\alpha$ CMa  & $\alpha$ Gem & $\alpha$ Ori & $\alpha$ Psc      & $\beta$ UMa   \\
+$\alpha$ And                & \prt{$\beta$ Aur}  & $\alpha$ CMa  & $\alpha$ Gem & $\alpha$ Ori & $\alpha$ Psc      & $\beta$ UMa   \\
 $\beta$ And                 & $\alpha$ Boo & $\beta$ CMa   & $\beta$ Gem  & $\beta$ Ori  & $\alpha$ Sco      & $\alpha$ UMi \\
 $\alpha$ Ari                & $\beta$ Boo  & $\alpha$ CMi  & $\alpha$ Leo & $\alpha$ Oph & $\beta$ Sco       & $\beta$ UMi  \\
 $\beta$ Ari                 & $\alpha$ Cap & $\beta$ CMi   & $\beta$ Leo  & $\beta$ Oph  & $\alpha$ Ser      & $\beta$ Cyg  \\
-$\alpha$ Aql                & $\alpha$ Cas & $\alpha$ CrB  & $\alpha$ Lep & $\alpha$ Per & $\varepsilon$ Sgr &              \\
+$\alpha$ Aql                & $\alpha$ Cas & $\alpha$ CrB  & $\alpha$ Lep & \prt{$\alpha$ Per} & $\varepsilon$ Sgr &              \\
 $\beta$ Aql                 & $\beta$ Cas  & $\beta$ CrB   & $\alpha$ Lib & $\beta$ Per  & $\alpha$ Tau      &              \\
 $\alpha$ Aqr                & $\alpha$ Cep & $\gamma$  Dra & $\alpha$ Lyr & $\alpha$ Peg & $\beta$ Tau       &              \\
 $\alpha$ Aur & $\alpha$ Cet & $\alpha$ Cyg  & $\beta$ Lyr  & $\beta$ Peg  & $\alpha$ UMa      &             
 \end{tabular}
-\caption{Suggested Bright Stars of interest}
+\caption{Suggested Bright Stars of interest (\prt{Appeared in IOAA})}
 \end{table}
 
 \textbf{List of brightest natural objects in the sky}- \url{https://en.wikipedia.org/wiki/List_of_brightest_natural_objects_in_the_sky}
@@ -486,6 +487,45 @@ From the diagram, $\angle SME= \Psi$ and $MN= CM \cos \measuredangle CMN=r\cos (
 	(Image inverted for printing purposes)}
 \end{figure}
 
+\textsf{\textbf{\large Problem: Moon's Position}}\\
+
+Determining the Lunar Position based on observation is a very common question in Astronomy-related competitions. Although the problem statements often seem simple, solving them requires a solid understanding of the Sun–Earth–Moon geometry, lunar phases, and time relationships. Let’s go through an example problem and solve it step by step with the help of some diagrams.
+\clearpage
+
+\textsf{\textbf{Question 1}} Mim sees a gibbous moon setting in the west at 12am today. What will he see at 12 am 12 days later?
+
+\begin{sol}
+	Here, one should first draw a horizon diagram (which I prefer to call) representing the situation during the observation. First Draw this without knowing ANYTHING!
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{moon_position1.pdf}
+		\caption*{\textbf{Step 1:} Horizon diagram. Sun's observation time in Orange text.}
+	\end{figure}
+Now the observation, what we noticed! Placing the Moon according to it's phase and Sun's relative position according to the Moon. Here, Mim saw Gibbous moon setting in the west. When? 12 am, so, midnight. We already know where the sun should be around. Let's place them. Wait! which Gibbous moon is that, Waning or Waxing? Due to diurnal motion, this gibbous must be, Waxing. So the current scenario should look like--
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{moon_position2.pdf}
+	\caption*{\textbf{Step 2:} Current position of Sun and Moon}
+\end{figure}
+
+Now, In 12 days, the moon goes through about 3.25 of its 8 phases - $\frac{8}{29.53} \times 12$. This places the next moon phase closest to a waning half moon or third quarter. Let's draw the scenario.
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{moon_position3.pdf}
+	\caption*{\textbf{Step 3:} 12 days later position of Sun and Moon}
+\end{figure}
+So, 12 days later, Mim will see half-moon rising in the \textbf{East}!
+\end{sol}
+\vspace{1cm}
+\textsf{\textbf{Question 2}} Talha sees a half moon on the western horizon at 12 am today. What will he see at 12 am 7 days later?\\
+
+\fbox{\begin{minipage}{43em}
+\textbf{Draw and Solve the scenario here}
+		\vspace{15cm}
+\end{minipage}}
+\clearpage
 \textsf{\textbf{\large Problem: Moon features}}
 \begin{enumerate}
 	\item Match the selenographic objects numbered in the photo and their names and complete the table. Some of the designations of selenographic objects in the list superfluous.
@@ -495,7 +535,7 @@ From the diagram, $\angle SME= \Psi$ and $MN= CM \cos \measuredangle CMN=r\cos (
 \end{enumerate}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{moon2.png}
+	\includegraphics[width=0.6\linewidth]{moon2.png}
 \end{figure}
 
 
@@ -523,9 +563,10 @@ From the diagram, $\angle SME= \Psi$ and $MN= CM \cos \measuredangle CMN=r\cos (
 
 For Olympiad a student must know the position and type of some DSOs. Here are some of these that I recommend---\\
 
-\textbf{Most Important}: {\color{red} 1, 8, 13, 15, 20, 27, 31, 33, 41, 42, 44, 45, 51, 57, 63, 64, 81, 82, 101, 102, 104.}\\
-
-\textbf{Important}: 6, 7, 11, 16, 17, 18, 22, 40, 43, 67, 74, 76, 78, 83, 94, 97.\\
+\begin{enumerate}
+	\item \textbf{Most Important}: {\color{red} 1, 8, 13, 15, 20, 27, 31, 33, 41, 42, 44, 45, 51, 57, 63, 64, 81, 82, 101, 102, 104.}
+	\item \textbf{Important}: 6, 7, 11, 16, 17, 18, 22, 32, 40, 43, 67, 74, 76, 78, 83, 94, 97.
+\end{enumerate}
 
 It is not customary to also remember how a particular DSO looks. But for the fascination of these and to know the structure, some examples should be remembered which are very popular. For instance, Andromeda galaxy, Pleiades or Ring Nebula. In the \nth{12}, 2018 and \nth{15}, 2022 IOAA recognizing DSOs by their image was a controversial\footnote{It's no longer controversial it has become the norm now as of 2025 :) } question. So I'll suggest, \textit{Be safe than sorry}!  
 
@@ -859,22 +900,22 @@ For data related to the problems below refer to the Messier Object List table \r
 \[\frac{0.8^\circ}{0.251^\circ/\rm min}=3.19\; \rm min\]	
 \end{sol}
 
-\textsf{\textbf{Question 3}} Imagine that you are in a post-COVID world without travel restrictions and are currently on a stargazing trip in a remote location at a latitude of $35^\circ$ N. Capella (RA/DE: $5^h\, 18^m$ / +46 deg 01min) is currently 3 degrees above the western horizon. The following table shows a list of DSOs you have decided to try to observe for tonight. \\
+\textsf{\textbf{Question 3}} Imagine that you are in a post-COVID world without travel restrictions and are currently on a stargazing trip in a remote location at a latitude of $35^\circ$ N. Capella (RA/DE: $5^h\, 18^m$ / $+46^\circ 01'$) is currently 3 degrees above the western horizon. The following table shows a list of DSOs you have decided to try to observe for tonight. \\
 
 \textbf{Object of consideration:} Heart Nebula, Omega Centauri, Black-Eye Galaxy, Dumbbell Nebula. \\
 
-\textbf{In what order, from highest to lowest priority, should you arrange your observations so as to maximise your chances of seeing every one of the DSOs on your list?}
+\textbf{In what order, from highest to lowest priority, should you arrange your observations so as to maximize your chances of seeing every one of the DSOs on your list?}
 
 \begin{sol}
     -- Omega Centauri, Black Eye Galaxy, Dumbbell Nebula, Heart Nebula\\
     
-    A quick calculation ($90^\circ-61^\circ= 29^\circ$) shows us that the Heart Nebula is circumpolar and thus has lower priority. Ideally, one would want to view it when it is near the meridian, and judging by the RA (which is earlier than Capella), it is around its lower culmination. The Dumbbell Nebula has a RA of $20^h$, indicating that it is on the eastern side of the sky and thus would have lower priority. Between Omega Centauri and the Black Eye Galaxy, the latter has a slightly earlier RA and thus is normally prioritized if we are near the equator. However, at northern latitudes, objects with more southern declinations spend less time above the horizon and thus set faster. While we normally need spherical trigonometry to ascertain which objects set earlier, there is a very small difference in RA between Omega Centauri and Black Eye Galaxy (31 minutes). Omega Centauri will set earlier and thus should be prioritized. (Note: Omega Centauri is very barely visible.)
+    A quick calculation ($90^\circ-61^\circ= 29^\circ$) shows us that the Heart Nebula is circumpolar and thus has lower priority. Ideally, one would want to view it when it is near the meridian, and judging by the RA (which is earlier than Capella), it is around its lower culmination. The Dumbbell Nebula has a RA of $20^h$, indicating that it is on the eastern side of the sky and thus would have lower priority. Between Omega Centauri and the Black Eye Galaxy, the latter has a slightly earlier RA and thus is normally prioritized if we are near the equator. However, at northern latitudes, objects with more southern declination spend less time above the horizon and thus set faster. While we normally need spherical trigonometry to ascertain which objects set earlier, there is a very small difference in RA between Omega Centauri and Black Eye Galaxy (31 minutes). Omega Centauri will set earlier and thus should be prioritized. (Note: Omega Centauri is very barely visible.)
 \end{sol}
  
  
 \textsf{\textbf{Question 4}} \textbf{Object of consideration:} Triangulum Galaxy, Andromeda Galaxy, Orion Nebula, Dumbbell Nebula and Eskimo Nebula where it has apparent magnitude of 10.1 and apparent size of $0.8\times 0.8$. \\ 
 
-\textbf{Calculate the surface brightness of each DSO in $\rm mag/arcsec^2$, and hence arrange them in order of increasing surface brightness.} 
+\textbf{Calculate the surface brightness of each DSO in $\rm  mag/arcsec^2$, and hence arrange them in order of increasing surface brightness.} 
 
 \begin{sol}
 -- Triangulum Galaxy, Andromeda Galaxy, Orion Nebula, Dumbbell nebula, Eskimo
@@ -1112,7 +1153,7 @@ Again,
 \cos\lambda_{old}=\frac{\cos\delta_{old}\cos\alpha_{old}}{\cos\beta}\]
 Now the new Ecliptic Coordinates after Precession: 
    \begin{gather*}
-	\beta_{new} =\beta_{old}\\
+	\boxed{\beta_{new} =\beta_{old}}\\
 	\lambda_{new}=\lambda_{old}+\Delta \lambda= \lambda_{old}+\frac{t}{26000\;\rm years}\ast 360^\circ
 \end{gather*}
 Equatorial Coordinates after Precession (Similarly):
@@ -1908,7 +1949,7 @@ Telescopes are often described by both their aperture size and f number. The f-n
 If the aperture ratio is large, near unity, one has a powerful, ``fast'' telescope; this means that one can take photographs using short exposures, since the image is bright. A small aperture ratio (the focal length much greater than the aperture) means a ``slow'' telescope.
 
 \begin{pro}
-	\textsf{\textbf{Question}} A special telescope features a $3x$ optical scope  with a diameter of 25mm, and a length of 120mm. Find the f-number of the scope.
+	\textsf{\textbf{Question}} A special telescope features a $3\times$ optical scope  with a diameter of 25mm, and a length of 120mm. Find the f-number of the scope.
 \end{pro}
 
 \textbf{3. Magnification}\\
@@ -2130,7 +2171,7 @@ focal length = (aperture size) $\times$ (focal ratio) = $5 \times 2.54 \times 6 
 
 Calculate for each option with the different values of $x$ and $y$. This gives 35 mm focal length, $40^\circ$ apparent field-of-view.
 \end{sol}
-\item \textbf{You brought out your club’s $6''$ F/6 Newtonian telescope to observe M6. With a quick search you realize M6 is 2$5'$ in angular diameter. Which eyepiece would you attach to the telescope to maximize your view of M6 while still ensuring the whole of M6 can be seen in the eyepiece? (FL =Focal length, AFOV = Apparent field of view, 1 inch = 2.54cm)}	\\
+\item \textbf{You brought out your club’s $6''$ F/6 Newtonian telescope to observe M6. With a quick search you realize M6 is 2$5'$ in angular diameter. Which eyepiece would you attach to the telescope to maximize your view of M6 while still ensuring the whole of M6 can be seen in the eyepiece? (FL = Focal length, AFOV = Apparent field of view, 1 inch = 2.54 cm)}	\\
 
 \textit{Options}
 \begin{multicols}{2}
@@ -2198,8 +2239,8 @@ Label the following telescope parts in the image given above.
 \end{enumerate}
 \clearpage
 \textbf{\textit{Try Yourself}}
-\begin{enumerate}[T1.]	
-\item  Student A has just received a telescope from her professor. Her professor had performed some measurements on the telescope, and told her that it has an effective focal length of 1800mm, with an aperture of 90mm. Student A next chooses to use a 5 mm Plossl eyepiece, with an advertised apparent field of view (AFOV) of $40^\circ$.
+\begin{enumerate}[\textbf{T1.}]	
+\item  Student A has just received a telescope from her professor. Her professor had performed some measurements on the telescope, and told her that it has an effective focal length of 1800mm, with an aperture of 90mm. Student A next chooses to use a 5mm Plossl eyepiece, with an advertised apparent field of view (AFOV) of $40^\circ$.
 \begin{enumerate}[i.]
 	\item Calculate the f/ratio of this scope
 	\item Calculate the resultant magnification that this setup provides
@@ -2209,7 +2250,7 @@ Label the following telescope parts in the image given above.
 	(Hint: Think about highest useful magnification. Also, an average dark adapted human eye has an entrance pupil of about 7mm)
 \end{enumerate}
 
-\item  Upon further investigation, Student A discovered that a 3X Barlow lens had been left in the telescope’s visual back. She thus removed the Barlow. She also changed the eyepiece to a 10mm Nagler, with an advertised $80^\circ$ wide-view AFOV.\\
+\item  Upon further investigation, Student A discovered that a 3$\times$ Barlow lens had been left in the telescope’s visual back. She thus removed the Barlow. She also changed the eyepiece to a 10mm Nagler, with an advertised $80^\circ$ wide-view AFOV.\\
 
 Calculate the new effective focal length, f/ratio, magnification, exit pupil and TFOV.
 
@@ -2781,9 +2822,9 @@ We are standing somewhere on the Earth. The map does not show Solar System objec
 \begin{tabular}{|c|l|l|}
 \hline
 Brightest Star & \quad Name\;\; \; & Azimuth \\ \hline
-1st            &                                               &         \\ \hline
-2nd            &                                               &         \\ \hline
-3rd            &                                               &         \\ \hline
+\nth{1}           &                                               &         \\ \hline
+\nth{2}            &                                               &         \\ \hline
+\nth{3}           &                                               &         \\ \hline
 \end{tabular}
 \end{table}
     \item Yellow × signs show the positions of 3 comets. Witch comet is in the closest position to ecliptic? (Write the number of nearest comet on the dotted line.)
