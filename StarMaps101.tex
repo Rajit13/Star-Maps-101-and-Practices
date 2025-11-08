@@ -293,14 +293,14 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 \begin{table}[H]
 \centering
 \begin{tabular}{lllllll}
-$\alpha$ And                & \prt{$\beta$ Aur}  & $\alpha$ CMa  & $\alpha$ Gem & $\alpha$ Ori & $\alpha$ Psc      & $\beta$ UMa   \\
+\prt{$\alpha$ And }               & \prt{$\beta$ Aur}  & $\alpha$ CMa  & $\alpha$ Gem & $\alpha$ Ori & $\alpha$ Psc      & $\beta$ UMa   \\
 $\beta$ And                 & $\alpha$ Boo & $\beta$ CMa   & $\beta$ Gem  & $\beta$ Ori  & $\alpha$ Sco      & $\alpha$ UMi \\
-$\alpha$ Ari                & $\beta$ Boo  & $\alpha$ CMi  & $\alpha$ Leo & $\alpha$ Oph & $\beta$ Sco       & $\beta$ UMi  \\
-$\beta$ Ari                 & $\alpha$ Cap & $\beta$ CMi   & $\beta$ Leo  & $\beta$ Oph  & $\alpha$ Ser      & $\beta$ Cyg  \\
+\prt{$\alpha$ Ari}                & $\beta$ Boo  & $\alpha$ CMi  & $\alpha$ Leo & $\alpha$ Oph & $\beta$ Sco       & $\beta$ UMi  \\
+$\beta$ Ari                 & $\alpha$ Cap & \prt{$\beta$ CMi}   & $\beta$ Leo  & $\beta$ Oph  & $\alpha$ Ser      & $\beta$ Cyg  \\
 $\alpha$ Aql                & $\alpha$ Cas & $\alpha$ CrB  & $\alpha$ Lep & \prt{$\alpha$ Per} & $\varepsilon$ Sgr &              \\
 $\beta$ Aql                 & $\beta$ Cas  & $\beta$ CrB   & $\alpha$ Lib & $\beta$ Per  & $\alpha$ Tau      &              \\
 $\alpha$ Aqr                & $\alpha$ Cep & $\gamma$  Dra & $\alpha$ Lyr & $\alpha$ Peg & $\beta$ Tau       &              \\
-$\alpha$ Aur & $\alpha$ Cet & $\alpha$ Cyg  & $\beta$ Lyr  & $\beta$ Peg  & $\alpha$ UMa      &             
+$\alpha$ Aur & \prt{$\alpha$ Cet} & $\alpha$ Cyg  & $\beta$ Lyr  & $\beta$ Peg  & $\alpha$ UMa      &             
 \end{tabular}
 \caption{Suggested Bright Stars of interest (\prt{Appeared in IOAA})}
 \end{table}
@@ -1152,10 +1152,12 @@ Pole view maps effectivelty represents one hemisphere. This makes this type of s
 
 \subsubsection{The precession of the Equinoxes}\label{precessional}
 
-The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift westward through the constellations at a continuous rate of roughly \textbf{$\mathbf{50\frac{1}{4}''}$ annually}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
+The Earth orbits the Sun in a plane that we call the \emph{plane of the ecliptic}. The Earth's rotation axis is tilted by an angle of $\varepsilon = 23.5^\circ$ with respect to the direction perpendicular to the ecliptic plane. In other words, the ecliptic and celestial poles are separated on the celestial sphere by the same angle $\varepsilon$. The Earth's northern hemisphere is most tilted toward the Sun during the \emph{summer solstice} and most tilted away during the \emph{winter solstice}.\\
 
-The precessional motion causes the north and south rotational poles
-to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25770$ year). Currently the Earth’s north celestial pole points close to the star Polaris, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
+ The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift westward through the constellations at a continuous rate of roughly \textbf{$\mathbf{50\frac{1}{4}''}$ annually}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
+
+The period of Earth's precession is called the \emph{Platonic year}, which lasts $25{,}800$ years. The same kind of motion can be observed in a rapidly spinning \emph{top}, whose rotation axis is slightly tilted and slowly changes its direction in space. The precessional motion causes the north and south rotational poles
+to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25800$ year). Currently the Earth’s north celestial pole points towards the constellation \emph{Ursa Minor}, near the \emph{North Star (Polaris)}, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
 
 The precession of the Earth's rotation axis causes the ecliptic longitude to change linearly but the ecliptic latitude remains constant. Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$: 
 
@@ -1199,8 +1201,25 @@ Equatorial Coordinates after Precession (Similarly):
 	\end{cases}
 \end{gather*}	
 
+\begin{pro}
+	\begin{enumerate}[a.]
+		\itemsep 
+		\item What was the right ascension of the ecliptic pole $\alpha'_{\rm E}$ 12,900 years ago? The vernal equinox is always defined as the intersection point of the celestial equator and the ecliptic, where the Sun is located during the spring equinox. \emph{Note:} 12,900 years corresponds to half of the Platonic year.
+		
+		\item The star Betelgeuse currently has coordinates $\alpha = 6^\mathrm{h}$, $\delta = 7^\circ$. What were its coordinates $\alpha'$, $\delta'$ 12,900 years ago? Neglect the star’s proper motion and nutation.
+		
+		\item Was Betelgeuse observable from Slovakia 12,900 years ago as a circumpolar, setting, or rising star? Assume the observer’s geographical latitude $\varphi = 49^\circ$.
+	\end{enumerate}
+\end{pro}
 
-\subsection*{Finding new Pole Star}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{prescession_geometry.pdf}
+	\caption{Diagram of the precession of the celestial pole around the ecliptic pole.}
+	\text{\prt{Pink} shows the situation 12,900 years ago and {\color{blue} blue} shows the situation today.}
+\end{figure}
+
+\subsection*{Finding new Pole Star [Using Star Chart]}
 Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thuban ($\alpha$ Draco) was the ``north pole star'' when it was around 3000 BC.
 
 \begin{enumerate}[Q1.]
@@ -1213,16 +1232,17 @@ Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thu
 
 \begin{sol}
 	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.8\linewidth]{thuban.png}
-		\caption{Thuban as North Pole}
-		\label{precession}
-	\end{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{thuban.png}
+	\caption{Thuban as North Pole}
+	\label{precession}
+\end{figure}
 \textbf{Q2} We can find the north ecliptic pole by drawing two circles with its radius of $23.5^\circ$ which the center of each circle is on Polaris and Thuban. We will get 2 intersections, E and the other one.\\
 By considering the ecliptic line, we know that \textbf{E} is the north ecliptic pole (white circle), not the other one.\\
 
 \textbf{Q3} First, we measure the angle of $\angle PET$. There are some ways to measure this angle. Some possible methods are:
 \begin{itemize}
+	\itemsep0em
 	\item Measure PT $\rightarrow$ PT = $25.8^\circ$.
 	Using cosine rule we get $\rightarrow \cos\angle PET =0.361$ or $\angle PET= 68.8^\circ$.\\
 	(for cosine rule in spherical geometry, $\angle PET= 68^\circ$)
@@ -1255,6 +1275,10 @@ Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (
 
 
 Because of precession, our framework of Right Ascension and declination is constantly changing. Consequently, it is necessary to state the equator and equinox of the coordinate system to which any position is referred. Astronomers will report the coordinates of an object based on the celestial equator and vernal equinox of a specific time and date; this is called the epoch. Certain dates (e.g. 1950.0, 2000.0) are taken as standard epochs, and used for star catalogues, etc.   
+
+
+
+
 \clearpage 
 \subsection{Mercator Projections}
 [\textbf{To be completed}] Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.
@@ -1476,7 +1500,7 @@ its height $a=0^\circ$,
 	\cos HA&=\frac{\sin a -\sin \delta \sin \phi}{\cos \delta \cos \phi}\\
 	\Aboxed{\cos HA&= - \tan \delta \tan \phi} \implies \text{Sunrise Equation}
 \end{align*}
-the hour angle ($HA$) is the time from the moment of the upper culmination.\\
+The hour angle ($HA$) is the time from the moment of the upper culmination.\\
 
 \begin{pro}
 	\begin{enumerate}[a.]
@@ -1536,7 +1560,14 @@ More Coming....
 	where $\delta$ is the declination of a star and $\phi$ is the latitude of the observer. The condition for lower
 	circumpolar stars would be that this altitude $< 0^\circ$. Therefore, the condition becomes $90^\circ + \delta <\phi$.
 \end{sol}
-\clearpage	
+\item \textbf{Is it possible for a star to be circumpolar if it passes through the zenith?}
+\begin{sol}
+	Only Polaris satisfies this condition. Otherwise, no.
+\end{sol}
+\item \textbf{What is the range of latitudes at which the sun can be circumpolar in a day?}
+\begin{sol}
+	As the axis of the Earth’s rotation is titled at an angle 23.5 degrees from the ecliptic, the sun can be circumpolar at latitude $66.5^\circ − 90^\circ$ N and $66.5^\circ − 90^\circ$ S.
+\end{sol}
 	\item \textbf{Name the Zodiac constellations according to sun's yearly path.} 
 	
 	\begin{figure}[H]
@@ -1945,7 +1976,7 @@ Using the properties of sine and cosine, this expression can be further simplifi
 The declination of Neptune is \(\delta = -15^\circ\). We calculate its ecliptic longitude using the sine rule (with additional simplifications using sine and cosine properties):
 
 \[
-\cos \lambda = \frac{\cos \delta}{\cos \beta \cos \alpha}.
+\cos \lambda = \frac{\cos \delta}{\cos \beta }\cos \alpha.
 \]
 
 Using the \(\arccos\) function on a calculator, we obtain \(\lambda' = 140^\circ\), which is not the correct result—it should be close to the right ascension. Using the cosine property \(\cos x = \cos(360^\circ - x)\), we find \(\lambda = 220^\circ\). Since the difference from the right ascension is only \(2.5^\circ\), we see that \(\lambda = \alpha\) is a reasonable approximation. When plotting on the map, this positional difference is negligible.
