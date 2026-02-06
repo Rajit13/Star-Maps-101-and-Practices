@@ -1111,29 +1111,55 @@ Now we'll revisit the figure \ref{stereo_2} once again. Let's try to find how ma
 \begin{defi}
 	{\color{red}\textbf{Caution:}} If either Equator, Ecliptic line, or Galactic equator (Milky way) passes through zenith then you should just draw a straight line diametrically above corresponding constellations. Don't make a curved line!
 \end{defi}
-\subsubsection*{Latitude from Stereographic charts}
-Consider a planar starchart projection where the zenith is placed at the chart center and the horizon forms the circular boundary. Let the chart radius $R$ correspond to $90^\circ$ of angular altitude (from horizon to zenith). Define:
-\begin{itemize}
-	\itemsep0em 
-	\item $R$: Radius of the starchart (horizon to zenith)
-	\item $d_P$: Measured chart distance from horizon to Polaris
-	\item $h_P$: Angular altitude of Polaris above horizon
-	\item $\phi$: Observer’s latitude
-\end{itemize}
-A linear scale factor $k$ relates angular altitude to chart distance:
-\[k = \frac{R}{90^\circ}\]
-Thus, the measured distance $d_P$ corresponds to
-\[d_P = k \, h_P = \frac{R}{90^\circ} \, h_P\]
-Since the altitude of Polaris approximates the observer’s latitude ($\phi \approx h_P$), we obtain
-\[\boxed{\phi \approx 90^\circ \cdot \frac{d_P}{R}}
+\subsubsection*{Altitude from Stereographic charts}
+
+Consider a stereographic projection from the nadir onto a plane tangent to the celestial sphere at the zenith. Let $P$ be a point on the celestial sphere, $P'$ its stereographic projection on the chart, $R$ the radius of the chart, $r$ the distance from the chart center to $P'$, $z$ the zenith distance of $P$, and $a$ its altitude.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{chart_geometry.pdf}
+	\label{chartgeo_1}
+\end{figure}
+
+From the geometry of the stereographic projection (see figure \ref{chartgeo_1}), the following
+relation holds:
+\[
+\tan\!\left(\frac{z}{2}\right) = \frac{r}{R}.
 \]
+
+Solving for the zenith distance, we obtain
+\[
+z = 2 \arctan\!\left(\frac{r}{R}\right).
+\]
+
+Since altitude and zenith distance satisfy
+\[
+a + z = 90^\circ,
+\]
+the altitude of the point $P$ is therefore
+\[\boxed{a = 90^\circ - 2 \arctan\!\left(\dfrac{r}{R}\right)}\]
+
+
+\textbf{Steps to follow with printed charts to find} $\bm{\phi}$\textbf{ with Polaris}
 \begin{enumerate}[Step 1]
-	\itemsep0em 
-	\item Identify the starchart’s horizon circle and zenith point.
-	\item Measure the radius $R$ from horizon to zenith.
-	\item Measure $d_P$ from the horizon circle to Polaris.
-	\item Compute the latitude using $\displaystyle \phi = 90^\circ \cdot  \frac{d_P}{R}$.
+	\itemsep0em
+	\item Identify the zenith point (chart center) and the horizon circle on the stereographic chart.
+	\item Measure the chart radius $R$, defined as the distance from the chart center (zenith) to the horizon circle.
+	\item Measure the radial distance $r_P$ from the chart center (zenith) to the projected position of Polaris.
+	\item Compute the zenith distance $z$ using the stereographic relation
+	\[
+	z = 2 \arctan\!\left(\frac{r_P}{R}\right).
+	\]
+	\item Convert zenith distance to altitude using
+	\[
+	a_P = 90^\circ - z.
+	\]
+	\item Since the altitude of Polaris approximates the observer’s latitude, take
+	\[
+	\phi \approx a_P.
+	\]
 \end{enumerate}
+
 \clearpage
 \subsection{Pole View Maps}
 Pole view maps are interesting as here the edge of the map represents both the observing horizon in horizontal coordinate system and equator for equatorial coordinate system. So with this, one can determine the position of the star in both measuring system. \\
@@ -1157,25 +1183,62 @@ The Earth orbits the Sun in a plane that we call the \emph{plane of the ecliptic
  The precession of the equinoxes is a gradual changing in the direction of the Earth’s rotation axis, which causes the position of the celestial poles to drift westward through the constellations at a continuous rate of roughly \textbf{$\mathbf{50\frac{1}{4}''}$ annually}. Although this effect is small on short timescales, the accumulated drift adds up to about one Moon diameter per century.\\
 
 The period of Earth's precession is called the \emph{Platonic year}, which lasts $25{,}800$ years. The same kind of motion can be observed in a rapidly spinning \emph{top}, whose rotation axis is slightly tilted and slowly changes its direction in space. The precessional motion causes the north and south rotational poles
-to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25800$ year). Currently the Earth’s north celestial pole points towards the constellation \emph{Ursa Minor}, near the \emph{North Star (Polaris)}, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.\\
+to trace out circles around the pole of the ecliptic (in $T_{pr}\approx 25800$ year). Currently the Earth’s north celestial pole points towards the constellation \emph{Ursa Minor}, near the \emph{North Star (Polaris)}, but this will not always be the case. By 2500, Polaris will be several degrees away from the true celestial pole.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{Year} & \textbf{Star} & \textbf{Star Designation} & \textbf{Constellation} & \textbf{Magnitude} & \textbf{Dist. From North} \\
+		\hline
+		-11700 & Vega & $\alpha$ Lyr & Lyra & 0.03 & 3.3$^\circ$ \\ 
+		\hline
+		-10000 & -- & $\tau$ Her & Hercules & 3.89 & 1.6$^\circ$ \\ 
+		\hline
+		-5500 & -- & $\iota$ Her & Hercules & 3.80 & 0.4$^\circ$ \\ 
+		\hline
+		-5000 & Edasich & $\iota$ Dra & Draco & 3.29 & 2.8$^\circ$ \\ 
+		\hline
+		-3000 & Thuban & $\alpha$ Dra & Draco & 3.65 & 0.1$^\circ$ \\ 
+		\hline
+		-1000 & Kochab & $\beta$ UMi & Ursa Minor & 2.08 & 4.2$^\circ$ \\ 
+		\hline
+		\rowcolor{gray!25}
+		2000 & Polaris & $\alpha$ UMi & Ursa Minor & 2.02 & 0.3$^\circ$ \\ 
+		\hline
+		4000 & Errani & $\gamma$ Cep & Cepheus & 3.21 & 1.3$^\circ$ \\ 
+		\hline
+		6000 & Alfrik & $\beta$ Cep & Cepheus & 3.23 & 2.9$^\circ$ \\ 
+		\hline
+		7500 & Alderamin & $\alpha$ Cep & Cepheus & 2.45 & 1.5$^\circ$ \\ 
+		\hline
+		10000 & Deneb & $\alpha$ Cyg & Cygnus & 1.25 & 4.2$^\circ$ \\ 
+		\hline
+		11500 & -- & $\delta$ Cyg & Cygnus & 2.87 & 1.4$^\circ$ \\ 
+		\hline
+		14000 & Vega & $\alpha$ Lyr & Lyra & 0.03 & 3.3$^\circ$ \\ 
+		\hline
+	\end{tabular}
+	\caption{Precession of the North Celestial Pole and its nearest bright stars over time.}
+\end{table}
+%https://www.coconinoastro.org/PDF/Precession.pdf 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6 \linewidth]{presc1.png}
+	\caption{Precessional Circle}
+	\label{pcircle}
+\end{figure}
 
 The precession of the Earth's rotation axis causes the ecliptic longitude to change linearly but the ecliptic latitude remains constant. Suppose that at a certain point in time the star has coordinates ($\alpha_{old}, \delta_{old}$) and ($\lambda_{old}, \beta$). It is necessary to calculate its coordinates ($\alpha_{new}, \delta_{new}$) and ($\lambda_{new}, \beta$) after time $t$: 
 
-
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.6\linewidth}
-		\includegraphics[width=\linewidth]{presc1.png}
-		\caption{Precessional Circle}
-		\label{pcircle}
-	\end{subfigure}
-	\begin{subfigure}{0.35\linewidth}
-		\includegraphics[width=\linewidth]{potd65a.pdf}
-		\caption{EQ-EC spherical triangle}
-		\label{sphere_eqec}
-		\vspace{3cm}
-	\end{subfigure}
+	\includegraphics[width=0.3 \linewidth]{potd65a.pdf}
+	\caption{EQ-EC spherical triangle}
+	\label{sphere_eqec}
 \end{figure}
+
+
 From spherical triangle \ref{sphere_eqec} shown above:
 \begin{align*}
 	\cos(90^\circ-\beta)&=\cos\varepsilon \sin\delta_{old}+\sin\varepsilon\cos\delta_{old}\cos(90^\circ+\alpha)\\
@@ -1218,6 +1281,18 @@ Equatorial Coordinates after Precession (Similarly):
 	\caption{Diagram of the precession of the celestial pole around the ecliptic pole.}
 	\text{\prt{Pink} shows the situation 12,900 years ago and {\color{blue} blue} shows the situation today.}
 \end{figure}
+\begin{pro}
+	\textbf{Problem: Drifting Equinox} The Vernal Equinox occurs nowadays when the Sun is in the constellation of Pisces. Pisces covers a section of the ecliptic
+	from longitude $352^\circ$ to longitude $28^\circ$; at longitude $28^\circ$ the ecliptic passes into Aries.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.65\linewidth]{vernal_point.pdf}
+	\end{figure}
+	How many years would we have to go back, to find the Sun at ``the First Point of Aries'' at the Vernal Equinox?
+\end{pro}
+
+
+Because of precession, our framework of Right Ascension and declination is constantly changing. Consequently, it is necessary to state the equator and equinox of the coordinate system to which any position is referred. Astronomers will report the coordinates of an object based on the celestial equator and vernal equinox of a specific time and date; this is called the epoch. Certain dates (e.g. 1950.0, 2000.0) are taken as standard epochs, and used for star catalogues, etc.
 
 \subsection*{Finding new Pole Star [Using Star Chart]}
 Right now, Polaris ($\alpha$ Ursa Minor) is the ``north pole star'', however Thuban ($\alpha$ Draco) was the ``north pole star'' when it was around 3000 BC.
@@ -1263,24 +1338,31 @@ From sin rule, we get $\angle ETP = 58.1^\circ$ or $3^h52^m30^s$. (for sin rule 
 
 Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (21^h 52^m 30^s,\, 64.2^\circ)$
 \end{sol}
-\begin{pro}
-	\textbf{Problem: Drifting Equinox} The Vernal Equinox occurs nowadays when the Sun is in the constellation of Pisces. Pisces covers a section of the ecliptic
-	from longitude $352^\circ$ to longitude $28^\circ$; at longitude $28^\circ$ the ecliptic passes into Aries.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.65\linewidth]{vernal_point.pdf}
-	\end{figure}
-	How many years would we have to go back, to find the Sun at ``the First Point of Aries'' at the Vernal Equinox?
-\end{pro}
-
-
-Because of precession, our framework of Right Ascension and declination is constantly changing. Consequently, it is necessary to state the equator and equinox of the coordinate system to which any position is referred. Astronomers will report the coordinates of an object based on the celestial equator and vernal equinox of a specific time and date; this is called the epoch. Certain dates (e.g. 1950.0, 2000.0) are taken as standard epochs, and used for star catalogues, etc.   
+   
+\begin{table}[H]
+	\centering
+\begin{tabular}{|l|l|l|}
+	\hline
+	\textbf{Planet} & \textbf{North Polar Star}                                                                                        & \textbf{South Polar Star}                                                                                                         \\ \hline
+	Mercury         & $\mathrm{o}$-Dra                                                                                                 & $\alpha$-Pic                                                                                                                      \\ \hline
+	Venus           & $\eta^{1}$-Dor                                                                                                   & 42-Dra                                                                                                                            \\ \hline
+	Mars            & \begin{tabular}[c]{@{}l@{}}Extension of one times the line \\ joining $\gamma$-Cyg and $\alpha$-Cyg\end{tabular} & $\kappa$-Vel                                                                                                                      \\ \hline
+	Jupiter         & $\zeta$-Dra                                                                                                      & $\delta$-Dor                                                                                                                      \\ \hline
+	Saturn          & \begin{tabular}[c]{@{}l@{}}Forms a right triangle with \\ $\alpha$-UMi and $\gamma$-Cep\end{tabular}             & $\delta$-Oct                                                                                                                      \\ \hline
+	Uranus          & $\eta$-Oph                                                                                                       & \begin{tabular}[c]{@{}l@{}}15-Ori / Extension of one \\ times the line joining \\ $\gamma$-Ori and $\varepsilon$-Ori\end{tabular} \\ \hline
+	Neptune         & \begin{tabular}[c]{@{}l@{}}Midpoint of the line joining \\ $\gamma$-Cyg and $\delta$-Cyg\end{tabular}            & $\gamma$-Vel                                                                                                                      \\ \hline
+\end{tabular}
+	\caption{Stars located near the north and south celestial poles of the planets.}
+\end{table}
 
 
 
 
 \clearpage 
 \subsection{Mercator Projections}
+As you can see in Fig. , it is created by projecting the points of the sphere onto a cylindrical surface that touches the sphere, usually at the equator. The advantage is that it preserves directions and both declination circles and right ascension circles are displayed as straight lines (in the ``left-right" or ``up-down" directions), but the disadvantage is a large distortion in the area of ​​the poles. Looking at the projection method, you can easily imagine that the map cannot display the entire sphere and some part around the poles is omitted.
+
+\clearpage
 [\textbf{To be completed}] Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.
 \begin{figure}[H]
 	\centering
@@ -1511,7 +1593,7 @@ The hour angle ($HA$) is the time from the moment of the upper culmination.\\
 	\end{enumerate}
 \end{pro}
 
-More Coming....
+More Coming....[Very Soon est April 2026]
 
 
 
@@ -2301,7 +2383,7 @@ Label the following telescope parts in the image given above.
 \end{enumerate}
 \clearpage
 \textbf{\textit{Try Yourself}}
-\begin{enumerate}[\textbf{T1.}]	
+\begin{enumerate}[T1.]	
 \item  Student A has just received a telescope from her professor. Her professor had performed some measurements on the telescope, and told her that it has an effective focal length of 1800mm, with an aperture of 90mm. Student A next chooses to use a 5mm Plossl eyepiece, with an advertised apparent field of view (AFOV) of $40^\circ$.
 \begin{enumerate}[i.]
 	\item Calculate the f/ratio of this scope
