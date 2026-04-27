@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://orcid.org/0009-0002-4699-8059">
-    <img src="https://img.shields.io/badge/ORCID-0009--0002--4699--8059-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
+    <img src="https://img.shields.io/badge/Fahim%20Rajit%20Hossain%20Shwadhin-ORCID%200009--0002--4699--8059-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
   </a>
 </p>
 
@@ -20,7 +20,7 @@
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/network/members" target="_blank">
     <img src="https://img.shields.io/github/forks/Rajit13/Star-Maps-101-and-Practices?style=for-the-badge&logo=github&label=Forks" alt="GitHub Forks" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=Rajit13&repo=Star-Maps-101-and-Practices&style=for-the-badge&color=0A0F3C&label=Sky%20Views" />
+  <img src="https://komarev.com/ghpvc/?username=Rajit13&repo=Star-Maps-101-and-Practices&style=for-the-badge&color=0A0F3C&label=StarChart101%20Views" />
 </p>
 
 <p align="center">
