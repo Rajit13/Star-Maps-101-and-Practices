@@ -7,7 +7,9 @@
 </p>
 
 <p align="center">
-  📄 <a href="StarMaps101.pdf"><strong>Download Latest PDF</strong></a>
+  📄 <a href="https://raw.githubusercontent.com/Rajit13/Star-Maps-101-and-Practices/master/StarMaps101.pdf" target="_blank">
+    <strong>Download Latest PDF</strong>
+  </a>
 </p>
 
 ---
