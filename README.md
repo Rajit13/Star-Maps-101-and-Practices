@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases/latest/download/StarMaps101.pdf" target="_blank">
+  <a href="https://raw.githubusercontent.com/Rajit13/Star-Maps-101-and-Practices/master/StarMaps101.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Download%20Latest%20PDF-0EA5E9?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Latest PDF" />
   </a>
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/stargazers" target="_blank">
