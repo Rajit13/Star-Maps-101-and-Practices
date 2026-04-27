@@ -1,7 +1,7 @@
 # 🌌 Star Charts 101 and Practices
 
 <p align="center">
-  <img src="download.png" alt="Star Charts 101 cover" width="520" />
+  <img src="starcharts101_cover.png" alt="Star Charts 101 cover" width="720" />
 </p>
 
 <p align="center">
