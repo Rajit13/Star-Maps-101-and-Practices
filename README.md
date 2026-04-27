@@ -14,7 +14,7 @@
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/network/members" target="_blank">
     <img src="https://img.shields.io/github/forks/Rajit13/Star-Maps-101-and-Practices?style=for-the-badge&logo=github&label=Forks" alt="GitHub Forks" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=Rajit13&repo=Star-Maps-101-and-Practices&style=for-the-badge&color=0A0F3C&label=Observers" alt="Views Counter" />
+  <img src="https://komarev.com/ghpvc/?username=Rajit13&repo=Star-Maps-101-and-Practices&style=for-the-badge&color=0A0F3C&label=Sky%20Views" />
 </p>
 
 <p align="center">
@@ -96,7 +96,8 @@ If you use this material, please cite:
   howpublished = {\url{https://github.com/Rajit13/Star-Maps-101-and-Practices}},
   note         = {Educational astronomy guide for Olympiad training. ORCID: 0009-0002-4699-8059},
   urldate      = {2026-04-27}
-}```
+}
+````
 
 ## 📜 License
 
