@@ -89,14 +89,14 @@ You can also contact me by email at **farahoshwadhin.13@gmail.com**.
 If you use this material, please cite:
 
 ```bibtex
-@misc{hossain2024starcharts,
-  author       = {Fahim Rajit Hossain Shwadhin},
+@misc{hossain_starcharts_101,
+  author       = {Shwadhin, Fahim Rajit Hossain},
   title        = {Star Charts 101 and Practices},
-  year         = {2024},
-  url          = {https://github.com/Rajit13/Star-Maps-101-and-Practices},
-  note         = {Educational astronomy guide},
-  orcid        = {0009-0002-4699-8059}
-}
+  year         = {2026},
+  howpublished = {\url{https://github.com/Rajit13/Star-Maps-101-and-Practices}},
+  note         = {Educational astronomy guide for Olympiad training. ORCID: 0009-0002-4699-8059},
+  urldate      = {2026-04-27}
+}```
 
 ## 📜 License
 
