@@ -14,6 +14,7 @@
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/network/members" target="_blank">
     <img src="https://img.shields.io/github/forks/Rajit13/Star-Maps-101-and-Practices?style=for-the-badge&logo=github&label=Forks" alt="GitHub Forks" />
   </a>
+  <img src="https://komarev.com/ghpvc/?username=Rajit13&repo=Star-Maps-101-and-Practices&style=for-the-badge&color=0A0F3C&label=Observers" alt="Views Counter" />
 </p>
 
 <p align="center">
@@ -82,6 +83,20 @@ You can also contact me by email at **farahoshwadhin.13@gmail.com**.
 - LaTeX
 - GitHub
 - Educational notes written for astronomy training
+
+## 📖 Citation
+
+If you use this material, please cite:
+
+```bibtex
+@misc{hossain2024starcharts,
+  author       = {Fahim Rajit Hossain Shwadhin},
+  title        = {Star Charts 101 and Practices},
+  year         = {2024},
+  url          = {https://github.com/Rajit13/Star-Maps-101-and-Practices},
+  note         = {Educational astronomy guide},
+  orcid        = {0009-0002-4699-8059}
+}
 
 ## 📜 License
 
