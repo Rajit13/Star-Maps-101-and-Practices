@@ -24,6 +24,8 @@
 \definecolor{cblue}{HTML}{0F52BA}
 \graphicspath{ {./images/} }
 
+
+
 \allowdisplaybreaks
 
 \pagestyle{fancy}
@@ -877,7 +879,7 @@ For data related to the problems below refer to the Messier Object List table \r
 
 \textbf{Object of consideration:} Butterfly Cluster (M6), Trifid Nebula (M20), Wild Duck Cluster (M11), Ring Nebula (M57), Albireo, Arcturus, Rasalhague, M3.
 
-\begin{enumerate}[1.1]
+\begin{enumerate}[q1.]
 	\item \textbf{Which object/star cannot be seen at this location at any time of the year?}
 	\begin{sol}
 		-- M6 as You cannot see any object below $-30^\circ$ declination.
@@ -897,6 +899,7 @@ For data related to the problems below refer to the Messier Object List table \r
 		-- Ring Nebula (M57), We look for the item with the declination is the closest to +60◦, which is local zenith at that location.
 	\end{sol}
 \end{enumerate}
+
    
 \textsf{\textbf{Question 2}}  A deep-sky object located directly at the celestial equator with an angular diameter of $10'$ is viewed from the eyepiece of a telescope with a true field of view of $0.8^\circ$. Object tracking on the telescope is disabled and the object is aligned at the edge of the field of view. Assuming the object moves along the diameter of the eyepiece before disappearing, calculate the time it takes for the object to drift out of view of the eyepiece.
 
@@ -1015,16 +1018,42 @@ To help with navigation, some star maps include coordinate lines that allow you 
 Therefore, when someone says that Canopus has an RA of $06^h 24^m$, it means that it's RA coordinate is just over one quarter of the way around the sky ($6^h$ is one-quarter of $24^h$) from the First Point of Aries. RA is always measured eastward from the First Point of Aries.
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|c|l|c|}
+	\begin{tabular}{|c|l|c|l|}
 		\hline
-		System                                                    & \multicolumn{1}{c|}{Coordinates}                                                         & Interval                                                                                                    \\ \hline \hline
-		Equatorial                                                & \begin{tabular}[c]{@{}l@{}}$\delta$: declination\\ $\alpha$: right Ascension\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \delta \leq +90^\circ$\\  $0^h \leq \alpha \leq 24^h$ \end{tabular}  \\ \hline
-		Horizontal                                                & \begin{tabular}[c]{@{}l@{}}$a$: altitude\\ $A$: azimuth\end{tabular}                     & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq a \leq +90^\circ$\\ $0^\circ \leq A \leq 360^\circ$\end{tabular} \\ \hline
-		\begin{tabular}[c]{@{}c@{}}Equatorial\\ Time\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\delta$: declination\\ $H$: hour angle\end{tabular}          & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \delta \leq +90^\circ$\\  $0^h \leq H \leq 24^h$ \end{tabular}       \\ \hline
-		Ecliptic                                                  & \begin{tabular}[c]{@{}l@{}}$\beta$: ecliptic latitude\\ $\lambda$: ecliptic longitude\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \beta \leq +90^\circ$\\ $0^\circ \leq \lambda \leq 360^\circ$\end{tabular}      \\ \hline
-		Galactic                                                  & \begin{tabular}[c]{@{}l@{}}$B$: galactic latitude\\ $L$: galactic longitude\end{tabular} & \begin{tabular}[c]{@{}c@{}}$-90^\circ \leq B \leq +90^\circ$\\ $0^\circ \leq L \leq 360^\circ$\end{tabular} \\ \hline
+		System & \multicolumn{1}{c|}{Coordinates} & Interval & Reference point \\ \hline \hline
+		
+		Equatorial &
+		\begin{tabular}[c]{@{}l@{}}$\delta$: declination\\ $\alpha$: right ascension\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \delta \leq +90^\circ$\\ $0^h \leq \alpha \leq 24^h$\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Celestial equator\\ First point of Aries\end{tabular}
+		\\ \hline
+		
+		Horizontal &
+		\begin{tabular}[c]{@{}l@{}}$a$: altitude\\ $A$: azimuth\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}$-90^\circ \leq a \leq +90^\circ$\\ $0^\circ \leq A \leq 360^\circ$\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Horizon\\ North point\end{tabular}
+		\\ \hline
+		
+		\begin{tabular}[c]{@{}c@{}}Equatorial\\ Time\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}$\delta$: declination\\ $H$: hour angle\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \delta \leq +90^\circ$\\ $0^h \leq H \leq 24^h$\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Celestial equator\\ Local meridian\end{tabular}
+		\\ \hline
+		
+		Ecliptic &
+		\begin{tabular}[c]{@{}l@{}}$\beta$: ecliptic latitude\\ $\lambda$: ecliptic longitude\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}$-90^\circ \leq \beta \leq +90^\circ$\\ $0^\circ \leq \lambda \leq 360^\circ$\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Ecliptic plane\\ First point of Aries\end{tabular}
+		\\ \hline
+		
+		Galactic &
+		\begin{tabular}[c]{@{}l@{}}$B$: galactic latitude\\ $L$: galactic longitude\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}$-90^\circ \leq B \leq +90^\circ$\\ $0^\circ \leq L \leq 360^\circ$\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Galactic plane\\ Galactic center\end{tabular}
+		\\ \hline
+		
 	\end{tabular}
-	\caption{Summery of Celestial Coordinate Systems}
+	\caption{Summary of Celestial Coordinate Systems}
 \end{table}
 
 
@@ -1061,7 +1090,7 @@ You'll get the same result for 06-26-2022 at 12:27 UTC. Don't just believe me tr
 \end{figure}
 The effect of changing latitude on Horizon views. Travelling south causes constellations in the north to sink towards the horizon.
 
-\subsubsection{Round Maps}
+\subsubsection{Round Maps}\label{stereo_projection}
 Creating a star chart requires projecting the celestial sphere onto a two-dimensional plane. This section will focus on the most common projection method, called \textbf{Stereo-graphic projection}. The method works by setting the celestial sphere to a fixed radius and then placing an imaginary plane on top of the sphere (some textbooks will have the plane go through the sphere's center). We imagine a light source at the bottom of the celestial sphere, and notice that every light ray emitted intersects the sphere and the plane once. We project a point on the sphere by finding the corresponding light ray and mapping the point on the sphere to the intersection of this light ray and the plane.\\ 
 
 Finally, we scale the plane to the desired size, giving us a star chart. Note that stereographic projection cannot project the entire
@@ -1157,8 +1186,10 @@ Since altitude and zenith distance satisfy $a + z = 90^\circ,$ the altitude of t
 	\]
 \end{enumerate}
 
+
+
 \clearpage
-\subsection{Pole View Maps}
+\subsection{Pole View Maps}\label{pole_view_maps}
 Pole view maps are interesting as here the edge of the map represents both the observing horizon in horizontal coordinate system and equator for equatorial coordinate system. So with this, one can determine the position of the star in both measuring system. \\
 \begin{figure}[H]
     \centering
@@ -1172,6 +1203,9 @@ Pole view maps effectivelty represents one hemisphere. This makes this type of s
     \includegraphics[width=0.9 \linewidth]{scp_view.eps}
     \caption{View from South Celestial Pole}
 \end{figure}
+
+
+
 
 \subsubsection{The precession of the Equinoxes}\label{precessional}
 
@@ -1359,6 +1393,88 @@ Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (
 \subsection{Mercator Projections}
 As you can see in Fig. , it is created by projecting the points of the sphere onto a cylindrical surface that touches the sphere, usually at the equator. The advantage is that it preserves directions and both declination circles and right ascension circles are displayed as straight lines (in the ``left-right" or ``up-down" directions), but the disadvantage is a large distortion in the area of ​​the poles. Looking at the projection method, you can easily imagine that the map cannot display the entire sphere and some part around the poles is omitted.
 
+\subsubsection{Determining Equatorial Coordinates Using Mercator and Pole View Maps}
+
+In the Mercator projection, points on the celestial sphere are mapped onto a cylindrical surface tangent at the equator. The horizontal coordinate corresponds to right ascension $\alpha$, while the vertical coordinate $y$ is related to declination $\delta$ through
+\[
+y = \mathcal{R} \ln \left( \tan \left( \frac{\pi}{4} + \frac{\delta}{2} \right) \right),
+\]
+where $\mathcal{R}$ is the scale parameter of the Mercator projection. It is determined directly from the map by measuring the total length of the equator. If $L_{\text{eq}}$ is the measured width of the map along the equator, then
+\[
+2\pi \mathcal{R} = L_{\text{eq}}, \qquad \mathcal{R} = \frac{L_{\text{eq}}}{2\pi}.
+\]
+
+
+In this projection, lines of constant right ascension and declination form an orthogonal grid. This allows the equatorial coordinates $(\alpha,\delta)$ of stars to be determined directly from measurements on the map. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mercator_1.png}
+\end{figure}
+
+\paragraph{Determination of declination:}
+In practice, only a finite range of declination is shown on the mercator map. The declination is obtained from the measured vertical coordinate using the inverse relation
+\[
+\delta = 2\left[\arctan\left(e^{y/\mathcal{R}}\right) - \frac{\pi}{4}\right],
+\]
+where $y$ is measured directly on the map (in the same units as $L_{\text{eq}}$). If working in degrees, the term $\pi/4$ is replaced by $45^\circ$.
+
+\paragraph{Determination of right ascension:}
+The right ascension is obtained from the horizontal coordinate. If $x$ denotes the measured horizontal coordinate and $x_0$ the position of the vernal equinox, then
+\[
+\alpha = 24^\mathrm{h} \cdot \frac{x - x_0}{L_{\text{eq}}},
+\]
+since the full equator corresponds to $24^\mathrm{h}$ and has total length $L_{\text{eq}}$.
+
+\paragraph{Transfer to the stereographic map:}
+Once the coordinates $(\alpha,\delta)$ are obtained, the stars are plotted onto the stereographic (pole view \ref{pole_view_maps}) map. In this projection, the center corresponds to the celestial pole ($\delta = \pm 90^\circ$). The right ascension determines the angular position around the center (measured from the direction $\alpha = 0^\mathrm{h}$).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{stereo_plot.pdf}
+\end{figure}
+
+The declination determines the radial distance from the center. In an exact stereographic projection, this relation is given by
+\[
+\tan\!\left(\frac{90^\circ - \delta}{2}\right) = \frac{r}{R},
+\]
+where $r$ is the distance from the center of the map and $R$ is the radius of the stereographic chart.
+
+However, as stated in the problem, this relation is approximated as linear. Thus, in practice, the radial distance is taken to be proportional to $90^\circ - \delta$. In particular, $\delta = 0^\circ$ corresponds to the boundary of the map, while $\delta = \pm 90^\circ$ corresponds to the center.
+
+
+\begin{defi}
+	{\color{red}\textbf{Caution:}} The quantities $\mathcal{R}$ (Mercator scale parameter) and $R$ (radius of the stereographic chart) are independent and arise from different projections. The Mercator map is used to determine the coordinates $(\alpha,\delta)$, while the stereographic map is used to represent their geometric positions.
+\end{defi}
+
+
+\paragraph{Accuracy and deviations:}
+The coordinates obtained from the map are subject to measurement uncertainties. If the smallest division of the ruler is $1\,\mathrm{mm}$, a reasonable estimate of the measurement uncertainty is $\sigma_x \approx \sigma_y \approx 0.5\,\mathrm{mm}$.
+
+The uncertainty in declination is obtained by propagating the error through the relation
+\[
+\delta = 2\left[\arctan\left(e^{y/\mathcal{R}}\right) - \frac{\pi}{4}\right],
+\]
+where $\mathcal{R}$ is determined from the measured equator length $L_{\text{eq}} = 2\pi \mathcal{R}$. Substituting typical values of $y$ and $\mathcal{R}$ obtained from the map gives an uncertainty of order
+\[
+\sigma_\delta \sim 1^\circ,
+\]
+with the exact value depending on the position on the map due to the non-linear dependence.
+
+The uncertainty in right ascension follows from
+\[
+\alpha = 24^\mathrm{h} \cdot \frac{x - x_0}{L_{\text{eq}}},
+\]
+so that
+\[
+\sigma_\alpha = 24^\mathrm{h} \cdot \frac{\sigma_x}{L_{\text{eq}}}.
+\]
+Substituting typical values yields
+\[
+\sigma_\alpha \sim 0.05^\mathrm{h} \approx 3^\mathrm{m}.
+\]
+
+In addition to measurement errors, further deviations arise from the approximations used in the stereographic projection, in particular the assumption of a linear relation between radial distance and declination.
 \clearpage
 [\textbf{To be completed}] Astronomical symbols are abstract pictorial symbols used to represent astronomical objects, theoretical constructs and observational events in European astronomy. The earliest forms of these symbols appear in Greek papyrus texts of late antiquity.
 \begin{figure}[H]
@@ -1590,7 +1706,7 @@ The hour angle ($HA$) is the time from the moment of the upper culmination.\\
 	\end{enumerate}
 \end{pro}
 
-More Coming....[Very Soon est April 2026]
+More Coming....[Very Soon est May 2026]
 
 
 
@@ -1690,7 +1806,7 @@ More Coming....[Very Soon est April 2026]
 \end{table}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.8\linewidth]{zodiac_dec.png}
+		\includegraphics[width=0.8\linewidth]{zodiac_dec.pdf}
 	\end{figure}
 	
 \clearpage
@@ -1862,7 +1978,7 @@ Observation of Planets in the night sky is pretty easy. The first thing you need
 		Mercury & $\bm{\Mercury}$ & Saturn  & $\bm{\Saturn}$   \\
 		Venus   & $\bm{\Venus}$   & Uranus  & $\bm{\Uranus}$   \\
 		Mars    & $\bm{\Mars}$    & Neptune & $\bm{\Neptune}$  \\
-		Jupiter & $\bm{\Jupiter}$ & Moon    & $\bm{\leftmoon}$ \\
+		Jupiter & $\bm{\Jupiter}$ & Moon    & $\leftmoon$ \\
 		\hline
 	\end{tabular}
 	\endgroup 
@@ -1876,9 +1992,9 @@ Observation of Planets in the night sky is pretty easy. The first thing you need
 		\item Close to the Sun/horizon during afternoon or just before sunrise $\implies$ \textbf{Venus}, $\Venus$. Phases can be observed when viewed with a telescope.
 		\item On the zodiac not following any time restrictions $\implies$ \textbf{Jupiter}, $\Jupiter$. 4 Galilean Moons can be observed when viewed with a telescope.
 	\end{itemize}
-	\item Above the zodiac constellations, bright but not twinkling $\implies$ definitely a Planet!
+	\item Above (same LOS) the zodiac constellations, bright but not twinkling $\implies$ definitely a Planet!
 	\item Reddish planet which often demonstrates prominent retrograde motion $\implies$ \textbf{Mars} $\Mars$.
-	\item Yellowish and smaller than Jupiter $\implies$ probably \textbf{Saturn}. Ring should be observed with sufficiently powerful telescope.
+	\item Yellowish and smaller than Jupiter $\implies$ probably \textbf{Saturn} $\Saturn$. Ring should be observed with sufficiently powerful telescope.
 \end{itemize}
 
 \begin{enumerate}
@@ -2457,7 +2573,7 @@ Conditions for comparing sight according to the Pickering method:
 	\item the spectral classes of the comparison star and variable star must be adjacent on the Harvard scale of spectral classes
 \end{itemize}
 
-\begin{enumerate}[\textbf{IDEA} 1.]
+\begin{enumerate}[\text{IDEA} 1.]
 	\itemsep0em 
 	\item Choose 2 stars with known magnitudes of more or less the same brightness,
 	\item  Divide the interval between them into 10 parts (or in the Neyland method - Blazhko into any number of parts, for example, into 5)
@@ -2702,14 +2818,14 @@ horizon.
 
 \subsubsection{2018}
 Refer to \ref{INAO18}
-\subsubsection{2016}
+\subsubsection{2014}
 
 The skymap below [Figure \ref{INAO16}] corresponds to sky above Nagpur ($21^\circ$ N, $79^\circ$ E) at 09:00 am on \nth{1} February 2014. If you are not used to using sky maps, it is important to note that sky map is usually seen lying down on the ground (feet to the South), facing the sky with map in your hand. Thus, East is on the left of the map and West is on the right. Answer the following questions:\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{INAI_16.png}
-	\caption{INAO 16 Map}
+	\caption{INAO 14 Map}
 	\label{INAO16}
 \end{figure}
 \begin{enumerate}[a.]
@@ -2746,7 +2862,7 @@ The star chart below shows the night sky at 00:00h on the night following the Ve
     \item  Calculate the \textbf{local hour angle} of the first point of Libra. 
 \end{enumerate}
 
-\subsection{Czech}
+\subsection{Czechia}
 \subsubsection{Observation using Simbad}
 In the blind map \ref{cz1}, 15 stars are highlighted in blue, 7 constellations in green and red in highlight 6 deep space objects. We could observe this night sky at midnight from a certain location on the 22nd day of a certain month this year. Select a month from the list.\\
 Here is their list:
@@ -2819,15 +2935,76 @@ Here is their list:
 
 \begin{enumerate}
     \item Mark any 5 (five) of the following stars on the map by putting a circle (O) around the appropriate star and writing its code next to it. If you mark more than 5 stars, only the first 5 in serial order will be considered.
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{2016_T1.PNG}
-\end{figure}
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\begin{minipage}{0.45\textwidth}
+ 		\centering
+ 		\begin{tabular}{|c|c|c|}
+ 			\hline
+ 			\textbf{Code} & \textbf{Name} & \textbf{Bayer Name} \\
+ 			\hline
+ 			S1 & Caph & $\beta$ Cas \\
+ 			S2 & Asellus Australis & $\delta$ Cnc \\
+ 			S3 & Acrux & $\alpha$ Cru \\
+ 			S4 & Alphard & $\alpha$ Hya \\
+ 			\hline
+ 		\end{tabular}
+ 	\end{minipage}
+ 	\hspace{0.02\textwidth}
+ 	\begin{minipage}{0.45\textwidth}
+ 		\centering
+ 		\begin{tabular}{|c|c|c|}
+ 			\hline
+ 			\textbf{Code} & \textbf{Name} & \textbf{Bayer Name} \\
+ 			\hline
+ 			S5 & Sheliak & $\beta$ Lyr \\
+ 			S6 & Albireo & $\beta$ Cyg \\
+ 			S7 & Rasalhague & $\alpha$ Oph \\
+ 			S8 & Kaus Australis & $\epsilon$ Sgr \\
+ 			\hline
+ 		\end{tabular}
+ 	\end{minipage}
+ \end{table}   
+    
+    %\begin{figure}[H]
+    %\centering
+    %\includegraphics[width=0.9\linewidth]{2016_T1.PNG}
+%\end{figure}
     \item  Mark location of any 3 (three) of the following galaxies on the map by putting a ‘+’ sign at appropriate place in the map and writing its code next to it. If you mark more than 3 galaxies, only the first 3 in serial order will be considered.
-        \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{2016_T2.PNG}
-\end{figure}
+ 
+ \begin{table}[h]
+ 	\centering
+ 	\begin{minipage}{0.45\textwidth}
+ 		\centering
+ 		\begin{tabular}{|c|c|c|}
+ 			\hline
+ 			\textbf{Code} & \textbf{Name} & \textbf{M number} \\
+ 			\hline
+ 			G1 & Triangulum Galaxy & M 33 \\
+ 			G2 & Whirlpool Galaxy & M 51 \\
+ 			G3 & Southern Pinwheel Galaxy & M 83 \\
+ 			\hline
+ 		\end{tabular}
+ 	\end{minipage}
+ 	\hspace{0.04\textwidth}
+ 	\begin{minipage}{0.45\textwidth}
+ 		\centering
+ 		\begin{tabular}{|c|c|c|}
+ 			\hline
+ 			\textbf{Code} & \textbf{Name} & \textbf{M number} \\
+ 			\hline
+ 			G4 & Virgo A & M 87 \\
+ 			G5 & Sombrero Galaxy & M 104 \\
+ 			&  &  \\
+ 			\hline
+ 		\end{tabular}
+ 	\end{minipage}
+ \end{table}
+ %\begin{figure}[H]
+   % \centering
+   % \includegraphics[width=0.9\linewidth]{2016_T2.PNG}
+%\end{figure}
 \item Draw ecliptic on the map and label it as ‘\textbf{E}’.
 \item Show position of Autumnal Equinox (descending node of the ecliptic) on the map by a ‘+’ sign and label it as ‘\textbf{A}’.
 \item Draw local meridian for Bhubaneswar on Winter Solstice day (\nth{22} December) at local midnight and label it as ‘\textbf{M}’.
@@ -3065,7 +3242,7 @@ Which of these 15 constellations are also on the ecliptic? If you give more than
 
 \begin{enumerate}
     \item Wikipedia
-    \item  International Olympiad on Astronomy and Astrophysics (IOAA) and subsidiaries (IOAAjr, GeCAA).
+    \item  International Olympiad on Astronomy and Astrophysics (IOAA) and subsidiaries (IOAAjr, GeCAA)
     \item International Earth Science Olympiad (IESO)
     \item Bangladesh Olympiad on Astronomy and Astrophysics -- \url{https://bdoaa.org/}
     \item Singapore/Indian/Czech/Brazil/Russian/Slovak Astronomy Olympiad. 
@@ -3077,6 +3254,8 @@ Perhaps the best software you can find. But don’t get to comfortable with only
 This site has many features too. You can track satellites and make sky maps for their path.
 \item \textbf{Skymaps.com} -- \url{www.skymaps.com/}\\
 They provide monthly free sky maps based on North/South/Equator.
+\item My IOAA Notes -- \url{https://rajit13.github.io/olympiad.html#notes}\\
+I have several highly curated notes on Olympiad Astronomy worth checking! 
 \end{enumerate}
 
 
