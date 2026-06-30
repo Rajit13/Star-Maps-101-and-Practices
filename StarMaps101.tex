@@ -316,7 +316,7 @@ The constellations should be differentiated from asterisms. Asterisms are patter
 
 In the next page you'll find the official figures from IAU. Notice that you should \textbf{only} remember constellation figures from IAU. You'll find many shapes of same constellation image on the internet which might differ due to distortion or variable conditions on their observations. 
 
-
+%https://watcheroftheskies.net/stars/star-maps.html 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{chart_legend.pdf}
@@ -879,7 +879,7 @@ For data related to the problems below refer to the Messier Object List table \r
 
 \textbf{Object of consideration:} Butterfly Cluster (M6), Trifid Nebula (M20), Wild Duck Cluster (M11), Ring Nebula (M57), Albireo, Arcturus, Rasalhague, M3.
 
-\begin{enumerate}[q1.]
+\begin{enumerate}[Q1.]
 	\item \textbf{Which object/star cannot be seen at this location at any time of the year?}
 	\begin{sol}
 		-- M6 as You cannot see any object below $-30^\circ$ declination.
@@ -990,8 +990,274 @@ horizon right now?}
 	{\color{red} Correct shape and size (between 0.5 to 1 degrees)-- \textbf{3 points}\\
 		Correct orientation (within $23^\circ$ of the picture) -- \textbf{ 2 points}}
 \end{defi}
+\clearpage
 
 
+\subsection*{Exmaple Problem: The Sagittarius Dwarf Galaxy}
+
+
+{ \footnotesize
+	In 1994, Rodrigo Ibata, Mike Irwin, and Gerry Gilmore discovered a dwarf spheroidal galaxy near the center of the Milky Way. Because it lies in the direction of the constellation Sagittarius, it was named the \emph{Sagittarius Dwarf Galaxy}. In this problem, our goal is to determine the center of this galaxy.\\
+	
+	\begin{wrapfigure}{r}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{stereo_geo0.pdf}
+		\caption{Stereographic Projection}
+		\label{sgr_drawf_stereo}
+	\end{wrapfigure}
+	
+	To do this, we need to plot the galaxy on a sky map. We have a sky chart in which the celestial sphere has been projected onto a plane using a stereographic projection. This projection preserves angles, but not areas. Under this projection, a point on the sphere is mapped to a point on a circle, as shown in the figure \ref{sgr_drawf_stereo}.\\
+	
+	The stereographic projection relation\footnote{Geometric derivation of the relation can be found later in the book here: \ref{stereo_projection}} is
+	
+	\[
+	r(\theta)=2R\tan\!\left(\frac{\theta}{2}\right),
+	\]
+	
+	where \(R\) is the radius of the celestial sphere.\\
+	
+	The map provided to you (Fig \ref{sgr_dwarf_map}) is a stereographic chart centered on the star Arcturus (\(\alpha\) Boo).
+	
+	\begin{enumerate}[a.]
+		\itemsep0em
+		\item As a first step, identify the galaxy. The Sagittarius Dwarf Galaxy has an angular thickness of approximately \(12^\circ\). First calculate the chart radius \(R\), then draw the Milky Way and the galaxy on the map.
+		
+		\item
+		The edge of the dwarf galaxy is not clearly defined. However, using data from the \emph{Gaia} satellite, it has been found that three stars lie on the apparent boundary of the galaxy. These stars are \(\pi\), \(\gamma\), and \(h1\) of the constellation Sagittarius.
+		
+		Using the data for these stars, draw the galaxy on the chart.
+		
+		\item
+		All galaxies contain a central star cluster. Such clusters have lower surface brightness than the rest of the galaxy and are therefore much easier to detect than the surrounding galaxy itself.
+		
+		Using the geometric shape of the galaxy, determine the true center of the Sagittarius Dwarf Galaxy and mark it with a ``+'' sign.
+		
+		\item
+		The center of this galaxy contains a globular cluster from the Messier catalog. Which Messier object corresponds to the central cluster of the Sagittarius Dwarf Galaxy?
+	\end{enumerate}}
+	
+	\begin{table}[H]
+		\centering
+		\caption{Coordinates of the stars used in the construction.}
+		\begin{tabular}{lcc}
+			\hline
+			\textbf{Object} & \textbf{RA} & \textbf{Dec} \\
+			\hline
+			Arcturus (\(\alpha\) Boo) & \(14^{\rm h}16^{\rm m}\) & \(+19^\circ03'\) \\
+			North Galactic Pole & \(12^{\rm h}53^{\rm m}\) & \(+27^\circ06'\) \\
+			Alnasl (\(\gamma\) Sgr) & \(18^{\rm h}07^{\rm m}\) & \(-30^\circ25'\) \\
+			\(\pi\) Sgr & \(19^{\rm h}10^{\rm m}\) & \(-21^\circ02'\) \\
+			\(h1\) Sgr & \(19^{\rm h}37^{\rm m}\) & \(-20^\circ40'\) \\
+			\hline
+		\end{tabular}
+	\end{table}
+\begin{sol}
+	\footnotesize
+	
+	\begin{enumerate}[a.]
+		
+		\item The stereographic projection is centered on Arcturus (\(\alpha\) Boo), whose coordinates are
+		\[
+		\alpha_0=14^{\rm h}16^{\rm m},
+		\qquad
+		\delta_0=+19^\circ03'.
+		\]
+		
+		The coordinates of \(\gamma\) Sgr are
+		\[
+		\alpha_\gamma=18^{\rm h}07^{\rm m},
+		\qquad
+		\delta_\gamma=-30^\circ25'.
+		\]
+		
+		The angular separation between the two stars is
+		\[
+		\cos\theta
+		=
+		\sin\delta_0\sin\delta_\gamma
+		+
+		\cos\delta_0\cos\delta_\gamma
+		\cos(\alpha_\gamma-\alpha_0).
+		\]
+		
+		Substituting the numerical values gives
+		\[
+		\theta
+		=
+		74.35^\circ.
+		\]
+		
+		From the chart, the projected distance between Arcturus and \(\gamma\) Sgr is measured to be
+		
+		\[
+		r=6.10\ {\rm cm}. \tag{This is a representative value}
+		\]
+		
+		Using the stereographic projection formula
+		
+		\[
+		r
+		=
+		2R\tan\left(\frac{\theta}{2}\right),
+		\]
+		
+		the chart radius is
+		
+		\[
+		R
+		=
+		\frac{r}
+		{2\tan(\theta/2)}
+		=
+		\frac{6.10}
+		{2\tan(74.35^\circ/2)}
+		=
+		4.02\ {\rm cm}.
+		\]
+		
+		Therefore,
+		
+		\[
+		\boxed{R=4.02\ {\rm cm}}.
+		\]
+		
+		The Milky Way is drawn as the projection of the galactic equator, i.e. the great circle whose pole is the North Galactic Pole. The Sagittarius Dwarf Galaxy has an angular thickness of approximately $	12^\circ.$
+		
+		The corresponding projected width is
+		
+		\[
+		w
+		=
+		2R\tan\left(\frac{12^\circ}{2}\right)
+		=
+		2(4.02)\tan(6^\circ)
+		=
+		0.84\ {\rm cm}.
+		\]
+		
+		This width is used when sketching the dwarf galaxy on the chart.
+		
+		\item
+		
+		The apparent boundary of the Sagittarius Dwarf Galaxy passes through
+		\[
+		\gamma{\rm\ Sgr},
+		\qquad
+		\pi{\rm\ Sgr},
+		\qquad
+		h1{\rm\ Sgr}.
+		\]
+		
+		The coordinates of the relevant stars are
+	\begin{gather*}
+				\alpha_\pi=19^{\rm h}10^{\rm m},
+		\qquad
+		\delta_\pi=-21^\circ02',\\
+				\alpha_{h1}=19^{\rm h}37^{\rm m},
+		\qquad
+		\delta_{h1}=-20^\circ40',\\
+		\alpha_\gamma=18^{\rm h}07^{\rm m},
+		\qquad
+		\delta_\gamma=-30^\circ25'.
+	\end{gather*}
+	
+		
+		The angular distance between \(\pi\) Sgr and \(h1\) Sgr is
+		
+		\[
+		\cos\theta_{\pi h1}
+		=
+		\sin\delta_\pi\sin\delta_{h1}
+		+
+		\cos\delta_\pi\cos\delta_{h1}
+		\cos(\alpha_{h1}-\alpha_\pi),
+		\]
+		
+		which yields
+		
+		\[
+		\theta_{\pi h1}
+		=
+		7.19^\circ.
+		\]
+		
+		The corresponding projected distance is
+		
+		\[
+		r_{\pi h1}
+		=
+		2R\tan\left(\frac{\theta_{\pi h1}}{2}\right)
+		=
+		2(4.02)\tan\left(\frac{7.19^\circ}{2}\right)
+		=
+		0.505\ {\rm cm}.
+		\]
+		
+		Similarly,
+		
+		\[
+		\cos\theta_{\gamma h1}
+		=
+		\sin\delta_\gamma\sin\delta_{h1}
+		+
+		\cos\delta_\gamma\cos\delta_{h1}
+		\cos(\alpha_{h1}-\alpha_\gamma),
+		\]
+		
+		giving
+		
+		\[
+		\theta_{\gamma h1}
+		=
+		20.73^\circ.
+		\]
+		
+		Thus
+		
+		\[
+		r_{\gamma h1}
+		=
+		2R\tan\left(\frac{\theta_{\gamma h1}}{2}\right)
+		=
+		2(4.02)\tan\left(\frac{20.73^\circ}{2}\right)
+		=
+		1.47\ {\rm cm}.
+		\]
+		
+		On the chart, a circle of radius \(0.505\) cm is drawn around \(\pi\) Sgr and a circle of radius \(1.47\) cm is drawn around \(\gamma\) Sgr. Their intersection determines the location of \(h1\) Sgr. The three stars
+		\[
+		\gamma{\rm\ Sgr},
+		\qquad
+		\pi{\rm\ Sgr},
+		\qquad
+		h1{\rm\ Sgr}
+		\]
+		
+		define the visible boundary of the Sagittarius Dwarf Galaxy. An elongated spheroidal outline passing through these stars is then drawn.
+		
+		\item
+		
+		The Sagittarius Dwarf Galaxy is approximately spheroidal. After constructing its outline, the geometric center of the figure is determined.
+		
+		The center is marked on the chart with a ``+'' symbol and represents the location of the galaxy's nuclear star cluster.
+		
+		\item
+		
+		The globular cluster located at the center of the Sagittarius Dwarf Galaxy is
+		
+		\[
+		\boxed{\mathrm{M54}}.
+		\]
+		
+	\end{enumerate}
+	
+\end{sol}
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=\linewidth]{sgr_dwarf_prob}}
+	\caption{Work on the Map yourself!}
+	\label{sgr_dwarf_map}
+\end{figure}
 
 \clearpage
 
@@ -1077,7 +1343,7 @@ To measure other information about the location of the observing place the chart
 One might ask, how can we know the scale of the image? Your scale is the Ursa Major/Minor constellation itself! But with this particular viewing the longitude of the observing place can not be determined easily. However using the Dipper clock orientation you can determine the current month of the observation provided that you know the time when it was observed. This is important as same sky viewing constellation will be present at night once a year. But another thing to remember is that if you've seen this portion of the sky at midnight today, you can find the same orientation after 6 months at midday [If there was no atmosphere which we can do using Stellarium].
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\linewidth]{Hor_1.png}
+    \fbox{\includegraphics[width=0.6\linewidth]{Hor_1.png}}
     \caption{View toward horizon from $23^\circ$ N $89^\circ$ E, azimuth $0^\circ$ (N) Wed 2022 Jan 26 0:27 UTC. Here the FOV is $75^\circ$.}
 \end{figure}
 
@@ -1194,14 +1460,14 @@ Pole view maps are interesting as here the edge of the map represents both the o
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9 \linewidth]{ncp_view.eps}
-    \caption{View from North Celestial Pole}
+    \caption{View from North Celestial Pole \href{https://watcheroftheskies.net/constellations/northern.pdf}{HQ PDF}}
 \end{figure}
 Pole view maps effectivelty represents one hemisphere. This makes this type of stars a good choice for ground tracks (Check IOAA 24 Theory round) of polar satellites.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9 \linewidth]{scp_view.eps}
-    \caption{View from South Celestial Pole}
+    \caption{View from South Celestial Pole \href{https://watcheroftheskies.net/constellations/southern.pdf}{HQ PDF}}
 \end{figure}
 
 
@@ -1297,7 +1563,7 @@ Equatorial Coordinates after Precession (Similarly):
 
 \begin{pro}
 	\begin{enumerate}[a.]
-		\itemsep 
+		\itemsep0em 
 		\item What was the right ascension of the ecliptic pole $\alpha'_{\rm E}$ 12,900 years ago? The vernal equinox is always defined as the intersection point of the celestial equator and the ecliptic, where the Sun is located during the spring equinox. \emph{Note:} 12,900 years corresponds to half of the Platonic year.
 		
 		\item The star Betelgeuse currently has coordinates $\alpha = 6^\mathrm{h}$, $\delta = 7^\circ$. What were its coordinates $\alpha'$, $\delta'$ 12,900 years ago? Neglect the star’s proper motion and nutation.
@@ -1392,6 +1658,8 @@ Hence, the equatorial coordinate Polaris 6000 years ago is: $(\alpha, \delta)= (
 \clearpage 
 \subsection{Mercator Projections}
 As you can see in Fig. , it is created by projecting the points of the sphere onto a cylindrical surface that touches the sphere, usually at the equator. The advantage is that it preserves directions and both declination circles and right ascension circles are displayed as straight lines (in the ``left-right" or ``up-down" directions), but the disadvantage is a large distortion in the area of ​​the poles. Looking at the projection method, you can easily imagine that the map cannot display the entire sphere and some part around the poles is omitted.
+
+%https://watcheroftheskies.net/constellations/maps.html 
 
 \subsubsection{Determining Equatorial Coordinates Using Mercator and Pole View Maps}
 
@@ -2007,7 +2275,7 @@ No penalty if Mars and Mercury’s positions in the list are interchanged.
 	\item \textbf{What would be the maximum altitude of inner planets as seen in the western sky?}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.6\linewidth]{elong_planets.eps}
+		\fbox{\includegraphics[width=0.6\linewidth]{elong_planets.eps}}
 	\end{figure}
 
 	
@@ -2539,6 +2807,8 @@ If for a specific type of glass lens, \( A = B = 2 \, \text{cm} \), and if the e
 
 
 \clearpage
+\begin{comment}
+
 \subsection{Astrophotography}
 As the prices of DSLRs drop since their inception, more people now can take photographs of the night
 sky. The art of Astrophotography has caught on to become a serious pastime for amateur astronomers.\\
@@ -2564,7 +2834,12 @@ These three settings are what a photographer uses to control the amount of light
 The last setting is known as the Zoom. It controls how magnified the image will be. It is usually expressed as the focal length of the lens. (e.g., 18mm, 35mm, 120mm etc.)\\
 
 [To be Completed!]
+\end{comment}
 \subsection{Guessing the correct Magnitude}
+%https://www.saguaroastro.org/wp-content/sac-images/NoviceLimitingMagnitude/limit-mag.pdf 
+%https://project-nightflight.net/limiting_mag.pdf 
+
+A measure of a star's relative dimness is called it's magnitude. The brightest stars are near magnitude zero (a few are even negative.) Stars can be easily seen in suburban skies down to 4th magnitude, and at dark sites, down to greater than 6th magnitude with the naked-eye.\\
 
 Conditions for comparing sight according to the Pickering method:
 \begin{itemize}
@@ -2581,6 +2856,130 @@ Conditions for comparing sight according to the Pickering method:
 	\item By linearizing the scale, you determine the magnitude.
 \end{enumerate}
 
+
+\subsubsection*{Example Problem: Noah's Ark}
+
+{ \footnotesize
+On the following pages you will observe an image of \textbf{Noah's Ark}. Using images numbered 1 through 4, place Noah's Ark at the center of the telescope eyepiece such that stars \textbf{A} through \textbf{F} are all visible in the field. Then present the telescope to the station supervisor for verification.\\ 
+
+\begin{pro}
+	\textbf{Note:} You may ask the supervisor to recenter Noah's Ark, but in that case you will receive only half of the score for this section.
+\end{pro}
+\vspace{0.3cm}
+Using the image \ref{noah_ark} that you see in the eyepiece, answer the following questions.
+
+\begin{enumerate}[a.]
+	\itemsep0em
+	\item Arrange stars \textbf{A} through \textbf{E} in order of brightness, from brightest to faintest.
+	\item The apparent magnitude of star \textbf{B} is \(6.8\) and the apparent magnitude of star \textbf{D} is \(7.8\).
+	
+	Estimate the apparent magnitudes of stars \textbf{C} and \textbf{E}.
+
+	\item Determine the cardinal directions \textbf{North}, \textbf{South}, \textbf{East}, and \textbf{West} around the edge of the field of view.
+	\item Among stars \textbf{A} through \textbf{F}, which star has the smallest right ascension, and which star has the largest angular distance from the south celestial pole?
+	\item Assume the angular separation between stars \textbf{D} and \textbf{F} is \(100\) units. In this scale, estimate the following quantities.
+\end{enumerate}}
+\begin{sol}
+	\footnotesize
+	\textbf{Suggested Method.}
+	
+	The apparent magnitudes of stars \(B\) and \(D\) are known:
+	
+	\[
+	m_B = 6.8,
+	\qquad
+	m_D = 7.8.
+	\]
+	
+	The magnitude difference is $\Delta m = 1.0.$ We visually compare the brightnesses of stars \(C\) and \(E\) with the reference stars \(B\) and \(D\). If a star appears halfway in brightness between \(B\) and \(D\), its magnitude is estimated as $	m = 7.3.$ More generally, if the star appears to lie at a fraction \(f\) of the way from \(B\) to \(D\), then
+	
+	\[
+	m
+	=
+	m_B
+	+
+	f\,(m_D-m_B).
+	\]
+	
+	Since
+	
+	\[
+	m_D-m_B=1.0,
+	\]
+	
+	this becomes
+	
+	\[
+	m
+	=
+	6.8+f.
+	\]
+	
+	The values of \(f\) are estimated visually from the eyepiece image, yielding the apparent magnitudes of stars \(C\) and \(E\).
+\end{sol}
+\begin{figure}[H]
+	\centering
+	
+	\fbox{\includegraphics[width=0.48\linewidth]{noah1.png}}
+	\hfill
+	\fbox{\includegraphics[width=0.48\linewidth]{noah2}}
+	
+	\vspace{0.5em}
+	
+	\fbox{\includegraphics[width=0.48\linewidth]{noah3.png}}
+	\hfill
+	\fbox{\includegraphics[width=0.48\linewidth]{noah4.png}}
+	
+	\caption{Finder charts for Noah's Ark.}
+	\label{noah_ark}
+\end{figure}
+
+\begin{defi}
+	This is a simulated task you perform in actual Telescope Station. If you don't have access to a telescope practice this problem using Stellarium.
+	\tcblower
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Apparent Magnitude of Star E} &
+			\textbf{Apparent Magnitude of Star C} \\
+			\hline
+			& \\
+			\hline
+		\end{tabular}
+	\end{table}
+		\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Star with Smallest Right Ascension} &
+			\textbf{Star with Largest Angular Distance from SCP} \\
+			\hline
+			& \\
+			\hline
+		\end{tabular}
+	\end{table}
+		\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Field of View} &
+			\textbf{Angular Separation of B and E} &
+			\textbf{Angular Separation of A and C} \\
+			\hline
+			& & \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{defi}
+
+\begin{comment}
+	
+
+\subsection{Determining Limiting Magnitude}
+
+ The limiting magnitude is the magnitude of the faintest star that can be seen. This would be easy if we could figure out which star was the faintest. Unfortunately faint stars are not in any order in the sky and comparing two faint stars that are some distance apart is very difficult. The method presented here has the benefit of working around this problem, yet being easy enough for a beginner.
+\end{comment}
 
 \clearpage
 \section{Practice Olympiad Problems}
@@ -2679,7 +3078,7 @@ On \nth{23} March, 2019, Mahmud and Fahim were observing their local sky with th
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{BDOAA_19.png}
+    \fbox{\includegraphics[width=0.8\linewidth]{BDOAA_19.png}}
 \end{figure}
 \begin{enumerate}[a.]
     \item Name the stars 1,2,3, 4, and 5 and their constellations.
@@ -2732,11 +3131,12 @@ This is the sky map at local solar midnight on the observation date. The crossha
 \subsubsection{Jack finds Amelia's Cup of Youth}
 \textit{Author: Fahim Rajit Hossain, BDOAA 25 TST}\\
 
+{ \footnotesize
 You are Captain Jack Sparrow, currently sailing through the Indian Ocean. You've heard that Amelia Earhart\footnote{\url{https://en.wikipedia.org/wiki/Amelia_Earhart}}, the famous aviator, was once flying over the Indian Ocean with the legendary Cup of Youth. However, due to a shortage of fuel, she crash-landed on a remote island and likely perished there. Some native Sentinels later smuggled her diary, which contains valuable navigational data that might reveal the exact location of the island.\\
 
 After killing a rival captain, Berbossa and claiming the diary, you discover that Amelia did not die immediately after the crash—she was severely injured. When the Sentinels arrived at the island, they found only her skeleton, with evidence suggesting coconut crabs had devoured her remains. Unfortunately, the Sentinels are uneducated and unable to provide the precise location of the island.\\
 
-The diary contains the sub-stellar point (the point on Earth directly beneath a star) data for 8 stars on the night of the crash.
+The diary contains the sub-stellar point (the point on Earth directly beneath a star) data for 8 stars on the night of the crash.}
 
 \begin{table}[H]
 	\centering
@@ -2757,6 +3157,7 @@ The diary contains the sub-stellar point (the point on Earth directly beneath a 
 	\caption{Substellar Points on 2025-05-27 at 15:00:00 UTC}
 \end{table}
 %Zenith       & 13.28 & -18.00  & -18.00  &  88.78 \\
+{ \footnotesize
 Now, as you sail through the Indian Ocean, you believe you're very close to the island. A sky chart is provided to you showing the stars currently overhead at 9 PM local time, found in Amelia's diary as well. You also have access to a Mercator projection map of the Indian Ocean.\\
 
 As a captain and a skilled navigator with astronomical knowledge, it is your task to accurately determine your current location using the information from the diary, the sky chart, and your understanding of celestial navigation!
@@ -2774,7 +3175,7 @@ As a captain and a skilled navigator with astronomical knowledge, it is your tas
 	\itemsep0em 
 	\item You might already have the Mercator map and the star map printed. If you do not have access to printed maps, you can use a computer program like Paint to work with the images provided. For printed maps, you might need a pencil and a compass!
 	\item Use Star Maps to identify the listed stars and then find the corresponding values needed for calculation. Figure out how sub-stellar points and stars' positions in the sky correlate in real life. Savvy? :v  
-\end{itemize}
+\end{itemize}}
 
 %S 18° 11' 11.50", E 90° 41' 54.88" 
 
@@ -3062,7 +3463,7 @@ Figure \ref{A2018_O2} is a star chart of a recent opposition of Jupiter. The gri
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\linewidth]{18_O2.png}
+    \fbox{\includegraphics[width=0.95\linewidth]{18_O2.png}}
     \caption{O2 Map}
     \label{A2018_O2}
 \end{figure}
@@ -3073,7 +3474,7 @@ Figure \ref{A2018_O2} is a star chart of a recent opposition of Jupiter. The gri
 Figure \ref{A2018_O3} is a star chart of a part of the sky on March 21, 2018. The longitude and latitude of the observation site is $120^\circ$E, $40^\circ$N (UTC+8). The grid in the figure is an equatorial grid. The thicker vertical line in the centre is the meridian. Estimate the mean solar time to an accuracy of better than 0.5h. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\linewidth]{18_O3.png}
+    \fbox{\includegraphics[width=0.95\linewidth]{18_O3.png}}
     \caption{O3 Map}
     \label{A2018_O3}
 \end{figure}
@@ -3088,7 +3489,7 @@ Students were supposed be given 2 star charts before the examination. They shoul
     
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{18_O4.png}
+    \fbox{\includegraphics[width=0.9\linewidth]{18_O4.png}}
     \caption{O4 Map}
     \label{A2018_O4}
 \end{figure}
@@ -3097,7 +3498,7 @@ Students were supposed be given 2 star charts before the examination. They shoul
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\linewidth]{18_O5.png}
+    \fbox{\includegraphics[width=0.95\linewidth]{18_O5.png}}
     \caption{O5 Map}
     \label{A2018_O5}
 \end{figure}
@@ -3184,7 +3585,7 @@ The figure \ref{GeCAA_1} shows a star chart of the night sky. The location of co
     
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\linewidth]{GeCAA_1.png}
+    \fbox{\includegraphics[width=0.95\linewidth]{GeCAA_1.png}}
     \caption{Comets in the “air”}
     \label{GeCAA_1}
 \end{figure}
@@ -3227,7 +3628,7 @@ Which of these 15 constellations are also on the ecliptic? If you give more than
 \textbf{O8} There are three additional and two missing stars on the figure given below. Circle them and number them as 1, 2, 3 (additional stars), 4, 5 and 6 (missing stars). 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.76\linewidth]{ioaa22_3.png}
+	\fbox{\includegraphics[width=0.76\linewidth]{ioaa22_3.png}}
 	\caption{IOAA 2022 NO8}
 \end{figure}
 \clearpage
