@@ -1,39 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579 796" role="img" aria-labelledby="title desc">
   <title id="title">Orion constellation diagram</title>
-  <desc id="desc">Browser-renderable vector rendering of the repository source image ori_1.eps.</desc>
-  <!-- Web rendering of images/ori_1.eps (Cairo EPS, BoundingBox 0 0 579 796). -->
-  <rect width="579" height="796" fill="#ffffff"/>
-  <g transform="translate(0 796) scale(1 -1)" fill="#000000" stroke="#000000" stroke-linejoin="round">
+  <desc id="desc">White Orion constellation lines and stars on a dark night-sky background.</desc>
+  <rect width="579" height="796" fill="#07101b"/>
+  <g fill="#ffffff" stroke="#ffffff" stroke-linejoin="round">
     <g fill="none" stroke-width="7.767" stroke-linecap="butt">
-      <polyline points="266.977,779.930 278.156,569.949 147.215,345.594 89.730,296.090 9.887,185.113 38.629,27.023 97.715,9.461 37.832,168.344 9.887,186.707"/>
-      <polyline points="147.215,345.594 260.590,260.164 339.633,340.801 327.656,519.648 278.156,569.949"/>
-      <polyline points="327.656,519.648 385.941,566.754 475.363,706.477"/>
-      <polyline points="339.633,340.801 567.184,286.512 552.809,236.211 519.277,210.660 491.332,121.238 429.055,84.512"/>
-      <polyline points="567.184,286.512 556.004,407.871 530.453,431.820"/>
+      <polyline points="266.977,16.070 278.156,226.051 147.215,450.406 89.730,499.910 9.887,610.887 38.629,768.977 97.715,786.539 37.832,627.656 9.887,609.293"/>
+      <polyline points="147.215,450.406 260.590,535.836 339.633,455.199 327.656,276.352 278.156,226.051"/>
+      <polyline points="327.656,276.352 385.941,229.246 475.363,89.523"/>
+      <polyline points="339.633,455.199 567.184,509.488 552.809,559.789 519.277,585.340 491.332,674.762 429.055,711.488"/>
+      <polyline points="567.184,509.488 556.004,388.129 530.453,364.180"/>
     </g>
     <g stroke-width="1">
-      <circle cx="386.563" cy="566.941" r="11.235"/>
-      <circle cx="277.602" cy="572.305" r="16.932"/>
-      <circle cx="305.406" cy="546.758" r="16.252"/>
-      <circle cx="340.691" cy="341.539" r="18.966"/>
-      <circle cx="262.500" cy="258.266" r="14.898"/>
-      <circle cx="91.012" cy="297.641" r="12.864"/>
-      <circle cx="266.109" cy="780.148" r="14.357"/>
-      <circle cx="475.480" cy="706.668" r="30.223"/>
-      <circle cx="327.141" cy="519.656" r="14.356"/>
-      <circle cx="148.879" cy="347.605" r="22.086"/>
-      <circle cx="11.266" cy="186.848" r="10.829"/>
-      <circle cx="37.801" cy="169.063" r="11.372"/>
-      <circle cx="39.637" cy="28.629" r="11.506"/>
-      <circle cx="96.516" cy="10.984" r="10.558"/>
-      <circle cx="429.047" cy="84.098" r="10.558"/>
-      <circle cx="490.582" cy="123.617" r="11.914"/>
-      <circle cx="518.953" cy="211.266" r="13.948"/>
-      <circle cx="551.695" cy="236.953" r="11.235"/>
-      <circle cx="565.953" cy="287.340" r="12.453"/>
-      <circle cx="564.398" cy="323.047" r="10.421"/>
-      <circle cx="556.637" cy="405.898" r="11.098"/>
-      <circle cx="531.230" cy="430.176" r="10.558"/>
+      <circle cx="386.563" cy="229.059" r="11.235"/>
+      <circle cx="277.602" cy="223.695" r="16.932"/>
+      <circle cx="305.406" cy="249.242" r="16.252"/>
+      <circle cx="340.691" cy="454.461" r="18.966"/>
+      <circle cx="262.500" cy="537.734" r="14.898"/>
+      <circle cx="91.012" cy="498.359" r="12.864"/>
+      <circle cx="266.109" cy="15.852" r="14.357"/>
+      <circle cx="475.480" cy="89.332" r="30.223"/>
+      <circle cx="327.141" cy="276.344" r="14.356"/>
+      <circle cx="148.879" cy="448.395" r="22.086"/>
+      <circle cx="11.266" cy="609.152" r="10.829"/>
+      <circle cx="37.801" cy="626.937" r="11.372"/>
+      <circle cx="39.637" cy="767.371" r="11.506"/>
+      <circle cx="96.516" cy="785.016" r="10.558"/>
+      <circle cx="429.047" cy="711.902" r="10.558"/>
+      <circle cx="490.582" cy="672.383" r="11.914"/>
+      <circle cx="518.953" cy="584.734" r="13.948"/>
+      <circle cx="551.695" cy="559.047" r="11.235"/>
+      <circle cx="565.953" cy="508.660" r="12.453"/>
+      <circle cx="564.398" cy="472.953" r="10.421"/>
+      <circle cx="556.637" cy="390.102" r="11.098"/>
+      <circle cx="531.230" cy="365.824" r="10.558"/>
     </g>
   </g>
 </svg>
