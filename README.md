@@ -14,7 +14,7 @@
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases/latest/download/StarMaps101.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Download%20Latest%20PDF-0EA5E9?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Latest PDF" />
   </a>
-  <a href="https://rajit13.github.io/starcharts101/graph.html" target="_blank">
+  <a href="https://rajit13.github.io/starcharts101/" target="_blank">
     <img src="https://img.shields.io/badge/Interactive%20Knowledge%20Graph-6D5DFB?style=for-the-badge&logo=githubpages&logoColor=white" alt="Interactive Star Maps 101 Knowledge Graph" />
   </a>
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases" target="_blank">
@@ -52,7 +52,7 @@ This material is used in the training of the Bangladesh team at the
 
 The repository includes an Obsidian-style interactive knowledge graph that connects book sections, previous observation practice, IOAA 2025 Observation tasks (OM, OT and OP), and identified areas for additional training.
 
-**[Open the interactive Star Maps 101 knowledge graph](https://rajit13.github.io/starcharts101/graph.html)**
+**[Open the interactive Star Maps 101 knowledge graph](https://rajit13.github.io/starcharts101/)**
 
 The graph supports search, OM/OT/OP filtering, relationship filtering, node dragging, zooming, neighbour highlighting and direct source links. Its canonical source is [`star-maps-101-graph.html`](star-maps-101-graph.html) in this repository; the hosted page loads that source so repository updates can be reflected online without maintaining a separate graph copy.
 
