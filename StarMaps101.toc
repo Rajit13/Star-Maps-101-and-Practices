@@ -27,37 +27,39 @@
 \contentsline {subsection}{\numberline {5.3}Observing Planets}{83}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Problem: Plotting the Moon and Planets}{85}{subsubsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.4}Telescope Aided Observation}{90}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Guessing the correct Magnitude}{100}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Practice Olympiad Problems}{102}{section.6}%
-\contentsline {subsection}{\numberline {6.1}General Instructions in typical IOAA}{102}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}How OBS Marking Works}{102}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}BDOAA}{105}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}2019}{105}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}2021}{106}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}2024}{107}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Jack finds Amelia's Cup of Youth}{108}{subsubsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.4}INAO}{110}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}2019}{110}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}2018}{111}{subsubsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.3}2014}{111}{subsubsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.5}SAO}{113}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}P1: The night of Vernal Equinox}{113}{subsubsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.6}Czechia}{114}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Observation using Simbad}{114}{subsubsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.7}IOAA 2016 Observation Round}{116}{subsection.6.7}%
-\contentsline {subsubsection}{\numberline {6.7.1}Observational Map}{116}{subsubsection.6.7.1}%
-\contentsline {subsubsection}{\numberline {6.7.2}Observational Planetarium}{116}{subsubsection.6.7.2}%
-\contentsline {subsection}{\numberline {6.8}IOAA 2018 Observation Round}{119}{subsection.6.8}%
-\contentsline {subsubsection}{\numberline {6.8.1}O1}{119}{subsubsection.6.8.1}%
-\contentsline {subsubsection}{\numberline {6.8.2}O2}{120}{subsubsection.6.8.2}%
-\contentsline {subsubsection}{\numberline {6.8.3}O3}{121}{subsubsection.6.8.3}%
-\contentsline {subsubsection}{\numberline {6.8.4}O4}{122}{subsubsection.6.8.4}%
-\contentsline {subsection}{\numberline {6.9}IOAA 2019 Observation Round}{124}{subsection.6.9}%
-\contentsline {subsubsection}{\numberline {6.9.1}Task 01}{124}{subsubsection.6.9.1}%
-\contentsline {subsubsection}{\numberline {6.9.2}Task 02}{125}{subsubsection.6.9.2}%
-\contentsline {subsubsection}{\numberline {6.9.3}Task 03}{126}{subsubsection.6.9.3}%
-\contentsline {subsection}{\numberline {6.10}GeCAA 2020}{128}{subsection.6.10}%
-\contentsline {subsubsection}{\numberline {6.10.1}Problem 1}{128}{subsubsection.6.10.1}%
-\contentsline {subsubsection}{\numberline {6.10.2}Problem 4}{129}{subsubsection.6.10.2}%
-\contentsline {subsection}{\numberline {6.11}IOAA 2022}{131}{subsection.6.11}%
-\contentsline {section}{\numberline {7}Sources}{134}{section.7}%
+\contentsline {subsubsection}{\numberline {5.4.1}Practice Telescope Tasks}{96}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Guessing the correct Magnitude}{102}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Practice Olympiad Problems}{104}{section.6}%
+\contentsline {subsection}{\numberline {6.1}General Instructions in typical IOAA}{104}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}How OBS Marking Works}{104}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}BDOAA}{107}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}2019}{107}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}2021}{108}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}2024}{109}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Jack finds Amelia's Cup of Youth}{110}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}INAO}{112}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}2019}{112}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}2018}{113}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}2014}{113}{subsubsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.5}SAO}{115}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}P1: The night of Vernal Equinox}{115}{subsubsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.6}Czechia}{116}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Observation using Simbad}{116}{subsubsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.7}IOAA 2016 Observation Round}{118}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Observational Map}{118}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}Observational Planetarium}{118}{subsubsection.6.7.2}%
+\contentsline {subsection}{\numberline {6.8}IOAA 2018 Observation Round}{121}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}O1}{121}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}O2}{122}{subsubsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.3}O3}{123}{subsubsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.4}O4}{124}{subsubsection.6.8.4}%
+\contentsline {subsection}{\numberline {6.9}IOAA 2019 Observation Round}{126}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Task 01}{126}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.2}Task 02}{127}{subsubsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.3}Task 03}{128}{subsubsection.6.9.3}%
+\contentsline {subsection}{\numberline {6.10}GeCAA 2020}{130}{subsection.6.10}%
+\contentsline {subsubsection}{\numberline {6.10.1}Problem 1}{130}{subsubsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.2}Problem 4}{131}{subsubsection.6.10.2}%
+\contentsline {subsection}{\numberline {6.11}IOAA 2022}{133}{subsection.6.11}%
+\contentsline {subsection}{\numberline {6.12}IOAA 2025 Grid-style}{136}{subsection.6.12}%
+\contentsline {section}{\numberline {7}Sources}{138}{section.7}%
