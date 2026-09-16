@@ -1,0 +1,62 @@
+name: Publish Star Maps 101 PDF Release
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'StarMaps101.pdf'
+      - '.github/workflows/release-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Define release metadata from latest PDF update
+        id: meta
+        shell: bash
+        run: |
+          pdf_date="$(git log -1 --format=%cs -- StarMaps101.pdf)"
+          if [ -z "$pdf_date" ]; then
+            echo "Could not determine the latest update date for StarMaps101.pdf" >&2
+            exit 1
+          fi
+
+          release_name="v1_${pdf_date}"
+          echo "date=$pdf_date" >> "$GITHUB_OUTPUT"
+          echo "tag=$release_name" >> "$GITHUB_OUTPUT"
+          echo "title=$release_name" >> "$GITHUB_OUTPUT"
+
+      - name: Create or refresh GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          TITLE: ${{ steps.meta.outputs.title }}
+          PDF_DATE: ${{ steps.meta.outputs.date }}
+        shell: bash
+        run: |
+          notes="Latest compiled Star Maps 101 and Practices PDF. PDF update date: ${PDF_DATE}."
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" StarMaps101.pdf --clobber
+            gh release edit "$TAG" \
+              --title "$TITLE" \
+              --notes "$notes" \
+              --latest
+          else
+            gh release create "$TAG" StarMaps101.pdf \
+              --target "$GITHUB_SHA" \
+              --title "$TITLE" \
+              --notes "$notes" \
+              --latest
+          fi
