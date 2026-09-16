@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/blob/master/StarMaps101.pdf" target="_blank">
+  <a href="https://raw.githubusercontent.com/Rajit13/Star-Maps-101-and-Practices/master/StarMaps101.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Open%20Latest%20PDF-0EA5E9?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Open Latest PDF" />
   </a>
   <a href="https://rajit13.github.io/starcharts101/" target="_blank">
@@ -39,7 +39,7 @@
 
 **Star Charts 101 and Practices** is a practice book dedicated to astronomy enthusiasts and students preparing for the Star Charts/Observational Round of Astronomy and Earth Science Olympiads. It is not a full star atlas; rather, it is intended as a practical problem-solving companion.
 
-The book is based on the author's experience as a participant in two international Olympiads, an IOAA team leader since 2018, a stargazer, and an amateur astronomer. It develops the fundamental knowledge needed for computations associated with studying the sky and the positions of celestial objects, with a particular focus on naked-eye observational astronomy. Practical examples increase progressively in complexity, and the emphasis is on understanding the sky systematically rather than memorizing every constellation.
+The book is based on the author's experience as a participant in two international Olympiads, an IOAA team leader since 2018, a stargazer, and an observational astronomer. It develops the fundamental knowledge needed for computations associated with studying the sky and the positions of celestial objects, with a particular focus on naked-eye observational astronomy. Practical examples increase progressively in complexity, and the emphasis is on understanding the sky systematically rather than memorizing every constellation.
 
 This material is used in the training of the Bangladesh team at the  
 [Bangladesh Olympiad on Astronomy and Astrophysics](https://bdoaa.org).
@@ -76,7 +76,12 @@ I am currently improving:
 - telescopic observations
 - celestial coordinate system notes
 
-Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v1_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Open Latest PDF** button above opens the repository PDF viewer in a new tab; the release page remains available for downloading specific versions.
+Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v1_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Open Latest PDF** button above opens the PDF file directly in a new browser tab; the release page remains available for downloading specific versions.
+
+## 📚 Additional reading for Astronomy Olympiad preparation
+
+- [Astronomy Problem of the Day — problem collection PDF](https://rajit13.github.io/website_docs/Astro_POTD.pdf)
+- [জ্যোতির্বিজ্ঞানের যতকিছু — অলিম্পিয়াড ও অন্যান্য](https://www.rokomari.com/book/471442/jyotirbigganer-jotokichu)
 
 ## 🤝 Contributing
 
