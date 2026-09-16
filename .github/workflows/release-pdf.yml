@@ -1,0 +1,46 @@
+name: Publish Star Maps 101 PDF Release
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'StarMaps101.pdf'
+      - '.github/workflows/release-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Define release metadata
+        id: meta
+        shell: bash
+        run: |
+          short_sha="${GITHUB_SHA::7}"
+          echo "tag=pdf-${short_sha}" >> "$GITHUB_OUTPUT"
+          echo "title=Star Maps 101 PDF — ${short_sha}" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release and attach final PDF
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          TITLE: ${{ steps.meta.outputs.title }}
+        shell: bash
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" StarMaps101.pdf --clobber
+          else
+            gh release create "$TAG" StarMaps101.pdf \
+              --target "$GITHUB_SHA" \
+              --title "$TITLE" \
+              --notes "Final compiled PDF for Star Maps 101 and Practices. Generated from commit $GITHUB_SHA." \
+              --latest
+          fi
