@@ -11,8 +11,11 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/Rajit13/Star-Maps-101-and-Practices/master/StarMaps101.pdf" target="_blank">
+  <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases/latest/download/StarMaps101.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Download%20Latest%20PDF-0EA5E9?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Latest PDF" />
+  </a>
+  <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases" target="_blank">
+    <img src="https://img.shields.io/github/v/release/Rajit13/Star-Maps-101-and-Practices?style=for-the-badge&label=Latest%20Release" alt="Latest GitHub Release" />
   </a>
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/stargazers" target="_blank">
     <img src="https://img.shields.io/github/stars/Rajit13/Star-Maps-101-and-Practices?style=for-the-badge&logo=github&label=Stars" alt="GitHub Stars" />
@@ -66,7 +69,7 @@ I am currently improving:
 - telescopic observations
 - celestial coordinate system notes
 
-Because of file size limits and the way GitHub handles large repository assets, future updates may be managed through release files rather than direct repository uploads.
+Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v1_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Download Latest PDF** button above always points to the PDF attached to the latest release.
 
 ## 🤝 Contributing
 
