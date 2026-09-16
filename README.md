@@ -11,11 +11,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases/latest/download/StarMaps101.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/Download%20Latest%20PDF-0EA5E9?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Latest PDF" />
+  <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/blob/master/StarMaps101.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/Open%20Latest%20PDF-0EA5E9?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Open Latest PDF" />
   </a>
   <a href="https://rajit13.github.io/starcharts101/" target="_blank">
-    <img src="https://img.shields.io/badge/Interactive%20Knowledge%20Graph-6D5DFB?style=for-the-badge&logo=githubpages&logoColor=white" alt="Interactive Star Maps 101 Knowledge Graph" />
+    <img src="https://img.shields.io/badge/Interactive%20Knowledge%20Graph-6D5DFB?style=for-the-badge&logo=githubpages&logoColor=white" alt="Interactive Star Charts 101 Knowledge Graph" />
   </a>
   <a href="https://github.com/Rajit13/Star-Maps-101-and-Practices/releases" target="_blank">
     <img src="https://img.shields.io/github/v/release/Rajit13/Star-Maps-101-and-Practices?style=for-the-badge&label=Latest%20Release" alt="Latest GitHub Release" />
@@ -30,20 +30,16 @@
 </p>
 
 <p align="center">
-  <em>A practical, Olympiad-focused guide to reading the night sky through star maps, charts, and observation.</em>
+  <em>A practical problem-solving companion for star charts and observational astronomy.</em>
 </p>
 
 ---
 
 ## ✨ Overview
 
-**Star Charts 101 and Practices** is a notebook and training guide created in preparation for the *International Olympiad on Astronomy and Astrophysics (IOAA)*.
+**Star Charts 101 and Practices** is a practice book dedicated to astronomy enthusiasts and students preparing for the Star Charts/Observational Round of Astronomy and Earth Science Olympiads. It is not a full star atlas; rather, it is intended as a practical problem-solving companion.
 
-It brings together:
-- star map and star chart analysis
-- practical astronomical observation
-- Olympiad-style training notes
-- guided thinking for sky navigation
+The book is based on the author's experience as a participant in two international Olympiads, an IOAA team leader since 2018, a stargazer, and an amateur astronomer. It develops the fundamental knowledge needed for computations associated with studying the sky and the positions of celestial objects, with a particular focus on naked-eye observational astronomy. Practical examples increase progressively in complexity, and the emphasis is on understanding the sky systematically rather than memorizing every constellation.
 
 This material is used in the training of the Bangladesh team at the  
 [Bangladesh Olympiad on Astronomy and Astrophysics](https://bdoaa.org).
@@ -52,7 +48,7 @@ This material is used in the training of the Bangladesh team at the
 
 The repository includes an Obsidian-style interactive knowledge graph that connects book sections, previous observation practice, IOAA 2025 Observation tasks (OM, OT and OP), and identified areas for additional training.
 
-**[Open the interactive Star Maps 101 knowledge graph](https://rajit13.github.io/starcharts101/)**
+**[Open the interactive Star Charts 101 knowledge graph](https://rajit13.github.io/starcharts101/)**
 
 The graph supports search, OM/OT/OP filtering, relationship filtering, node dragging, zooming, neighbour highlighting and direct source links. Its canonical source is [`star-maps-101-graph.html`](star-maps-101-graph.html) in this repository; the hosted page loads that source so repository updates can be reflected online without maintaining a separate graph copy.
 
@@ -80,7 +76,7 @@ I am currently improving:
 - telescopic observations
 - celestial coordinate system notes
 
-Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v1_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Download Latest PDF** button above always points to the PDF attached to the latest release.
+Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v1_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Open Latest PDF** button above opens the repository PDF viewer in a new tab; the release page remains available for downloading specific versions.
 
 ## 🤝 Contributing
 
