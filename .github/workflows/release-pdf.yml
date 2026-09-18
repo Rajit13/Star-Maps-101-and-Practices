@@ -32,7 +32,7 @@ jobs:
             exit 1
           fi
 
-          release_name="v1_${pdf_date}"
+          release_name="v_${pdf_date}"
           echo "date=$pdf_date" >> "$GITHUB_OUTPUT"
           echo "tag=$release_name" >> "$GITHUB_OUTPUT"
           echo "title=$release_name" >> "$GITHUB_OUTPUT"
