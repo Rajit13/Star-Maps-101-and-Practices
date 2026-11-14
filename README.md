@@ -76,7 +76,7 @@ I am currently improving:
 - telescopic observations
 - celestial coordinate system notes
 
-Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v1_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Open Latest PDF** button above opens the PDF file directly in a new browser tab; the release page remains available for downloading specific versions.
+Compiled PDF updates are published through [GitHub Releases](https://github.com/Rajit13/Star-Maps-101-and-Practices/releases). Release names follow the format `v_YYYY-MM-DD`, based on the date of the latest update to `StarMaps101.pdf`. The **Open Latest PDF** button above opens the PDF file directly in a new browser tab; the release page remains available for downloading specific versions.
 
 ## 📚 Additional reading for Astronomy Olympiad preparation
 
