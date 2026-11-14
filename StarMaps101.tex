@@ -21,7 +21,10 @@
 \usepackage{lipsum}
 \usepackage{bm}
 \usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable} 
 \definecolor{cblue}{HTML}{0F52BA}
+\definecolor{teqnTeal}{HTML}{008080}
+\definecolor{teqnPale}{HTML}{F2F8F8} 
 \graphicspath{ {./images/} }
 
 
@@ -72,6 +75,42 @@
 	before skip=4pt,  % Space before the box starts
 	after skip=4pt    % Space after the box ends
 }
+
+
+\newenvironment{teqn}[1][Check / technique]
+{% Begin teqn
+	\begin{tcolorbox}[
+		enhanced,
+		breakable,
+		colframe=teqnTeal,
+		colback=teqnPale,
+		colbacktitle=teqnTeal,
+		coltitle=white,
+		fonttitle=\bfseries,
+		title={\(\checkmark\)\enspace #1},
+		boxrule=0.7pt,
+		arc=2mm,
+		boxsep=0pt,
+		left=3mm, right=3mm,
+		top=2mm, bottom=2mm,
+		toptitle=1.5mm, bottomtitle=1.5mm,
+		before skip=8pt, after skip=8pt
+		]
+		\begin{list}{\textcolor{teqnTeal}{\(\checkmark\)}}{%
+				\setlength{\leftmargin}{1.6em}%
+				\setlength{\labelwidth}{1.1em}%
+				\setlength{\labelsep}{0.5em}%
+				\setlength{\topsep}{0pt}%
+				\setlength{\partopsep}{0pt}%
+				\setlength{\parsep}{0pt}%
+				\setlength{\itemsep}{3pt}%
+			}%
+		}
+		{% End teqn
+		\end{list}
+	\end{tcolorbox}
+}
+
 
 \parindent 0ex
 \title{{\fontsize{30}{30}\selectfont\textbf{ \color{RoyalBlue} Star Charts 101 and Practices}}}
@@ -126,12 +165,9 @@ All modern constellations were codified in the European scientific subculture pr
 
 The IAU\footnote{Source: \url{https://www.iau.org/public/themes/constellations/}} adopted three-letter abbreviations of the constellation names at its inaugural General Assembly in Rome in 1922. The abbreviations devised by the IAU each have three letters which in the majority of cases are the first three letters of the constellation name, such as AND for Andromeda, EQU for Equuleus, HER for Hercules, ORI for Orion and so on. This trend is not strictly adhered to in cases where confusion may arise. This happens with the two constellations Leo (abbreviated LEO) and Leo Minor (abbreviated LMI). Similarly, because Triangulum (TRI) may be mistaken for Triangulum Australe, the latter is abbreviated TRA. Other instances occur with Sagitta (SGE) and Sagittarius (SGR) and with Canis Major (CMA) and Canis Minor (CMI) where the first two letters from the second names of the constellations are used. This is also the case with Corona Australis (CRA) and Corona Borealis (CRB) where the first letter of the second name of each constellation is incorporated. Finally, mention must be made of Crater (CRT) which has been abbreviated in such a way as to avoid confusion with the aforementioned CRA (Corona Australis).\\
 
-In Olympiads, students are allowed to use star or constellation names based on their system, yet obtaining permission is necessary for IOAA/IAO/APAO/OWAO competitions. Typically, team leaders should inquire about this with the host jury. Therefore, students from countries like Bangladesh are advised to consistently utilize names designated by the IAU. However, for a comprehensive understanding of the Bangla names of stars and constellations, along with their background stories, students are encouraged to read the book {\color{blue}\textbf{Tara Porichity} by Abdul Jobbar}.\\
+In Olympiads, students are allowed to use star or constellation names based on their system, yet obtaining permission is necessary for IOAA/IAO/APAO/OWAO competitions. Typically, team leaders should inquire about this with the host jury. Therefore, students from countries like Bangladesh are advised to consistently utilize names designated by the IAU. However, for a comprehensive understanding of the Bangla names of stars and constellations, along with their background stories, students are encouraged to visit \href{https://rajit13.github.io/astro-bangla-dict.html#bn-star-names}{Bangla Star Names} in my website.\\
 
-\textbf{Learning how to recognize constellations}
-
-\begin{enumerate}[1.]
-	\itemsep0em 
+\begin{teqn}[Learning how to recognize constellations]
 	\item Write down the list of all the constellations you want to remember (let's call this to be ``C-List")
 	\item Open the Stellarium app\footnote{Download from: \url{https://stellarium.org/}},
 	\item Turn the constellation lines on, and the constellation names on.
@@ -142,8 +178,8 @@ In Olympiads, students are allowed to use star or constellation names based on t
 	\item Repeat the striking-out rounds until you have no constellations left in your ``C-list."
 	\item If you every day repeat steps 1-8 (each day you start with blank ``C-list" with no constellations struck out), just in 4-5 days you will be able to recognize the constellations lines and will have the basic knowledge about how they are situated on the night sky.
 	\item When you can strike all the constellations from the ``C-list" in one striking out round, you can start repeating all the previous steps, but now with constellation lines turned off. If you repeat these steps every day, just in some days you will get good skills of determining the position of the constellation, and recognizing it by its picture or stars around.
-	
-\end{enumerate}
+\end{teqn}
+
 
 \subsection{Star Names}
 
@@ -152,10 +188,17 @@ Most of the brighter stars were assigned their first systematic names by the Ger
 A constellation’s most brilliant star is often called Alpha, the first letter in the Greek alphabet. The letters are used with the Latin genitive form of the constellation name, so the Alpha star of Centaurus is called “Alpha Centauri.” But there are few exceptions. For example, Gemini’s brightest star is $\beta$ and that of octans is $\nu$. Here is the lowercase Greek alphabet as used by astronomers:
 
 \begin{table}[H]
-\centering
-\begin{tabular}{lll}
-\begin{tabular}[c]{@{}l@{}}$\alpha$ Alpha\\ $\beta$ Beta\\ $\gamma$ Gamma\\ $\delta$ Delta\\ $\varepsilon$ Epsilon\\ $\zeta$ Zeta\\ $\eta$ Eta\\ $\theta$ Theta\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\iota$ Iota\\ $\kappa$ Kappa\\ $\lambda$ Lambda\\ $\mu$ Mu\\ $\nu$ Nu\\ $\xi$ Xi\\ o Omicron\\ $\pi$ Pi\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\rho$ Rho\\ $\sigma$ Sigma\\ $\tau$ Tau\\ $\upsilon$ Upsilon\\ $\phi$ Phi\\ $\chi$ Chi\\ $\Psi$ Psi\\ $\omega$ Omega\end{tabular}
-\end{tabular}
+	\centering
+	\begin{tabular}{cl@{\qquad}cl@{\qquad}cl}
+		$\alpha$      & Alpha   & $\iota$   & Iota    & $\rho$     & Rho     \\
+		$\beta$       & Beta    & $\kappa$  & Kappa   & $\sigma$   & Sigma   \\
+		$\gamma$      & Gamma   & $\lambda$ & Lambda  & $\tau$     & Tau     \\
+		$\delta$      & Delta   & $\mu$     & Mu      & $\upsilon$ & Upsilon \\
+		$\varepsilon$ & Epsilon & $\nu$     & Nu      & $\phi$     & Phi     \\
+		$\zeta$       & Zeta    & $\xi$     & Xi      & $\chi$     & Chi     \\
+		$\eta$        & Eta     & $o$       & Omicron & $\psi$     & Psi     \\
+		$\theta$      & Theta   & $\pi$     & Pi      & $\omega$   & Omega   \\
+	\end{tabular}
 \end{table}
 
 
@@ -296,7 +339,7 @@ If you every day repeat steps 1-5 (each day you start with blank ``S-list" with 
 \centering
 \begin{tabular}{lllllll}
 \prt{$\alpha$ And }               & \prt{$\beta$ Aur}  & $\alpha$ CMa  & $\alpha$ Gem & $\alpha$ Ori & $\alpha$ Psc      & $\beta$ UMa   \\
-$\beta$ And                 & $\alpha$ Boo & $\beta$ CMa   & $\beta$ Gem  & $\beta$ Ori  & $\alpha$ Sco      & $\alpha$ UMi \\
+$\beta$ And                 & \prt{$\alpha$ Boo} & $\beta$ CMa   & $\beta$ Gem  & $\beta$ Ori  & $\alpha$ Sco      & $\alpha$ UMi \\
 \prt{$\alpha$ Ari}                & $\beta$ Boo  & $\alpha$ CMi  & $\alpha$ Leo & $\alpha$ Oph & $\beta$ Sco       & $\beta$ UMi  \\
 $\beta$ Ari                 & $\alpha$ Cap & \prt{$\beta$ CMi}   & $\beta$ Leo  & $\beta$ Oph  & $\alpha$ Ser      & $\beta$ Cyg  \\
 $\alpha$ Aql                & $\alpha$ Cas & $\alpha$ CrB  & $\alpha$ Lep & \prt{$\alpha$ Per} & $\varepsilon$ Sgr &              \\
@@ -307,7 +350,7 @@ $\alpha$ Aur & \prt{$\alpha$ Cet} & $\alpha$ Cyg  & $\beta$ Lyr  & $\beta$ Peg  
 \caption{Suggested Bright Stars of interest (\prt{Appeared in IOAA})}
 \end{table}
 
-\textbf{List of brightest natural objects in the sky}- \url{https://en.wikipedia.org/wiki/List_of_brightest_natural_objects_in_the_sky}
+\href{https://en.wikipedia.org/wiki/List_of_brightest_natural_objects_in_the_sky}{\textbf{List of brightest natural objects in the sky}}
 \subsection{Constellation Figures}
 
 In star maps it is common to mark line “patterns” that represent the shapes that give the name to the constellations. However, the IAU defines a constellation by its boundary (indicated by sky coordinates) and not by its pattern and the same constellation may have several variants in its representation.\\
@@ -501,6 +544,49 @@ From the diagram, $\angle SME= \Psi$ and $MN= CM \cos \measuredangle CMN=r\cos (
 	(Image inverted for printing purposes)}
 \end{figure}
 
+
+\begin{comment}
+	
+
+\begin{pro}
+	\noindent\textbf{A Solar Panel and a Sundial on the Moon}\hfill
+	\textbf{[10 marks]}
+	
+	An astronaut installs a horizontal solar panel and a vertical pole of
+	height \(H=1.00\,\mathrm{m}\) at selenographic coordinates
+	\((0^\circ,0^\circ)\), the centre of the Moon's near side. At \(t=0\),
+	the Sun rises at the station. At that same instant, an observer on Earth
+	sees a first-quarter Moon.
+	
+	Take one lunar solar day to be \(T=29.53\) Earth days. Assume that the
+	Sun moves uniformly along the lunar celestial equator and that the
+	ground is a flat, unobstructed plane. Treat the Sun as a point source
+	of constant irradiance. Neglect lunar libration, eclipses, and reflected
+	light.
+	
+	Sketch three vertically stacked graphs for \(0\leq t\leq T\). Use the
+	same horizontal scale on all three, label each vertical axis with its
+	quantity and units where applicable, and mark the times of sunrise,
+	noon, sunset, midnight, and the following sunrise at the lunar station.
+	
+	\begin{enumerate}[(a)]
+		\item Plot the percentage of the Moon's apparent disk that is
+		illuminated, as seen \emph{from Earth}. Indicate whether this
+		percentage is increasing or decreasing at \(t=0\). \hfill [3]
+		
+		\item Plot \(P(t)/P_{\max}\), where \(P(t)\) is the direct solar
+		power received by the panel and \(P_{\max}\) is the power it
+		receives at local noon. \hfill [3]
+		
+		\item Plot the length \(L(t)\), in metres, of the pole's shadow.
+		Show its behaviour near sunrise and sunset, and mark the times
+		when the shadow is as long as the pole. Distinguish a shadow of
+		zero length from the absence of a solar shadow. \hfill [4]
+	\end{enumerate}
+\end{pro}
+\end{comment}
+\clearpage
+
 \textsf{\textbf{\large Problem: Moon's Position}}\\
 
 Determining the Lunar Position based on observation is a very common question in Astronomy-related competitions. Although the problem statements often seem simple, solving them requires a solid understanding of the Sun–Earth–Moon geometry, lunar phases, and time relationships. Let’s go through an example problem and solve it step by step with the help of some diagrams.\\
@@ -538,6 +624,126 @@ So, 12 days later, Mim will see half-moon rising in the \textbf{East}!
 \textbf{Draw and Solve the scenario here}
 		\vspace{13cm}
 \end{minipage}}
+\clearpage
+\clearpage
+\textsf{\textbf{\large Graph Plotting using lunar conditions}}\\
+\begin{pro}
+	\textbf{Earth Observation from the Moon \hfill [IOAAjr 2026]}
+	
+	An astronaut is observing Earth and the Sun from a lunar station at
+	selenographic latitude $0^\circ$ and longitude $0^\circ$, near the centre
+	of the Moon's Earth-facing side. On day $0$, observers on Earth witness
+	a total lunar eclipse.
+	
+	Sketch the following three graphs for the astronaut over the next
+	$30$ Earth days. In each panel, the horizontal axis should show the time
+	elapsed since day $0$, measured in Earth days.
+	
+	\begin{enumerate}[(a)]
+		\item The percentage of Earth's apparent disk that is illuminated.
+		\hfill [3]
+		
+		\item The altitude of the Sun, in degrees, while it is above the
+		astronaut's horizon. Leave the graph blank while the Sun is below
+		the horizon.
+		\hfill [3]
+		
+		\item The altitude of the centre of Earth, in degrees. Show the
+		small apparent motion of Earth in the lunar sky.
+		\hfill [4]
+	\end{enumerate}
+\end{pro}
+
+\begin{center}
+	\includegraphics[width=0.9\linewidth]{ioaajr_2026_2D.pdf}
+\end{center}
+
+\begin{sol}
+	The starting geometry is the key: during a total lunar eclipse, the
+	order of the bodies is Sun--Earth--Moon. From the lunar station, Earth
+	therefore lies nearly in the direction of the Sun. The astronaut sees
+	the night side of Earth, although it is approximately local noon at the
+	station. Let $T=29.53$ Earth days be the synodic month.\\
+	
+	\textbf{Phase of Earth.}: On day $0$, Earth appears new, so its illuminated fraction is approximately zero. After a quarter of a cycle, the astronaut sees
+	half of Earth's disk illuminated. At $t=T/2\simeq14.8$ days, Earth
+	appears full. The illuminated fraction then decreases smoothly,
+	returning to its minimum at $t=T\simeq29.5$ days. In a uniform,
+	circular-orbit approximation, the percentage is
+	$P(t)=50[1-\cos(2\pi t/T)]$.
+\end{sol}
+\begin{defi}
+	\footnotesize
+	{\color{red}\small \textbf{Marking guide:} Award $0.5$ mark for each feature:
+		the maximum is between $90\%$ and $100\%$; the minimum reaches
+		$0\%$; the curve begins at its minimum; the maximum occurs on
+		day $14$--$16$; the curve is continuous and repeats after about
+		$29.5$ days; the curve is roughly sinusoidal, with visibly curved
+		rather than straight segments.}
+\end{defi}
+\begin{sol}
+	\textbf{Altitude of the Sun.}
+	The Sun begins near the zenith. Earth temporarily blocks it during
+	the eclipse, but this occultation does not place the Sun below the
+	horizon. Its altitude decreases to $0^\circ$ at sunset, around
+	$t=T/4\simeq7.4$ days. Leave the next part blank: during lunar
+	night the Sun is below the horizon, rather than sitting at
+	$0^\circ$. It rises around $t=3T/4\simeq22.1$ days and returns
+	near the zenith around day $29.5$.
+\end{sol}
+\begin{defi}
+	\footnotesize
+	{\color{red}\small \textbf{Marking guide:} Award $0.5$ mark for each feature:
+		the maximum is between $85^\circ$ and $90^\circ$; the visible
+		curve reaches $0^\circ$; it begins at its maximum; the Sun is
+		absent for a total of $10$--$20$ days; each above-horizon arc is
+		continuous and the pattern repeats after about $29.5$ days;
+		the visible arcs are rounded and roughly sinusoidal, as in the
+		supplied marking sketch.}
+\end{defi}
+\begin{sol}
+	\textbf{Altitude of Earth.}
+	The Moon keeps nearly the same face toward Earth, so an observer at
+	$(0^\circ,0^\circ)$ sees Earth high overhead throughout the month.
+	Its altitude is not exactly constant: lunar libration makes Earth
+	move slightly around the zenith. Draw a continuous curve with small
+	dips, for example from $90^\circ$ to about $85^\circ$ and back.
+	The precise dates of the dips are not determined by the information
+	given.
+\end{sol}
+\begin{defi}
+	\footnotesize
+	{\color{red}\small 
+		\textbf{Marking guide:} Award $0.5$ mark for a maximum altitude
+		between $85^\circ$ and $90^\circ$; $1.5$ marks for a continuous
+		curve showing that Earth never sets; $1$ mark for a minimum altitude
+		of at least $80^\circ$; and $1$ mark for small periodic variations
+		no larger than $10^\circ$.\par}
+\end{defi}
+\begin{teqn}[Sketching an observation graph]
+	\footnotesize
+	\item \textbf{Fix the viewpoint at $t=0$.} Sketch the Sun, Earth,
+	and Moon, then mark the observer and their local horizon. A full Moon
+	seen from Earth corresponds to a nearly new Earth seen from the Moon.
+	
+	\item \textbf{Label and number the axes.} Give each axis a quantity,
+	a unit, and numbered ticks. Use the same time scale for related panels;
+	if curves share a panel, identify them with labels or a legend.
+	
+	\item \textbf{Mark the key points before drawing.} Place the starting
+	value, show whether it rises or falls, and mark known maxima, minima,
+	and crossings. Use the period of the quantity being plotted: $29.53$
+	days is the phase cycle, not the interval between successive moonrises.
+	
+	\item \textbf{Let the geometry set the shape.} A repeating curve need
+	not be sinusoidal. For a real sky plot, use the observing site, date,
+	and time; for a sketch, do not assign exact times to features the
+	problem does not fix, such as dips caused by libration.
+	
+	\item \textbf{Distinguish altitude from visibility.} A body below the
+	horizon has negative altitude; leave a gap only if plotting visible
+	positions. An eclipse can hide a body without changing its altitude.
+\end{teqn}
 \clearpage
 \textsf{\textbf{\large Problem: Moon features}}
 \begin{enumerate}
@@ -862,7 +1068,8 @@ For Table (\ref{Messier_list}), In the next table here is the color code meaning
 
 \textbf{Some key facts about Messier Objects}
 \begin{itemize}
-    \item Only 34 out of 88 constellations contain Messier Objects
+	\renewcommand{\labelitemi}{\textcolor{orange}{\(\bigstar\)}}
+    \item Only 34 out of 88 constellations contain Messier Objects.
     \item Sagittarius contains the most about 35 where Virgo have 11, Coma Berenices have 8, Ursa Major and Ophiachus with 7 each, Canes Venatici and Leo contains 5 each, and Scorpius contains 4.
     \item The list of 109 objects compiled by \textit{C. Messier} contains many of the fines deep sky objects however observed from Paris. So far southern sky was lost to him. That's why 62 of his objects lie in these 8 constellations, famously known as Messier Northern Bias. 
 \end{itemize}
@@ -1375,6 +1582,7 @@ The round edge of each chart represents your horizon, with compass directions us
 \textbf{Some key information to notice}
 \begin{itemize}
 	\itemsep0em 
+	\renewcommand{\labelitemi}{\textcolor{orange}{\(\bigstar\)}}
     \item The \textbf{celestial equator} will always go from East to West. But this imaginary line in the sky can be an arc depending on the latitude of the observer. So, you must know the constellations that resides on this path. One simple example is that celestial equator passes through the belt of Orion. So if you can first determine the cardinals, you can easily draw the equator with help of Orion.
     \item The \textbf{ecliptic} is the imaginary path in which the Sun moves throughout the year. The term zodiac comes from this concept. There are 13 constellations that lies in the ecliptic. But 12 are considered the famous Zodiac constellations. They are: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius and Pisces. The Sun also passes through Ophiuchus, a constellation that has traditionally not been part of the zodiac family. It belongs to the Hercules family. One must also remember or be able to recognize this 12 constellations with their sequence. Then you can find the ecliptic.
     \item The intersection point of the equator and the ecliptic arc/line is the \textbf{equinox point}. So we have 2 equinox points $180^\circ$ apart. One is known as the first point of Aries \aries \; another is termed first point of Libra \libra. But the names are misleading nowadays[!]. Yes the points are named using the constellation they were on. But due to some special effects like processional rotation the euqinoxes have shifted a bit.\footnote{Discussed later in \ref{precessional}} So the \aries \; point now lies on Pisces and \libra \; currently resides on Virgo. It is helpful to also remember their approximate position compared to nearby constellations.
@@ -2031,7 +2239,7 @@ More Coming....[Very Soon est January 2027]
 \begin{sol}
 	As the axis of the Earth’s rotation is titled at an angle 23.5 degrees from the ecliptic, the sun can be circumpolar at latitude $66.5^\circ − 90^\circ$ N and $66.5^\circ − 90^\circ$ S.
 \end{sol}
-	\item \textbf{Name the Zodiac constellations according to sun's yearly path.} 
+	\item \textbf{Name the Zodiac constellations according to sun's yearly path.}\footnote{More details on Indian/Bangla zodiacs -- \url{https://rajit13.github.io/astro-bangla-dict.html#bn-zodiacs}} 
 	
 	\begin{figure}[H]
 		\centering
@@ -2252,6 +2460,7 @@ Observation of Planets in the night sky is pretty easy. The first thing you need
 	\endgroup 
 \end{table}
 \begin{itemize}
+	\renewcommand{\labelitemi}{\textcolor{orange}{\(\bigstar\)}}
 	\itemsep0em
 	\item It isn't twinkling? $\implies$ Probably a Planet!
 	\item Is the bright object brighter than Sirius (when you can compare)? $\implies$ Probably a Planet.
@@ -2543,6 +2752,7 @@ During the day, set your telescope so that you can see a distant object, at leas
 Here are the steps to follow.
 
 \begin{itemize}
+	\renewcommand{\labelitemi}{\textcolor{orange}{\(\bigstar\)}}
 	\itemsep0em 
 	\item Using your low power eyepiece point the telescope at the target and get it centered in the field of view of the eyepiece. Ignore the finder for now.
 	\item Switch to a high power eyepiece and again, get that target centered
@@ -3338,6 +3548,7 @@ In the blind map \ref{cz1}, 15 stars are highlighted in blue, 7 constellations i
 Here is their list:
 \begin{multicols}{4}
 	\begin{itemize}
+		\renewcommand{\labelitemi}{\textcolor{orange}{\(\bigstar\)}}
 		\item M13 
 		\item $\alpha$ Boo
 		\item Hydra
